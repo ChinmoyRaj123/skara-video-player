@@ -1,5 +1,5 @@
 {
-  "name": "@skara-test/video-player",
+  "name": "skara-test-video-player",
   "version": "0.0.1",
   "description": "A flexible, customizale video player",
   "source": "src/index.ts",
@@ -18,7 +18,7 @@
     "example": "live-server"
   },
   "keywords": [],
-  "author": "Mofiqul, mofi0islam@gmail.com",
+  "author": "Chinmoy, chinmoy@righthemisphere.in",
   "repository": {
     "type": "git",
     "url": ""
@@ -46,6 +46,7 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "hls.js": "^1.3.3"
+    "hls.js": "^1.3.3",
+    "pnpm": "^8.11.0"
   }
 }

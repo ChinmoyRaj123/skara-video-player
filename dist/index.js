@@ -1,3 +1,4 @@
+require("./index.css");
 var $8zHUo$hlsjs = require("hls.js");
 
 function $parcel$interopDefault(a) {
@@ -15,130 +16,130 @@ $parcel$defineInteropFlag(module.exports);
 $parcel$export(module.exports, "default", () => $882b6d93070905b3$export$2e2bcd8739ae039);
 var $ca9df0d41c4591c9$exports = {};
 
+$parcel$export($ca9df0d41c4591c9$exports, "icon", () => $ca9df0d41c4591c9$export$1ca1ec8b29a4ce27, (v) => $ca9df0d41c4591c9$export$1ca1ec8b29a4ce27 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "hide", () => $ca9df0d41c4591c9$export$fe8985bb6374093c, (v) => $ca9df0d41c4591c9$export$fe8985bb6374093c = v);
+$parcel$export($ca9df0d41c4591c9$exports, "root", () => $ca9df0d41c4591c9$export$e8e78c978b129247, (v) => $ca9df0d41c4591c9$export$e8e78c978b129247 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "volSlider", () => $ca9df0d41c4591c9$export$523cee24344607ef, (v) => $ca9df0d41c4591c9$export$523cee24344607ef = v);
+$parcel$export($ca9df0d41c4591c9$exports, "prgsWrapper", () => $ca9df0d41c4591c9$export$2f388bdb5e147bac, (v) => $ca9df0d41c4591c9$export$2f388bdb5e147bac = v);
+$parcel$export($ca9df0d41c4591c9$exports, "button", () => $ca9df0d41c4591c9$export$2ba01fb71ed41cb6, (v) => $ca9df0d41c4591c9$export$2ba01fb71ed41cb6 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "watchTimer", () => $ca9df0d41c4591c9$export$5321aef497dbc95, (v) => $ca9df0d41c4591c9$export$5321aef497dbc95 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "ctrlRight", () => $ca9df0d41c4591c9$export$deaf7926095b512d, (v) => $ca9df0d41c4591c9$export$deaf7926095b512d = v);
+$parcel$export($ca9df0d41c4591c9$exports, "sliderProgress", () => $ca9df0d41c4591c9$export$44601925ebb63135, (v) => $ca9df0d41c4591c9$export$44601925ebb63135 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "iconmd", () => $ca9df0d41c4591c9$export$ea551f4aac394d83, (v) => $ca9df0d41c4591c9$export$ea551f4aac394d83 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "settingWrapper", () => $ca9df0d41c4591c9$export$208d04ce5dd64049, (v) => $ca9df0d41c4591c9$export$208d04ce5dd64049 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "osdActive", () => $ca9df0d41c4591c9$export$26238087290c1f5b, (v) => $ca9df0d41c4591c9$export$26238087290c1f5b = v);
+$parcel$export($ca9df0d41c4591c9$exports, "prgsContainer", () => $ca9df0d41c4591c9$export$22702ef448665b4d, (v) => $ca9df0d41c4591c9$export$22702ef448665b4d = v);
+$parcel$export($ca9df0d41c4591c9$exports, "controls", () => $ca9df0d41c4591c9$export$cc1adf6fb659c762, (v) => $ca9df0d41c4591c9$export$cc1adf6fb659c762 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "active", () => $ca9df0d41c4591c9$export$89da14300d534261, (v) => $ca9df0d41c4591c9$export$89da14300d534261 = v);
 $parcel$export($ca9df0d41c4591c9$exports, "toolBar", () => $ca9df0d41c4591c9$export$ed2652bdb9ef1ad0, (v) => $ca9df0d41c4591c9$export$ed2652bdb9ef1ad0 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "ctrlLeft", () => $ca9df0d41c4591c9$export$fb55bfd207eb66bf, (v) => $ca9df0d41c4591c9$export$fb55bfd207eb66bf = v);
+$parcel$export($ca9df0d41c4591c9$exports, "spinner", () => $ca9df0d41c4591c9$export$641374ffb95bc399, (v) => $ca9df0d41c4591c9$export$641374ffb95bc399 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "listItem", () => $ca9df0d41c4591c9$export$76c7e83ecc9cdf05, (v) => $ca9df0d41c4591c9$export$76c7e83ecc9cdf05 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "spinn", () => $ca9df0d41c4591c9$export$b082c0b7a6cd56b2, (v) => $ca9df0d41c4591c9$export$b082c0b7a6cd56b2 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "prgsHover", () => $ca9df0d41c4591c9$export$f38465fe307ff1ea, (v) => $ca9df0d41c4591c9$export$f38465fe307ff1ea = v);
+$parcel$export($ca9df0d41c4591c9$exports, "innerOsd", () => $ca9df0d41c4591c9$export$5bbce59cbad6e3b7, (v) => $ca9df0d41c4591c9$export$5bbce59cbad6e3b7 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "centerBtnHide", () => $ca9df0d41c4591c9$export$e9be0fb78d9ff657, (v) => $ca9df0d41c4591c9$export$e9be0fb78d9ff657 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "scrubber", () => $ca9df0d41c4591c9$export$e2b69c907b9ef440, (v) => $ca9df0d41c4591c9$export$e2b69c907b9ef440 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "prgsContainerWrapper", () => $ca9df0d41c4591c9$export$49ee957901f7a027, (v) => $ca9df0d41c4591c9$export$49ee957901f7a027 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "prgsBar", () => $ca9df0d41c4591c9$export$e475d70d0abfaf0c, (v) => $ca9df0d41c4591c9$export$e475d70d0abfaf0c = v);
+$parcel$export($ca9df0d41c4591c9$exports, "volCtrlWrapper", () => $ca9df0d41c4591c9$export$328af1edb566eae3, (v) => $ca9df0d41c4591c9$export$328af1edb566eae3 = v);
 $parcel$export($ca9df0d41c4591c9$exports, "rotate", () => $ca9df0d41c4591c9$export$bb628a54ab399bc9, (v) => $ca9df0d41c4591c9$export$bb628a54ab399bc9 = v);
 $parcel$export($ca9df0d41c4591c9$exports, "sliderWrapper", () => $ca9df0d41c4591c9$export$b99e7c702abdb77a, (v) => $ca9df0d41c4591c9$export$b99e7c702abdb77a = v);
-$parcel$export($ca9df0d41c4591c9$exports, "active", () => $ca9df0d41c4591c9$export$89da14300d534261, (v) => $ca9df0d41c4591c9$export$89da14300d534261 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "prgsBar", () => $ca9df0d41c4591c9$export$e475d70d0abfaf0c, (v) => $ca9df0d41c4591c9$export$e475d70d0abfaf0c = v);
-$parcel$export($ca9df0d41c4591c9$exports, "activeIconWrapper", () => $ca9df0d41c4591c9$export$54384a8b841c9096, (v) => $ca9df0d41c4591c9$export$54384a8b841c9096 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "icon", () => $ca9df0d41c4591c9$export$1ca1ec8b29a4ce27, (v) => $ca9df0d41c4591c9$export$1ca1ec8b29a4ce27 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "sliderProgress", () => $ca9df0d41c4591c9$export$44601925ebb63135, (v) => $ca9df0d41c4591c9$export$44601925ebb63135 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "ctrlLeft", () => $ca9df0d41c4591c9$export$fb55bfd207eb66bf, (v) => $ca9df0d41c4591c9$export$fb55bfd207eb66bf = v);
-$parcel$export($ca9df0d41c4591c9$exports, "prgsHover", () => $ca9df0d41c4591c9$export$f38465fe307ff1ea, (v) => $ca9df0d41c4591c9$export$f38465fe307ff1ea = v);
 $parcel$export($ca9df0d41c4591c9$exports, "video", () => $ca9df0d41c4591c9$export$5f8d3589eb8441ca, (v) => $ca9df0d41c4591c9$export$5f8d3589eb8441ca = v);
-$parcel$export($ca9df0d41c4591c9$exports, "settingWrapper", () => $ca9df0d41c4591c9$export$208d04ce5dd64049, (v) => $ca9df0d41c4591c9$export$208d04ce5dd64049 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "listItem", () => $ca9df0d41c4591c9$export$76c7e83ecc9cdf05, (v) => $ca9df0d41c4591c9$export$76c7e83ecc9cdf05 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "indicatorIcon", () => $ca9df0d41c4591c9$export$37c675ad6e14d9ff, (v) => $ca9df0d41c4591c9$export$37c675ad6e14d9ff = v);
-$parcel$export($ca9df0d41c4591c9$exports, "watchTimer", () => $ca9df0d41c4591c9$export$5321aef497dbc95, (v) => $ca9df0d41c4591c9$export$5321aef497dbc95 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "innerOsd", () => $ca9df0d41c4591c9$export$5bbce59cbad6e3b7, (v) => $ca9df0d41c4591c9$export$5bbce59cbad6e3b7 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "root", () => $ca9df0d41c4591c9$export$e8e78c978b129247, (v) => $ca9df0d41c4591c9$export$e8e78c978b129247 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "iconSmall", () => $ca9df0d41c4591c9$export$934587b1a6f00472, (v) => $ca9df0d41c4591c9$export$934587b1a6f00472 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "spinner", () => $ca9df0d41c4591c9$export$641374ffb95bc399, (v) => $ca9df0d41c4591c9$export$641374ffb95bc399 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "osdBar", () => $ca9df0d41c4591c9$export$a1b4384913d28591, (v) => $ca9df0d41c4591c9$export$a1b4384913d28591 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "ctrlRight", () => $ca9df0d41c4591c9$export$deaf7926095b512d, (v) => $ca9df0d41c4591c9$export$deaf7926095b512d = v);
-$parcel$export($ca9df0d41c4591c9$exports, "iconmd", () => $ca9df0d41c4591c9$export$ea551f4aac394d83, (v) => $ca9df0d41c4591c9$export$ea551f4aac394d83 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "centerButton", () => $ca9df0d41c4591c9$export$a2b3dd87d3e471be, (v) => $ca9df0d41c4591c9$export$a2b3dd87d3e471be = v);
-$parcel$export($ca9df0d41c4591c9$exports, "prgsWrapper", () => $ca9df0d41c4591c9$export$2f388bdb5e147bac, (v) => $ca9df0d41c4591c9$export$2f388bdb5e147bac = v);
-$parcel$export($ca9df0d41c4591c9$exports, "prgsContainer", () => $ca9df0d41c4591c9$export$22702ef448665b4d, (v) => $ca9df0d41c4591c9$export$22702ef448665b4d = v);
-$parcel$export($ca9df0d41c4591c9$exports, "osdActive", () => $ca9df0d41c4591c9$export$26238087290c1f5b, (v) => $ca9df0d41c4591c9$export$26238087290c1f5b = v);
-$parcel$export($ca9df0d41c4591c9$exports, "hide", () => $ca9df0d41c4591c9$export$fe8985bb6374093c, (v) => $ca9df0d41c4591c9$export$fe8985bb6374093c = v);
-$parcel$export($ca9df0d41c4591c9$exports, "prgsContainerWrapper", () => $ca9df0d41c4591c9$export$49ee957901f7a027, (v) => $ca9df0d41c4591c9$export$49ee957901f7a027 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "centerBtnShow", () => $ca9df0d41c4591c9$export$4bc86dd528c758a3, (v) => $ca9df0d41c4591c9$export$4bc86dd528c758a3 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "ctrlContainer", () => $ca9df0d41c4591c9$export$77806bb1d74cd6f6, (v) => $ca9df0d41c4591c9$export$77806bb1d74cd6f6 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "spinn", () => $ca9df0d41c4591c9$export$b082c0b7a6cd56b2, (v) => $ca9df0d41c4591c9$export$b082c0b7a6cd56b2 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "controls", () => $ca9df0d41c4591c9$export$cc1adf6fb659c762, (v) => $ca9df0d41c4591c9$export$cc1adf6fb659c762 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "scrubber", () => $ca9df0d41c4591c9$export$e2b69c907b9ef440, (v) => $ca9df0d41c4591c9$export$e2b69c907b9ef440 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "centerBtnHide", () => $ca9df0d41c4591c9$export$e9be0fb78d9ff657, (v) => $ca9df0d41c4591c9$export$e9be0fb78d9ff657 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "seekTimeTooltip", () => $ca9df0d41c4591c9$export$b0904f355cb5d789, (v) => $ca9df0d41c4591c9$export$b0904f355cb5d789 = v);
 $parcel$export($ca9df0d41c4591c9$exports, "title", () => $ca9df0d41c4591c9$export$fb184b623420d9be, (v) => $ca9df0d41c4591c9$export$fb184b623420d9be = v);
-$parcel$export($ca9df0d41c4591c9$exports, "volSlider", () => $ca9df0d41c4591c9$export$523cee24344607ef, (v) => $ca9df0d41c4591c9$export$523cee24344607ef = v);
-$parcel$export($ca9df0d41c4591c9$exports, "button", () => $ca9df0d41c4591c9$export$2ba01fb71ed41cb6, (v) => $ca9df0d41c4591c9$export$2ba01fb71ed41cb6 = v);
-$parcel$export($ca9df0d41c4591c9$exports, "volCtrlWrapper", () => $ca9df0d41c4591c9$export$328af1edb566eae3, (v) => $ca9df0d41c4591c9$export$328af1edb566eae3 = v);
 $parcel$export($ca9df0d41c4591c9$exports, "settingItem", () => $ca9df0d41c4591c9$export$d9d30bff7354568a, (v) => $ca9df0d41c4591c9$export$d9d30bff7354568a = v);
+$parcel$export($ca9df0d41c4591c9$exports, "centerButton", () => $ca9df0d41c4591c9$export$a2b3dd87d3e471be, (v) => $ca9df0d41c4591c9$export$a2b3dd87d3e471be = v);
+$parcel$export($ca9df0d41c4591c9$exports, "indicatorIcon", () => $ca9df0d41c4591c9$export$37c675ad6e14d9ff, (v) => $ca9df0d41c4591c9$export$37c675ad6e14d9ff = v);
+$parcel$export($ca9df0d41c4591c9$exports, "ctrlContainer", () => $ca9df0d41c4591c9$export$77806bb1d74cd6f6, (v) => $ca9df0d41c4591c9$export$77806bb1d74cd6f6 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "osdBar", () => $ca9df0d41c4591c9$export$a1b4384913d28591, (v) => $ca9df0d41c4591c9$export$a1b4384913d28591 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "seekTimeTooltip", () => $ca9df0d41c4591c9$export$b0904f355cb5d789, (v) => $ca9df0d41c4591c9$export$b0904f355cb5d789 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "iconSmall", () => $ca9df0d41c4591c9$export$934587b1a6f00472, (v) => $ca9df0d41c4591c9$export$934587b1a6f00472 = v);
 $parcel$export($ca9df0d41c4591c9$exports, "settingPopup", () => $ca9df0d41c4591c9$export$5e53b5cc6c2ef6ac, (v) => $ca9df0d41c4591c9$export$5e53b5cc6c2ef6ac = v);
+$parcel$export($ca9df0d41c4591c9$exports, "activeIconWrapper", () => $ca9df0d41c4591c9$export$54384a8b841c9096, (v) => $ca9df0d41c4591c9$export$54384a8b841c9096 = v);
+$parcel$export($ca9df0d41c4591c9$exports, "centerBtnShow", () => $ca9df0d41c4591c9$export$4bc86dd528c758a3, (v) => $ca9df0d41c4591c9$export$4bc86dd528c758a3 = v);
+var $ca9df0d41c4591c9$export$1ca1ec8b29a4ce27;
+var $ca9df0d41c4591c9$export$fe8985bb6374093c;
+var $ca9df0d41c4591c9$export$e8e78c978b129247;
+var $ca9df0d41c4591c9$export$523cee24344607ef;
+var $ca9df0d41c4591c9$export$2f388bdb5e147bac;
+var $ca9df0d41c4591c9$export$2ba01fb71ed41cb6;
+var $ca9df0d41c4591c9$export$5321aef497dbc95;
+var $ca9df0d41c4591c9$export$deaf7926095b512d;
+var $ca9df0d41c4591c9$export$44601925ebb63135;
+var $ca9df0d41c4591c9$export$ea551f4aac394d83;
+var $ca9df0d41c4591c9$export$208d04ce5dd64049;
+var $ca9df0d41c4591c9$export$26238087290c1f5b;
+var $ca9df0d41c4591c9$export$22702ef448665b4d;
+var $ca9df0d41c4591c9$export$cc1adf6fb659c762;
+var $ca9df0d41c4591c9$export$89da14300d534261;
 var $ca9df0d41c4591c9$export$ed2652bdb9ef1ad0;
+var $ca9df0d41c4591c9$export$fb55bfd207eb66bf;
+var $ca9df0d41c4591c9$export$641374ffb95bc399;
+var $ca9df0d41c4591c9$export$76c7e83ecc9cdf05;
+var $ca9df0d41c4591c9$export$b082c0b7a6cd56b2;
+var $ca9df0d41c4591c9$export$f38465fe307ff1ea;
+var $ca9df0d41c4591c9$export$5bbce59cbad6e3b7;
+var $ca9df0d41c4591c9$export$e9be0fb78d9ff657;
+var $ca9df0d41c4591c9$export$e2b69c907b9ef440;
+var $ca9df0d41c4591c9$export$49ee957901f7a027;
+var $ca9df0d41c4591c9$export$e475d70d0abfaf0c;
+var $ca9df0d41c4591c9$export$328af1edb566eae3;
 var $ca9df0d41c4591c9$export$bb628a54ab399bc9;
 var $ca9df0d41c4591c9$export$b99e7c702abdb77a;
-var $ca9df0d41c4591c9$export$89da14300d534261;
-var $ca9df0d41c4591c9$export$e475d70d0abfaf0c;
-var $ca9df0d41c4591c9$export$54384a8b841c9096;
-var $ca9df0d41c4591c9$export$1ca1ec8b29a4ce27;
-var $ca9df0d41c4591c9$export$44601925ebb63135;
-var $ca9df0d41c4591c9$export$fb55bfd207eb66bf;
-var $ca9df0d41c4591c9$export$f38465fe307ff1ea;
 var $ca9df0d41c4591c9$export$5f8d3589eb8441ca;
-var $ca9df0d41c4591c9$export$208d04ce5dd64049;
-var $ca9df0d41c4591c9$export$76c7e83ecc9cdf05;
-var $ca9df0d41c4591c9$export$37c675ad6e14d9ff;
-var $ca9df0d41c4591c9$export$5321aef497dbc95;
-var $ca9df0d41c4591c9$export$5bbce59cbad6e3b7;
-var $ca9df0d41c4591c9$export$e8e78c978b129247;
-var $ca9df0d41c4591c9$export$934587b1a6f00472;
-var $ca9df0d41c4591c9$export$641374ffb95bc399;
-var $ca9df0d41c4591c9$export$a1b4384913d28591;
-var $ca9df0d41c4591c9$export$deaf7926095b512d;
-var $ca9df0d41c4591c9$export$ea551f4aac394d83;
-var $ca9df0d41c4591c9$export$a2b3dd87d3e471be;
-var $ca9df0d41c4591c9$export$2f388bdb5e147bac;
-var $ca9df0d41c4591c9$export$22702ef448665b4d;
-var $ca9df0d41c4591c9$export$26238087290c1f5b;
-var $ca9df0d41c4591c9$export$fe8985bb6374093c;
-var $ca9df0d41c4591c9$export$49ee957901f7a027;
-var $ca9df0d41c4591c9$export$4bc86dd528c758a3;
-var $ca9df0d41c4591c9$export$77806bb1d74cd6f6;
-var $ca9df0d41c4591c9$export$b082c0b7a6cd56b2;
-var $ca9df0d41c4591c9$export$cc1adf6fb659c762;
-var $ca9df0d41c4591c9$export$e2b69c907b9ef440;
-var $ca9df0d41c4591c9$export$e9be0fb78d9ff657;
-var $ca9df0d41c4591c9$export$b0904f355cb5d789;
 var $ca9df0d41c4591c9$export$fb184b623420d9be;
-var $ca9df0d41c4591c9$export$523cee24344607ef;
-var $ca9df0d41c4591c9$export$2ba01fb71ed41cb6;
-var $ca9df0d41c4591c9$export$328af1edb566eae3;
 var $ca9df0d41c4591c9$export$d9d30bff7354568a;
+var $ca9df0d41c4591c9$export$a2b3dd87d3e471be;
+var $ca9df0d41c4591c9$export$37c675ad6e14d9ff;
+var $ca9df0d41c4591c9$export$77806bb1d74cd6f6;
+var $ca9df0d41c4591c9$export$a1b4384913d28591;
+var $ca9df0d41c4591c9$export$b0904f355cb5d789;
+var $ca9df0d41c4591c9$export$934587b1a6f00472;
 var $ca9df0d41c4591c9$export$5e53b5cc6c2ef6ac;
-$ca9df0d41c4591c9$export$ed2652bdb9ef1ad0 = `VC4pIW_toolBar`;
-$ca9df0d41c4591c9$export$bb628a54ab399bc9 = `VC4pIW_rotate`;
-$ca9df0d41c4591c9$export$b99e7c702abdb77a = `VC4pIW_sliderWrapper`;
-$ca9df0d41c4591c9$export$89da14300d534261 = `VC4pIW_active`;
-$ca9df0d41c4591c9$export$e475d70d0abfaf0c = `VC4pIW_prgsBar`;
-$ca9df0d41c4591c9$export$54384a8b841c9096 = `VC4pIW_activeIconWrapper`;
+var $ca9df0d41c4591c9$export$54384a8b841c9096;
+var $ca9df0d41c4591c9$export$4bc86dd528c758a3;
 $ca9df0d41c4591c9$export$1ca1ec8b29a4ce27 = `VC4pIW_icon`;
-$ca9df0d41c4591c9$export$44601925ebb63135 = `VC4pIW_sliderProgress`;
-$ca9df0d41c4591c9$export$fb55bfd207eb66bf = `VC4pIW_ctrlLeft`;
-$ca9df0d41c4591c9$export$f38465fe307ff1ea = `VC4pIW_prgsHover`;
-$ca9df0d41c4591c9$export$5f8d3589eb8441ca = `VC4pIW_video`;
-$ca9df0d41c4591c9$export$208d04ce5dd64049 = `VC4pIW_settingWrapper`;
-$ca9df0d41c4591c9$export$76c7e83ecc9cdf05 = `VC4pIW_listItem`;
-$ca9df0d41c4591c9$export$37c675ad6e14d9ff = `VC4pIW_indicatorIcon`;
-$ca9df0d41c4591c9$export$5321aef497dbc95 = `VC4pIW_watchTimer`;
-$ca9df0d41c4591c9$export$5bbce59cbad6e3b7 = `VC4pIW_innerOsd`;
-$ca9df0d41c4591c9$export$e8e78c978b129247 = `VC4pIW_root`;
-$ca9df0d41c4591c9$export$934587b1a6f00472 = `VC4pIW_iconSmall`;
-$ca9df0d41c4591c9$export$641374ffb95bc399 = `VC4pIW_spinner`;
-$ca9df0d41c4591c9$export$a1b4384913d28591 = `VC4pIW_osdBar`;
-$ca9df0d41c4591c9$export$deaf7926095b512d = `VC4pIW_ctrlRight`;
-$ca9df0d41c4591c9$export$ea551f4aac394d83 = `VC4pIW_iconmd`;
-$ca9df0d41c4591c9$export$a2b3dd87d3e471be = `VC4pIW_centerButton`;
-$ca9df0d41c4591c9$export$2f388bdb5e147bac = `VC4pIW_prgsWrapper`;
-$ca9df0d41c4591c9$export$22702ef448665b4d = `VC4pIW_prgsContainer`;
-$ca9df0d41c4591c9$export$26238087290c1f5b = `VC4pIW_osdActive`;
 $ca9df0d41c4591c9$export$fe8985bb6374093c = `VC4pIW_hide`;
-$ca9df0d41c4591c9$export$49ee957901f7a027 = `VC4pIW_prgsContainerWrapper`;
-$ca9df0d41c4591c9$export$4bc86dd528c758a3 = `VC4pIW_centerBtnShow`;
-$ca9df0d41c4591c9$export$77806bb1d74cd6f6 = `VC4pIW_ctrlContainer`;
+$ca9df0d41c4591c9$export$e8e78c978b129247 = `VC4pIW_root`;
+$ca9df0d41c4591c9$export$523cee24344607ef = `VC4pIW_volSlider`;
+$ca9df0d41c4591c9$export$2f388bdb5e147bac = `VC4pIW_prgsWrapper`;
+$ca9df0d41c4591c9$export$2ba01fb71ed41cb6 = `VC4pIW_button`;
+$ca9df0d41c4591c9$export$5321aef497dbc95 = `VC4pIW_watchTimer`;
+$ca9df0d41c4591c9$export$deaf7926095b512d = `VC4pIW_ctrlRight`;
+$ca9df0d41c4591c9$export$44601925ebb63135 = `VC4pIW_sliderProgress`;
+$ca9df0d41c4591c9$export$ea551f4aac394d83 = `VC4pIW_iconmd`;
+$ca9df0d41c4591c9$export$208d04ce5dd64049 = `VC4pIW_settingWrapper`;
+$ca9df0d41c4591c9$export$26238087290c1f5b = `VC4pIW_osdActive`;
+$ca9df0d41c4591c9$export$22702ef448665b4d = `VC4pIW_prgsContainer`;
+$ca9df0d41c4591c9$export$cc1adf6fb659c762 = `VC4pIW_controls`;
+$ca9df0d41c4591c9$export$89da14300d534261 = `VC4pIW_active`;
+$ca9df0d41c4591c9$export$ed2652bdb9ef1ad0 = `VC4pIW_toolBar`;
+$ca9df0d41c4591c9$export$fb55bfd207eb66bf = `VC4pIW_ctrlLeft`;
+$ca9df0d41c4591c9$export$641374ffb95bc399 = `VC4pIW_spinner`;
+$ca9df0d41c4591c9$export$76c7e83ecc9cdf05 = `VC4pIW_listItem`;
 $ca9df0d41c4591c9$export$b082c0b7a6cd56b2 = `VC4pIW_spinn`;
 $ca9df0d41c4591c9$export$b082c0b7a6cd56b2;
-$ca9df0d41c4591c9$export$cc1adf6fb659c762 = `VC4pIW_controls`;
-$ca9df0d41c4591c9$export$e2b69c907b9ef440 = `VC4pIW_scrubber`;
+$ca9df0d41c4591c9$export$f38465fe307ff1ea = `VC4pIW_prgsHover`;
+$ca9df0d41c4591c9$export$5bbce59cbad6e3b7 = `VC4pIW_innerOsd`;
 $ca9df0d41c4591c9$export$e9be0fb78d9ff657 = `VC4pIW_centerBtnHide`;
-$ca9df0d41c4591c9$export$b0904f355cb5d789 = `VC4pIW_seekTimeTooltip`;
-$ca9df0d41c4591c9$export$fb184b623420d9be = `VC4pIW_title`;
-$ca9df0d41c4591c9$export$523cee24344607ef = `VC4pIW_volSlider`;
-$ca9df0d41c4591c9$export$2ba01fb71ed41cb6 = `VC4pIW_button`;
+$ca9df0d41c4591c9$export$e2b69c907b9ef440 = `VC4pIW_scrubber`;
+$ca9df0d41c4591c9$export$49ee957901f7a027 = `VC4pIW_prgsContainerWrapper`;
+$ca9df0d41c4591c9$export$e475d70d0abfaf0c = `VC4pIW_prgsBar`;
 $ca9df0d41c4591c9$export$328af1edb566eae3 = `VC4pIW_volCtrlWrapper`;
+$ca9df0d41c4591c9$export$bb628a54ab399bc9 = `VC4pIW_rotate`;
+$ca9df0d41c4591c9$export$b99e7c702abdb77a = `VC4pIW_sliderWrapper`;
+$ca9df0d41c4591c9$export$5f8d3589eb8441ca = `VC4pIW_video`;
+$ca9df0d41c4591c9$export$fb184b623420d9be = `VC4pIW_title`;
 $ca9df0d41c4591c9$export$d9d30bff7354568a = `VC4pIW_settingItem`;
+$ca9df0d41c4591c9$export$a2b3dd87d3e471be = `VC4pIW_centerButton`;
+$ca9df0d41c4591c9$export$37c675ad6e14d9ff = `VC4pIW_indicatorIcon`;
+$ca9df0d41c4591c9$export$77806bb1d74cd6f6 = `VC4pIW_ctrlContainer`;
+$ca9df0d41c4591c9$export$a1b4384913d28591 = `VC4pIW_osdBar`;
+$ca9df0d41c4591c9$export$b0904f355cb5d789 = `VC4pIW_seekTimeTooltip`;
+$ca9df0d41c4591c9$export$934587b1a6f00472 = `VC4pIW_iconSmall`;
 $ca9df0d41c4591c9$export$5e53b5cc6c2ef6ac = `VC4pIW_settingPopup`;
+$ca9df0d41c4591c9$export$54384a8b841c9096 = `VC4pIW_activeIconWrapper`;
+$ca9df0d41c4591c9$export$4bc86dd528c758a3 = `VC4pIW_centerBtnShow`;
 
 
 
@@ -204,127 +205,127 @@ const $83c9e6ee03e7ee34$export$129f0a95dc280ac5 = (el, icon)=>{
 };
 
 
-var $7fc3351cbd82e57a$exports = {};
-$7fc3351cbd82e57a$exports = new URL("play_arrow.4cc4f502.svg", "file:" + __filename).toString();
+var $0b29251b41c12945$exports = {};
+$0b29251b41c12945$exports = new URL("play_arrow.4cc4f502.svg", "file:" + __filename).toString();
 
 
-var $ff40f515e1f81cd8$exports = {};
-$ff40f515e1f81cd8$exports = new URL("play_circle.df9c3cff.svg", "file:" + __filename).toString();
+var $297a52c918b41e93$exports = {};
+$297a52c918b41e93$exports = new URL("play_circle.df9c3cff.svg", "file:" + __filename).toString();
 
 
-var $2f902bd9b7fb5a73$exports = {};
-$2f902bd9b7fb5a73$exports = new URL("pause.2323d772.svg", "file:" + __filename).toString();
+var $1de6478421d60540$exports = {};
+$1de6478421d60540$exports = new URL("pause.2323d772.svg", "file:" + __filename).toString();
 
 
-var $047c46e70237b99c$exports = {};
-$047c46e70237b99c$exports = new URL("stop.be378618.svg", "file:" + __filename).toString();
+var $f0202413988421c8$exports = {};
+$f0202413988421c8$exports = new URL("stop.be378618.svg", "file:" + __filename).toString();
 
 
-var $3eb38dc25a4f0fcd$exports = {};
-$3eb38dc25a4f0fcd$exports = new URL("replay.e78d085d.svg", "file:" + __filename).toString();
+var $9933d976c47c05a7$exports = {};
+$9933d976c47c05a7$exports = new URL("replay.e78d085d.svg", "file:" + __filename).toString();
 
 
-var $3a96ce9c7c3350f1$exports = {};
-$3a96ce9c7c3350f1$exports = new URL("volume_off.146f15f9.svg", "file:" + __filename).toString();
+var $9b4cbe4528fb0583$exports = {};
+$9b4cbe4528fb0583$exports = new URL("volume_off.146f15f9.svg", "file:" + __filename).toString();
 
 
-var $a410d328ce75c319$exports = {};
-$a410d328ce75c319$exports = new URL("volume_up.702ad549.svg", "file:" + __filename).toString();
+var $987ce38555ad2882$exports = {};
+$987ce38555ad2882$exports = new URL("volume_up.702ad549.svg", "file:" + __filename).toString();
 
 
-var $c9d7f7ae8d277497$exports = {};
-$c9d7f7ae8d277497$exports = new URL("fullscreen.5158f294.svg", "file:" + __filename).toString();
+var $865ea319e9152439$exports = {};
+$865ea319e9152439$exports = new URL("fullscreen.5158f294.svg", "file:" + __filename).toString();
 
 
-var $6b28026f25884e6a$exports = {};
-$6b28026f25884e6a$exports = new URL("fullscreen_exit.16e2ba69.svg", "file:" + __filename).toString();
+var $7f210635a775185e$exports = {};
+$7f210635a775185e$exports = new URL("fullscreen_exit.16e2ba69.svg", "file:" + __filename).toString();
 
 
-var $bc1263a9ebcbcca8$exports = {};
-$bc1263a9ebcbcca8$exports = new URL("hd.29dcc5bc.svg", "file:" + __filename).toString();
+var $5215728e025c60dd$exports = {};
+$5215728e025c60dd$exports = new URL("hd.29dcc5bc.svg", "file:" + __filename).toString();
 
 
-var $7d9872de9e9e8030$exports = {};
-$7d9872de9e9e8030$exports = new URL("high_quality.ab0fd3d1.svg", "file:" + __filename).toString();
+var $b7edca5936f4d0be$exports = {};
+$b7edca5936f4d0be$exports = new URL("high_quality.ab0fd3d1.svg", "file:" + __filename).toString();
 
 
-var $5d97628dee8965d6$exports = {};
-$5d97628dee8965d6$exports = new URL("2k.b0ab1062.svg", "file:" + __filename).toString();
+var $e0a4724df9b09781$exports = {};
+$e0a4724df9b09781$exports = new URL("2k.b0ab1062.svg", "file:" + __filename).toString();
 
 
-var $3d3205e82294190e$exports = {};
-$3d3205e82294190e$exports = new URL("4k.b8adc639.svg", "file:" + __filename).toString();
+var $4ed628aa4b905d23$exports = {};
+$4ed628aa4b905d23$exports = new URL("4k.b8adc639.svg", "file:" + __filename).toString();
 
 
-var $b77e081d3858caf9$exports = {};
-$b77e081d3858caf9$exports = new URL("settings.139ef56d.svg", "file:" + __filename).toString();
+var $76cd4ec192aabaa9$exports = {};
+$76cd4ec192aabaa9$exports = new URL("settings.139ef56d.svg", "file:" + __filename).toString();
 
 
-var $3842088043df68b7$exports = {};
-$3842088043df68b7$exports = new URL("closed_caption_disabled.04d73fb7.svg", "file:" + __filename).toString();
+var $0401d99fc17ee1f8$exports = {};
+$0401d99fc17ee1f8$exports = new URL("closed_caption_disabled.04d73fb7.svg", "file:" + __filename).toString();
 
 
-var $992255ceec4b8f4c$exports = {};
-$992255ceec4b8f4c$exports = new URL("closed_caption_enabled.f30a2548.svg", "file:" + __filename).toString();
+var $f669eefd57d348c9$exports = {};
+$f669eefd57d348c9$exports = new URL("closed_caption_enabled.f30a2548.svg", "file:" + __filename).toString();
 
 
-var $d6493afb074d4b2d$exports = {};
-$d6493afb074d4b2d$exports = new URL("tune.4f3ae920.svg", "file:" + __filename).toString();
+var $831fadad19774975$exports = {};
+$831fadad19774975$exports = new URL("tune.4f3ae920.svg", "file:" + __filename).toString();
 
 
-var $8f3f20dc235bf54e$exports = {};
-$8f3f20dc235bf54e$exports = new URL("slow_motion_video.63bda835.svg", "file:" + __filename).toString();
+var $ece434fd02452646$exports = {};
+$ece434fd02452646$exports = new URL("slow_motion_video.63bda835.svg", "file:" + __filename).toString();
 
 
-var $8f9ce3009f4ead52$exports = {};
-$8f9ce3009f4ead52$exports = new URL("chevron_right.d3d6fda1.svg", "file:" + __filename).toString();
+var $e8bc643d88ba18cd$exports = {};
+$e8bc643d88ba18cd$exports = new URL("chevron_right.d3d6fda1.svg", "file:" + __filename).toString();
 
 
-var $6ec066630963edf5$exports = {};
-$6ec066630963edf5$exports = new URL("chevron_left.98bf943f.svg", "file:" + __filename).toString();
+var $75853fd3616d8785$exports = {};
+$75853fd3616d8785$exports = new URL("chevron_left.98bf943f.svg", "file:" + __filename).toString();
 
 
-var $9f4735bcf053a647$exports = {};
-$9f4735bcf053a647$exports = new URL("arrow_back.5f12e800.svg", "file:" + __filename).toString();
+var $9dfc1588fdd7c7a4$exports = {};
+$9dfc1588fdd7c7a4$exports = new URL("arrow_back.5f12e800.svg", "file:" + __filename).toString();
 
 
-var $1e7c632347be7244$exports = {};
-$1e7c632347be7244$exports = new URL("volume_down.7c9c5eb5.svg", "file:" + __filename).toString();
+var $3f27d215771b3ca0$exports = {};
+$3f27d215771b3ca0$exports = new URL("volume_down.7c9c5eb5.svg", "file:" + __filename).toString();
 
 
-var $ae5ebf500f9ec0a1$exports = {};
-$ae5ebf500f9ec0a1$exports = new URL("screen_lock_landscape.77fb5891.svg", "file:" + __filename).toString();
+var $527c615c071a96cb$exports = {};
+$527c615c071a96cb$exports = new URL("screen_lock_landscape.77fb5891.svg", "file:" + __filename).toString();
 
 
-var $e301383e98ff8225$exports = {};
-$e301383e98ff8225$exports = new URL("screen_lock_rotation.16e1878f.svg", "file:" + __filename).toString();
+var $4904e625ecbd1091$exports = {};
+$4904e625ecbd1091$exports = new URL("screen_lock_rotation.16e1878f.svg", "file:" + __filename).toString();
 
 
 const $68df73fce0f18379$export$a2d8b23205c25948 = {
-    PlayIcon: (/*@__PURE__*/$parcel$interopDefault($7fc3351cbd82e57a$exports)),
-    PauseIcon: (/*@__PURE__*/$parcel$interopDefault($2f902bd9b7fb5a73$exports)),
-    StopIcon: (/*@__PURE__*/$parcel$interopDefault($047c46e70237b99c$exports)),
-    ReplayIcon: (/*@__PURE__*/$parcel$interopDefault($3eb38dc25a4f0fcd$exports)),
-    VolumeOnIcon: (/*@__PURE__*/$parcel$interopDefault($a410d328ce75c319$exports)),
-    VolumeOffIcon: (/*@__PURE__*/$parcel$interopDefault($3a96ce9c7c3350f1$exports)),
-    FullScreenIcon: (/*@__PURE__*/$parcel$interopDefault($c9d7f7ae8d277497$exports)),
-    FullScreenExitIcon: (/*@__PURE__*/$parcel$interopDefault($6b28026f25884e6a$exports)),
-    HqIcon: (/*@__PURE__*/$parcel$interopDefault($7d9872de9e9e8030$exports)),
-    HdIcon: (/*@__PURE__*/$parcel$interopDefault($bc1263a9ebcbcca8$exports)),
-    TwoKIcon: (/*@__PURE__*/$parcel$interopDefault($5d97628dee8965d6$exports)),
-    FourKIcon: (/*@__PURE__*/$parcel$interopDefault($3d3205e82294190e$exports)),
-    SettingIcon: (/*@__PURE__*/$parcel$interopDefault($b77e081d3858caf9$exports)),
-    ClosedCaptionEnabledIcon: (/*@__PURE__*/$parcel$interopDefault($3842088043df68b7$exports)),
-    ClosedCaptionDisabledIcon: (/*@__PURE__*/$parcel$interopDefault($992255ceec4b8f4c$exports)),
-    TuneIcon: (/*@__PURE__*/$parcel$interopDefault($d6493afb074d4b2d$exports)),
-    SlowMotionIcon: (/*@__PURE__*/$parcel$interopDefault($8f3f20dc235bf54e$exports)),
-    ChevronRightIcon: (/*@__PURE__*/$parcel$interopDefault($8f9ce3009f4ead52$exports)),
-    ChevronLeftIcon: (/*@__PURE__*/$parcel$interopDefault($6ec066630963edf5$exports)),
-    PlayCircleIcon: (/*@__PURE__*/$parcel$interopDefault($ff40f515e1f81cd8$exports)),
-    ArrowBackIcon: (/*@__PURE__*/$parcel$interopDefault($9f4735bcf053a647$exports)),
-    VolumeDownIcon: (/*@__PURE__*/$parcel$interopDefault($1e7c632347be7244$exports)),
-    ScrLockLandscapeIcon: (/*@__PURE__*/$parcel$interopDefault($ae5ebf500f9ec0a1$exports)),
-    ScrLockRotationIcon: (/*@__PURE__*/$parcel$interopDefault($e301383e98ff8225$exports))
+    PlayIcon: (/*@__PURE__*/$parcel$interopDefault($0b29251b41c12945$exports)),
+    PauseIcon: (/*@__PURE__*/$parcel$interopDefault($1de6478421d60540$exports)),
+    StopIcon: (/*@__PURE__*/$parcel$interopDefault($f0202413988421c8$exports)),
+    ReplayIcon: (/*@__PURE__*/$parcel$interopDefault($9933d976c47c05a7$exports)),
+    VolumeOnIcon: (/*@__PURE__*/$parcel$interopDefault($987ce38555ad2882$exports)),
+    VolumeOffIcon: (/*@__PURE__*/$parcel$interopDefault($9b4cbe4528fb0583$exports)),
+    FullScreenIcon: (/*@__PURE__*/$parcel$interopDefault($865ea319e9152439$exports)),
+    FullScreenExitIcon: (/*@__PURE__*/$parcel$interopDefault($7f210635a775185e$exports)),
+    HqIcon: (/*@__PURE__*/$parcel$interopDefault($b7edca5936f4d0be$exports)),
+    HdIcon: (/*@__PURE__*/$parcel$interopDefault($5215728e025c60dd$exports)),
+    TwoKIcon: (/*@__PURE__*/$parcel$interopDefault($e0a4724df9b09781$exports)),
+    FourKIcon: (/*@__PURE__*/$parcel$interopDefault($4ed628aa4b905d23$exports)),
+    SettingIcon: (/*@__PURE__*/$parcel$interopDefault($76cd4ec192aabaa9$exports)),
+    ClosedCaptionEnabledIcon: (/*@__PURE__*/$parcel$interopDefault($0401d99fc17ee1f8$exports)),
+    ClosedCaptionDisabledIcon: (/*@__PURE__*/$parcel$interopDefault($f669eefd57d348c9$exports)),
+    TuneIcon: (/*@__PURE__*/$parcel$interopDefault($831fadad19774975$exports)),
+    SlowMotionIcon: (/*@__PURE__*/$parcel$interopDefault($ece434fd02452646$exports)),
+    ChevronRightIcon: (/*@__PURE__*/$parcel$interopDefault($e8bc643d88ba18cd$exports)),
+    ChevronLeftIcon: (/*@__PURE__*/$parcel$interopDefault($75853fd3616d8785$exports)),
+    PlayCircleIcon: (/*@__PURE__*/$parcel$interopDefault($297a52c918b41e93$exports)),
+    ArrowBackIcon: (/*@__PURE__*/$parcel$interopDefault($9dfc1588fdd7c7a4$exports)),
+    VolumeDownIcon: (/*@__PURE__*/$parcel$interopDefault($3f27d215771b3ca0$exports)),
+    ScrLockLandscapeIcon: (/*@__PURE__*/$parcel$interopDefault($527c615c071a96cb$exports)),
+    ScrLockRotationIcon: (/*@__PURE__*/$parcel$interopDefault($4904e625ecbd1091$exports))
 };
 
 
@@ -1030,6 +1031,21 @@ class $c65f764c0d1d3d8d$var$Toolbar {
 var $c65f764c0d1d3d8d$export$2e2bcd8739ae039 = $c65f764c0d1d3d8d$var$Toolbar;
 
 
+const $882b6d93070905b3$var$defaultConfig = {
+    title: "",
+    src: "",
+    autoplay: false,
+    theme: {
+        colors: {
+            primary: "",
+            secondary: ""
+        },
+        spacing: {
+            margin: "",
+            padding: ""
+        }
+    }
+};
 /**
  * @class SkaraPlayer
  */ class $882b6d93070905b3$var$SkaraPlayer {
@@ -1038,7 +1054,7 @@ var $c65f764c0d1d3d8d$export$2e2bcd8739ae039 = $c65f764c0d1d3d8d$var$Toolbar;
    * @param el - The html element where the player will be mounted
    * @param config - player options
    * @returns SkaraPlayer
-   */ constructor(el, config){
+   */ constructor(el, config = $882b6d93070905b3$var$defaultConfig){
         this.config = config;
         this.levelLoaded = false;
         this.showCtrls = ()=>{
@@ -1071,6 +1087,7 @@ var $c65f764c0d1d3d8d$export$2e2bcd8739ae039 = $c65f764c0d1d3d8d$var$Toolbar;
         if (this.config.height) this._root.style.height = this.config.height;
         // Creating the Html5 video element
         this._videoEl = document.createElement("video");
+        this._videoEl.autoplay = this.config.autoplay;
         this._videoEl.className = (0, (/*@__PURE__*/$parcel$interopDefault($ca9df0d41c4591c9$exports))).video;
         this._playBtn = new (0, $46f7d01faa656c4c$export$2e2bcd8739ae039)(this);
         this._volCtrl = new (0, $3785d75510de71a0$export$2e2bcd8739ae039)(this);

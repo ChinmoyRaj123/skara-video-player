@@ -15,19 +15,21 @@ export type PlayerConfig = {
     width?: string;
     theme?: Theme;
     title: string;
+    autoplay: boolean;
 };
 type EventName = 'loaded' | 'metadataloaded' | 'playing' | 'pause' | 'ended' | 'volumechange' | 'ratechange' | 'timeupdate' | 'waiting' | 'stalled' | 'abort' | 'suspend';
 /**
  * @class SkaraPlayer
  */
 export default class SkaraPlayer {
+    config: PlayerConfig;
     /**
      * @constructor
      * @param el - The html element where the player will be mounted
      * @param config - player options
      * @returns SkaraPlayer
      */
-    constructor(el: HTMLDivElement | string, config: PlayerConfig);
+    constructor(el: HTMLDivElement | string, config?: PlayerConfig);
     /**
      * Starts the player
      */
