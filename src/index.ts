@@ -25,6 +25,8 @@ export type PlayerConfig = {
   theme?: Theme
   title: string
   autoplay: boolean
+  muted: boolean
+  loop: boolean
 }
 
 type EventName = 'loaded' |
@@ -44,9 +46,11 @@ const defaultConfig: PlayerConfig = {
   title: "",
   src: "",
   autoplay: false,
+  muted: false,
+  loop: false,
   theme: {
-    colors: { primary: "", secondary: "" },
-    spacing: { margin: "", padding: "" }
+    colors: { primary: "", secondary: "", buttonColor: "", brandColor: "" },
+    spacing: { margin: "", padding: "", bottomBarSpacing: "", playerControlMargin: "", playerCornerRadius: "" },
   }
 }
 /**
@@ -143,6 +147,8 @@ class SkaraPlayer {
     // Creating the Html5 video element
     this._videoEl = document.createElement('video')
     this._videoEl.autoplay = this.config.autoplay
+    this._videoEl.muted = this.config.muted
+    this._videoEl.loop = this.config.loop
     this._videoEl.className = styles.video
 
     this._playBtn = new PlayButton(this);
@@ -170,8 +176,12 @@ class SkaraPlayer {
       const newtheme = document.querySelector(':root') as HTMLElement;
       const setRootVariables = (vars: Record<string, string>) => Object.entries(vars).forEach(v => newtheme?.style?.setProperty(v[0], v[1]));
       const colorVariables = {
-        "--skaraVideoPrimaryColor": this.theme?.colors?.primary,
-        "--skaraVideoSecondaryColor": this.theme?.colors?.secondary,
+        // "--skaraVideoPrimaryColor": this.theme?.colors?.primary,
+        "--skaraVideoPrimaryColor": this.theme?.colors?.brandColor,
+        "--skaraVideoSecondaryColor": this.theme?.colors?.buttonColor,
+        "--bottomBarSpacing": this.theme?.spacing?.bottomBarSpacing,
+        "--playerControlMargin": this.theme?.spacing?.playerControlMargin,
+        "--playerCornerRadius": this.theme?.spacing?.playerCornerRadius
       }
       setRootVariables(colorVariables)
     }

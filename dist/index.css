@@ -10,9 +10,13 @@
   --skaraVideoPopupBg: #02122a;
   --skaraVideoOsdBg: linear-gradient(180deg, #0000 0%, #000c 100%);
   --skaraVideoToolbarBg: linear-gradient(180deg, #000c 0%, #0000 100%);
+  --bottomBarSpacing: "8px";
+  --playerControlMargin: "8px";
+  --playerCornerRadius: "0px";
 }
 
 * {
+  border-radius: var(--playerCornerRadius);
   margin: 0;
   padding: 0;
   font-family: Roboto;

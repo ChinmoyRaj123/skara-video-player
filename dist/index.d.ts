@@ -2,10 +2,15 @@ declare const theme: {
     colors: {
         primary: string;
         secondary: string;
+        buttonColor: string;
+        brandColor: string;
     };
     spacing: {
         padding: string;
         margin: string;
+        bottomBarSpacing: string;
+        playerControlMargin: string;
+        playerCornerRadius: string;
     };
 };
 type Theme = typeof theme;
@@ -16,6 +21,8 @@ export type PlayerConfig = {
     theme?: Theme;
     title: string;
     autoplay: boolean;
+    muted: boolean;
+    loop: boolean;
 };
 type EventName = 'loaded' | 'metadataloaded' | 'playing' | 'pause' | 'ended' | 'volumechange' | 'ratechange' | 'timeupdate' | 'waiting' | 'stalled' | 'abort' | 'suspend';
 /**
@@ -202,10 +209,15 @@ export default class SkaraPlayer {
         colors: {
             primary: string;
             secondary: string;
+            buttonColor: string;
+            brandColor: string;
         };
         spacing: {
             padding: string;
             margin: string;
+            bottomBarSpacing: string;
+            playerControlMargin: string;
+            playerCornerRadius: string;
         };
     };
 }
