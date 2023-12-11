@@ -9,130 +9,130 @@ function $parcel$export(e, n, v, s) {
 }
 var $5b721391f7230cb2$exports = {};
 
-$parcel$export($5b721391f7230cb2$exports, "watchTimer", () => $5b721391f7230cb2$export$5321aef497dbc95, (v) => $5b721391f7230cb2$export$5321aef497dbc95 = v);
-$parcel$export($5b721391f7230cb2$exports, "controls", () => $5b721391f7230cb2$export$cc1adf6fb659c762, (v) => $5b721391f7230cb2$export$cc1adf6fb659c762 = v);
-$parcel$export($5b721391f7230cb2$exports, "innerOsd", () => $5b721391f7230cb2$export$5bbce59cbad6e3b7, (v) => $5b721391f7230cb2$export$5bbce59cbad6e3b7 = v);
-$parcel$export($5b721391f7230cb2$exports, "icon", () => $5b721391f7230cb2$export$1ca1ec8b29a4ce27, (v) => $5b721391f7230cb2$export$1ca1ec8b29a4ce27 = v);
-$parcel$export($5b721391f7230cb2$exports, "iconSmall", () => $5b721391f7230cb2$export$934587b1a6f00472, (v) => $5b721391f7230cb2$export$934587b1a6f00472 = v);
-$parcel$export($5b721391f7230cb2$exports, "listItem", () => $5b721391f7230cb2$export$76c7e83ecc9cdf05, (v) => $5b721391f7230cb2$export$76c7e83ecc9cdf05 = v);
-$parcel$export($5b721391f7230cb2$exports, "spinner", () => $5b721391f7230cb2$export$641374ffb95bc399, (v) => $5b721391f7230cb2$export$641374ffb95bc399 = v);
-$parcel$export($5b721391f7230cb2$exports, "indicatorIcon", () => $5b721391f7230cb2$export$37c675ad6e14d9ff, (v) => $5b721391f7230cb2$export$37c675ad6e14d9ff = v);
-$parcel$export($5b721391f7230cb2$exports, "video", () => $5b721391f7230cb2$export$5f8d3589eb8441ca, (v) => $5b721391f7230cb2$export$5f8d3589eb8441ca = v);
-$parcel$export($5b721391f7230cb2$exports, "root", () => $5b721391f7230cb2$export$e8e78c978b129247, (v) => $5b721391f7230cb2$export$e8e78c978b129247 = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsContainerWrapper", () => $5b721391f7230cb2$export$49ee957901f7a027, (v) => $5b721391f7230cb2$export$49ee957901f7a027 = v);
-$parcel$export($5b721391f7230cb2$exports, "toolBar", () => $5b721391f7230cb2$export$ed2652bdb9ef1ad0, (v) => $5b721391f7230cb2$export$ed2652bdb9ef1ad0 = v);
-$parcel$export($5b721391f7230cb2$exports, "title", () => $5b721391f7230cb2$export$fb184b623420d9be, (v) => $5b721391f7230cb2$export$fb184b623420d9be = v);
-$parcel$export($5b721391f7230cb2$exports, "settingItem", () => $5b721391f7230cb2$export$d9d30bff7354568a, (v) => $5b721391f7230cb2$export$d9d30bff7354568a = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsWrapper", () => $5b721391f7230cb2$export$2f388bdb5e147bac, (v) => $5b721391f7230cb2$export$2f388bdb5e147bac = v);
-$parcel$export($5b721391f7230cb2$exports, "centerBtnShow", () => $5b721391f7230cb2$export$4bc86dd528c758a3, (v) => $5b721391f7230cb2$export$4bc86dd528c758a3 = v);
-$parcel$export($5b721391f7230cb2$exports, "centerBtnHide", () => $5b721391f7230cb2$export$e9be0fb78d9ff657, (v) => $5b721391f7230cb2$export$e9be0fb78d9ff657 = v);
-$parcel$export($5b721391f7230cb2$exports, "sliderWrapper", () => $5b721391f7230cb2$export$b99e7c702abdb77a, (v) => $5b721391f7230cb2$export$b99e7c702abdb77a = v);
-$parcel$export($5b721391f7230cb2$exports, "scrubber", () => $5b721391f7230cb2$export$e2b69c907b9ef440, (v) => $5b721391f7230cb2$export$e2b69c907b9ef440 = v);
-$parcel$export($5b721391f7230cb2$exports, "rotate", () => $5b721391f7230cb2$export$bb628a54ab399bc9, (v) => $5b721391f7230cb2$export$bb628a54ab399bc9 = v);
-$parcel$export($5b721391f7230cb2$exports, "volCtrlWrapper", () => $5b721391f7230cb2$export$328af1edb566eae3, (v) => $5b721391f7230cb2$export$328af1edb566eae3 = v);
-$parcel$export($5b721391f7230cb2$exports, "settingPopup", () => $5b721391f7230cb2$export$5e53b5cc6c2ef6ac, (v) => $5b721391f7230cb2$export$5e53b5cc6c2ef6ac = v);
-$parcel$export($5b721391f7230cb2$exports, "button", () => $5b721391f7230cb2$export$2ba01fb71ed41cb6, (v) => $5b721391f7230cb2$export$2ba01fb71ed41cb6 = v);
-$parcel$export($5b721391f7230cb2$exports, "ctrlContainer", () => $5b721391f7230cb2$export$77806bb1d74cd6f6, (v) => $5b721391f7230cb2$export$77806bb1d74cd6f6 = v);
-$parcel$export($5b721391f7230cb2$exports, "centerButton", () => $5b721391f7230cb2$export$a2b3dd87d3e471be, (v) => $5b721391f7230cb2$export$a2b3dd87d3e471be = v);
-$parcel$export($5b721391f7230cb2$exports, "osdBar", () => $5b721391f7230cb2$export$a1b4384913d28591, (v) => $5b721391f7230cb2$export$a1b4384913d28591 = v);
-$parcel$export($5b721391f7230cb2$exports, "ctrlLeft", () => $5b721391f7230cb2$export$fb55bfd207eb66bf, (v) => $5b721391f7230cb2$export$fb55bfd207eb66bf = v);
-$parcel$export($5b721391f7230cb2$exports, "ctrlRight", () => $5b721391f7230cb2$export$deaf7926095b512d, (v) => $5b721391f7230cb2$export$deaf7926095b512d = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsContainer", () => $5b721391f7230cb2$export$22702ef448665b4d, (v) => $5b721391f7230cb2$export$22702ef448665b4d = v);
 $parcel$export($5b721391f7230cb2$exports, "spinn", () => $5b721391f7230cb2$export$b082c0b7a6cd56b2, (v) => $5b721391f7230cb2$export$b082c0b7a6cd56b2 = v);
+$parcel$export($5b721391f7230cb2$exports, "iconSmall", () => $5b721391f7230cb2$export$934587b1a6f00472, (v) => $5b721391f7230cb2$export$934587b1a6f00472 = v);
+$parcel$export($5b721391f7230cb2$exports, "spinner", () => $5b721391f7230cb2$export$641374ffb95bc399, (v) => $5b721391f7230cb2$export$641374ffb95bc399 = v);
+$parcel$export($5b721391f7230cb2$exports, "centerButton", () => $5b721391f7230cb2$export$a2b3dd87d3e471be, (v) => $5b721391f7230cb2$export$a2b3dd87d3e471be = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsContainerWrapper", () => $5b721391f7230cb2$export$49ee957901f7a027, (v) => $5b721391f7230cb2$export$49ee957901f7a027 = v);
+$parcel$export($5b721391f7230cb2$exports, "icon", () => $5b721391f7230cb2$export$1ca1ec8b29a4ce27, (v) => $5b721391f7230cb2$export$1ca1ec8b29a4ce27 = v);
+$parcel$export($5b721391f7230cb2$exports, "video", () => $5b721391f7230cb2$export$5f8d3589eb8441ca, (v) => $5b721391f7230cb2$export$5f8d3589eb8441ca = v);
+$parcel$export($5b721391f7230cb2$exports, "indicatorIcon", () => $5b721391f7230cb2$export$37c675ad6e14d9ff, (v) => $5b721391f7230cb2$export$37c675ad6e14d9ff = v);
 $parcel$export($5b721391f7230cb2$exports, "activeIconWrapper", () => $5b721391f7230cb2$export$54384a8b841c9096, (v) => $5b721391f7230cb2$export$54384a8b841c9096 = v);
-$parcel$export($5b721391f7230cb2$exports, "settingWrapper", () => $5b721391f7230cb2$export$208d04ce5dd64049, (v) => $5b721391f7230cb2$export$208d04ce5dd64049 = v);
+$parcel$export($5b721391f7230cb2$exports, "button", () => $5b721391f7230cb2$export$2ba01fb71ed41cb6, (v) => $5b721391f7230cb2$export$2ba01fb71ed41cb6 = v);
+$parcel$export($5b721391f7230cb2$exports, "sliderWrapper", () => $5b721391f7230cb2$export$b99e7c702abdb77a, (v) => $5b721391f7230cb2$export$b99e7c702abdb77a = v);
+$parcel$export($5b721391f7230cb2$exports, "active", () => $5b721391f7230cb2$export$89da14300d534261, (v) => $5b721391f7230cb2$export$89da14300d534261 = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsWrapper", () => $5b721391f7230cb2$export$2f388bdb5e147bac, (v) => $5b721391f7230cb2$export$2f388bdb5e147bac = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsHover", () => $5b721391f7230cb2$export$f38465fe307ff1ea, (v) => $5b721391f7230cb2$export$f38465fe307ff1ea = v);
+$parcel$export($5b721391f7230cb2$exports, "settingItem", () => $5b721391f7230cb2$export$d9d30bff7354568a, (v) => $5b721391f7230cb2$export$d9d30bff7354568a = v);
+$parcel$export($5b721391f7230cb2$exports, "innerOsd", () => $5b721391f7230cb2$export$5bbce59cbad6e3b7, (v) => $5b721391f7230cb2$export$5bbce59cbad6e3b7 = v);
 $parcel$export($5b721391f7230cb2$exports, "volSlider", () => $5b721391f7230cb2$export$523cee24344607ef, (v) => $5b721391f7230cb2$export$523cee24344607ef = v);
-$parcel$export($5b721391f7230cb2$exports, "sliderProgress", () => $5b721391f7230cb2$export$44601925ebb63135, (v) => $5b721391f7230cb2$export$44601925ebb63135 = v);
-$parcel$export($5b721391f7230cb2$exports, "hide", () => $5b721391f7230cb2$export$fe8985bb6374093c, (v) => $5b721391f7230cb2$export$fe8985bb6374093c = v);
+$parcel$export($5b721391f7230cb2$exports, "controls", () => $5b721391f7230cb2$export$cc1adf6fb659c762, (v) => $5b721391f7230cb2$export$cc1adf6fb659c762 = v);
+$parcel$export($5b721391f7230cb2$exports, "volCtrlWrapper", () => $5b721391f7230cb2$export$328af1edb566eae3, (v) => $5b721391f7230cb2$export$328af1edb566eae3 = v);
+$parcel$export($5b721391f7230cb2$exports, "rotate", () => $5b721391f7230cb2$export$bb628a54ab399bc9, (v) => $5b721391f7230cb2$export$bb628a54ab399bc9 = v);
+$parcel$export($5b721391f7230cb2$exports, "settingPopup", () => $5b721391f7230cb2$export$5e53b5cc6c2ef6ac, (v) => $5b721391f7230cb2$export$5e53b5cc6c2ef6ac = v);
 $parcel$export($5b721391f7230cb2$exports, "iconmd", () => $5b721391f7230cb2$export$ea551f4aac394d83, (v) => $5b721391f7230cb2$export$ea551f4aac394d83 = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsContainer", () => $5b721391f7230cb2$export$22702ef448665b4d, (v) => $5b721391f7230cb2$export$22702ef448665b4d = v);
 $parcel$export($5b721391f7230cb2$exports, "osdActive", () => $5b721391f7230cb2$export$26238087290c1f5b, (v) => $5b721391f7230cb2$export$26238087290c1f5b = v);
 $parcel$export($5b721391f7230cb2$exports, "prgsBar", () => $5b721391f7230cb2$export$e475d70d0abfaf0c, (v) => $5b721391f7230cb2$export$e475d70d0abfaf0c = v);
 $parcel$export($5b721391f7230cb2$exports, "seekTimeTooltip", () => $5b721391f7230cb2$export$b0904f355cb5d789, (v) => $5b721391f7230cb2$export$b0904f355cb5d789 = v);
-$parcel$export($5b721391f7230cb2$exports, "active", () => $5b721391f7230cb2$export$89da14300d534261, (v) => $5b721391f7230cb2$export$89da14300d534261 = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsHover", () => $5b721391f7230cb2$export$f38465fe307ff1ea, (v) => $5b721391f7230cb2$export$f38465fe307ff1ea = v);
-var $5b721391f7230cb2$export$5321aef497dbc95;
-var $5b721391f7230cb2$export$cc1adf6fb659c762;
-var $5b721391f7230cb2$export$5bbce59cbad6e3b7;
-var $5b721391f7230cb2$export$1ca1ec8b29a4ce27;
-var $5b721391f7230cb2$export$934587b1a6f00472;
-var $5b721391f7230cb2$export$76c7e83ecc9cdf05;
-var $5b721391f7230cb2$export$641374ffb95bc399;
-var $5b721391f7230cb2$export$37c675ad6e14d9ff;
-var $5b721391f7230cb2$export$5f8d3589eb8441ca;
-var $5b721391f7230cb2$export$e8e78c978b129247;
-var $5b721391f7230cb2$export$49ee957901f7a027;
-var $5b721391f7230cb2$export$ed2652bdb9ef1ad0;
-var $5b721391f7230cb2$export$fb184b623420d9be;
-var $5b721391f7230cb2$export$d9d30bff7354568a;
-var $5b721391f7230cb2$export$2f388bdb5e147bac;
-var $5b721391f7230cb2$export$4bc86dd528c758a3;
-var $5b721391f7230cb2$export$e9be0fb78d9ff657;
-var $5b721391f7230cb2$export$b99e7c702abdb77a;
-var $5b721391f7230cb2$export$e2b69c907b9ef440;
-var $5b721391f7230cb2$export$bb628a54ab399bc9;
-var $5b721391f7230cb2$export$328af1edb566eae3;
-var $5b721391f7230cb2$export$5e53b5cc6c2ef6ac;
-var $5b721391f7230cb2$export$2ba01fb71ed41cb6;
-var $5b721391f7230cb2$export$77806bb1d74cd6f6;
-var $5b721391f7230cb2$export$a2b3dd87d3e471be;
-var $5b721391f7230cb2$export$a1b4384913d28591;
-var $5b721391f7230cb2$export$fb55bfd207eb66bf;
-var $5b721391f7230cb2$export$deaf7926095b512d;
-var $5b721391f7230cb2$export$22702ef448665b4d;
+$parcel$export($5b721391f7230cb2$exports, "listItem", () => $5b721391f7230cb2$export$76c7e83ecc9cdf05, (v) => $5b721391f7230cb2$export$76c7e83ecc9cdf05 = v);
+$parcel$export($5b721391f7230cb2$exports, "hide", () => $5b721391f7230cb2$export$fe8985bb6374093c, (v) => $5b721391f7230cb2$export$fe8985bb6374093c = v);
+$parcel$export($5b721391f7230cb2$exports, "sliderProgress", () => $5b721391f7230cb2$export$44601925ebb63135, (v) => $5b721391f7230cb2$export$44601925ebb63135 = v);
+$parcel$export($5b721391f7230cb2$exports, "settingWrapper", () => $5b721391f7230cb2$export$208d04ce5dd64049, (v) => $5b721391f7230cb2$export$208d04ce5dd64049 = v);
+$parcel$export($5b721391f7230cb2$exports, "title", () => $5b721391f7230cb2$export$fb184b623420d9be, (v) => $5b721391f7230cb2$export$fb184b623420d9be = v);
+$parcel$export($5b721391f7230cb2$exports, "centerBtnHide", () => $5b721391f7230cb2$export$e9be0fb78d9ff657, (v) => $5b721391f7230cb2$export$e9be0fb78d9ff657 = v);
+$parcel$export($5b721391f7230cb2$exports, "centerBtnShow", () => $5b721391f7230cb2$export$4bc86dd528c758a3, (v) => $5b721391f7230cb2$export$4bc86dd528c758a3 = v);
+$parcel$export($5b721391f7230cb2$exports, "osdBar", () => $5b721391f7230cb2$export$a1b4384913d28591, (v) => $5b721391f7230cb2$export$a1b4384913d28591 = v);
+$parcel$export($5b721391f7230cb2$exports, "ctrlContainer", () => $5b721391f7230cb2$export$77806bb1d74cd6f6, (v) => $5b721391f7230cb2$export$77806bb1d74cd6f6 = v);
+$parcel$export($5b721391f7230cb2$exports, "ctrlLeft", () => $5b721391f7230cb2$export$fb55bfd207eb66bf, (v) => $5b721391f7230cb2$export$fb55bfd207eb66bf = v);
+$parcel$export($5b721391f7230cb2$exports, "root", () => $5b721391f7230cb2$export$e8e78c978b129247, (v) => $5b721391f7230cb2$export$e8e78c978b129247 = v);
+$parcel$export($5b721391f7230cb2$exports, "watchTimer", () => $5b721391f7230cb2$export$5321aef497dbc95, (v) => $5b721391f7230cb2$export$5321aef497dbc95 = v);
+$parcel$export($5b721391f7230cb2$exports, "toolBar", () => $5b721391f7230cb2$export$ed2652bdb9ef1ad0, (v) => $5b721391f7230cb2$export$ed2652bdb9ef1ad0 = v);
+$parcel$export($5b721391f7230cb2$exports, "scrubber", () => $5b721391f7230cb2$export$e2b69c907b9ef440, (v) => $5b721391f7230cb2$export$e2b69c907b9ef440 = v);
+$parcel$export($5b721391f7230cb2$exports, "ctrlRight", () => $5b721391f7230cb2$export$deaf7926095b512d, (v) => $5b721391f7230cb2$export$deaf7926095b512d = v);
 var $5b721391f7230cb2$export$b082c0b7a6cd56b2;
+var $5b721391f7230cb2$export$934587b1a6f00472;
+var $5b721391f7230cb2$export$641374ffb95bc399;
+var $5b721391f7230cb2$export$a2b3dd87d3e471be;
+var $5b721391f7230cb2$export$49ee957901f7a027;
+var $5b721391f7230cb2$export$1ca1ec8b29a4ce27;
+var $5b721391f7230cb2$export$5f8d3589eb8441ca;
+var $5b721391f7230cb2$export$37c675ad6e14d9ff;
 var $5b721391f7230cb2$export$54384a8b841c9096;
-var $5b721391f7230cb2$export$208d04ce5dd64049;
+var $5b721391f7230cb2$export$2ba01fb71ed41cb6;
+var $5b721391f7230cb2$export$b99e7c702abdb77a;
+var $5b721391f7230cb2$export$89da14300d534261;
+var $5b721391f7230cb2$export$2f388bdb5e147bac;
+var $5b721391f7230cb2$export$f38465fe307ff1ea;
+var $5b721391f7230cb2$export$d9d30bff7354568a;
+var $5b721391f7230cb2$export$5bbce59cbad6e3b7;
 var $5b721391f7230cb2$export$523cee24344607ef;
-var $5b721391f7230cb2$export$44601925ebb63135;
-var $5b721391f7230cb2$export$fe8985bb6374093c;
+var $5b721391f7230cb2$export$cc1adf6fb659c762;
+var $5b721391f7230cb2$export$328af1edb566eae3;
+var $5b721391f7230cb2$export$bb628a54ab399bc9;
+var $5b721391f7230cb2$export$5e53b5cc6c2ef6ac;
 var $5b721391f7230cb2$export$ea551f4aac394d83;
+var $5b721391f7230cb2$export$22702ef448665b4d;
 var $5b721391f7230cb2$export$26238087290c1f5b;
 var $5b721391f7230cb2$export$e475d70d0abfaf0c;
 var $5b721391f7230cb2$export$b0904f355cb5d789;
-var $5b721391f7230cb2$export$89da14300d534261;
-var $5b721391f7230cb2$export$f38465fe307ff1ea;
-$5b721391f7230cb2$export$5321aef497dbc95 = `VC4pIW_watchTimer`;
-$5b721391f7230cb2$export$cc1adf6fb659c762 = `VC4pIW_controls`;
-$5b721391f7230cb2$export$5bbce59cbad6e3b7 = `VC4pIW_innerOsd`;
-$5b721391f7230cb2$export$1ca1ec8b29a4ce27 = `VC4pIW_icon`;
-$5b721391f7230cb2$export$934587b1a6f00472 = `VC4pIW_iconSmall`;
-$5b721391f7230cb2$export$76c7e83ecc9cdf05 = `VC4pIW_listItem`;
-$5b721391f7230cb2$export$641374ffb95bc399 = `VC4pIW_spinner`;
-$5b721391f7230cb2$export$37c675ad6e14d9ff = `VC4pIW_indicatorIcon`;
-$5b721391f7230cb2$export$5f8d3589eb8441ca = `VC4pIW_video`;
-$5b721391f7230cb2$export$e8e78c978b129247 = `VC4pIW_root`;
-$5b721391f7230cb2$export$49ee957901f7a027 = `VC4pIW_prgsContainerWrapper`;
-$5b721391f7230cb2$export$ed2652bdb9ef1ad0 = `VC4pIW_toolBar`;
-$5b721391f7230cb2$export$fb184b623420d9be = `VC4pIW_title`;
-$5b721391f7230cb2$export$d9d30bff7354568a = `VC4pIW_settingItem`;
-$5b721391f7230cb2$export$2f388bdb5e147bac = `VC4pIW_prgsWrapper`;
-$5b721391f7230cb2$export$4bc86dd528c758a3 = `VC4pIW_centerBtnShow`;
-$5b721391f7230cb2$export$e9be0fb78d9ff657 = `VC4pIW_centerBtnHide`;
-$5b721391f7230cb2$export$b99e7c702abdb77a = `VC4pIW_sliderWrapper`;
-$5b721391f7230cb2$export$e2b69c907b9ef440 = `VC4pIW_scrubber`;
-$5b721391f7230cb2$export$bb628a54ab399bc9 = `VC4pIW_rotate`;
-$5b721391f7230cb2$export$328af1edb566eae3 = `VC4pIW_volCtrlWrapper`;
-$5b721391f7230cb2$export$5e53b5cc6c2ef6ac = `VC4pIW_settingPopup`;
-$5b721391f7230cb2$export$2ba01fb71ed41cb6 = `VC4pIW_button`;
-$5b721391f7230cb2$export$77806bb1d74cd6f6 = `VC4pIW_ctrlContainer`;
-$5b721391f7230cb2$export$a2b3dd87d3e471be = `VC4pIW_centerButton`;
-$5b721391f7230cb2$export$a1b4384913d28591 = `VC4pIW_osdBar`;
-$5b721391f7230cb2$export$fb55bfd207eb66bf = `VC4pIW_ctrlLeft`;
-$5b721391f7230cb2$export$deaf7926095b512d = `VC4pIW_ctrlRight`;
-$5b721391f7230cb2$export$22702ef448665b4d = `VC4pIW_prgsContainer`;
+var $5b721391f7230cb2$export$76c7e83ecc9cdf05;
+var $5b721391f7230cb2$export$fe8985bb6374093c;
+var $5b721391f7230cb2$export$44601925ebb63135;
+var $5b721391f7230cb2$export$208d04ce5dd64049;
+var $5b721391f7230cb2$export$fb184b623420d9be;
+var $5b721391f7230cb2$export$e9be0fb78d9ff657;
+var $5b721391f7230cb2$export$4bc86dd528c758a3;
+var $5b721391f7230cb2$export$a1b4384913d28591;
+var $5b721391f7230cb2$export$77806bb1d74cd6f6;
+var $5b721391f7230cb2$export$fb55bfd207eb66bf;
+var $5b721391f7230cb2$export$e8e78c978b129247;
+var $5b721391f7230cb2$export$5321aef497dbc95;
+var $5b721391f7230cb2$export$ed2652bdb9ef1ad0;
+var $5b721391f7230cb2$export$e2b69c907b9ef440;
+var $5b721391f7230cb2$export$deaf7926095b512d;
 $5b721391f7230cb2$export$b082c0b7a6cd56b2 = `VC4pIW_spinn`;
 $5b721391f7230cb2$export$b082c0b7a6cd56b2;
+$5b721391f7230cb2$export$934587b1a6f00472 = `VC4pIW_iconSmall`;
+$5b721391f7230cb2$export$641374ffb95bc399 = `VC4pIW_spinner`;
+$5b721391f7230cb2$export$a2b3dd87d3e471be = `VC4pIW_centerButton`;
+$5b721391f7230cb2$export$49ee957901f7a027 = `VC4pIW_prgsContainerWrapper`;
+$5b721391f7230cb2$export$1ca1ec8b29a4ce27 = `VC4pIW_icon`;
+$5b721391f7230cb2$export$5f8d3589eb8441ca = `VC4pIW_video`;
+$5b721391f7230cb2$export$37c675ad6e14d9ff = `VC4pIW_indicatorIcon`;
 $5b721391f7230cb2$export$54384a8b841c9096 = `VC4pIW_activeIconWrapper`;
-$5b721391f7230cb2$export$208d04ce5dd64049 = `VC4pIW_settingWrapper`;
+$5b721391f7230cb2$export$2ba01fb71ed41cb6 = `VC4pIW_button`;
+$5b721391f7230cb2$export$b99e7c702abdb77a = `VC4pIW_sliderWrapper`;
+$5b721391f7230cb2$export$89da14300d534261 = `VC4pIW_active`;
+$5b721391f7230cb2$export$2f388bdb5e147bac = `VC4pIW_prgsWrapper`;
+$5b721391f7230cb2$export$f38465fe307ff1ea = `VC4pIW_prgsHover`;
+$5b721391f7230cb2$export$d9d30bff7354568a = `VC4pIW_settingItem`;
+$5b721391f7230cb2$export$5bbce59cbad6e3b7 = `VC4pIW_innerOsd`;
 $5b721391f7230cb2$export$523cee24344607ef = `VC4pIW_volSlider`;
-$5b721391f7230cb2$export$44601925ebb63135 = `VC4pIW_sliderProgress`;
-$5b721391f7230cb2$export$fe8985bb6374093c = `VC4pIW_hide`;
+$5b721391f7230cb2$export$cc1adf6fb659c762 = `VC4pIW_controls`;
+$5b721391f7230cb2$export$328af1edb566eae3 = `VC4pIW_volCtrlWrapper`;
+$5b721391f7230cb2$export$bb628a54ab399bc9 = `VC4pIW_rotate`;
+$5b721391f7230cb2$export$5e53b5cc6c2ef6ac = `VC4pIW_settingPopup`;
 $5b721391f7230cb2$export$ea551f4aac394d83 = `VC4pIW_iconmd`;
+$5b721391f7230cb2$export$22702ef448665b4d = `VC4pIW_prgsContainer`;
 $5b721391f7230cb2$export$26238087290c1f5b = `VC4pIW_osdActive`;
 $5b721391f7230cb2$export$e475d70d0abfaf0c = `VC4pIW_prgsBar`;
 $5b721391f7230cb2$export$b0904f355cb5d789 = `VC4pIW_seekTimeTooltip`;
-$5b721391f7230cb2$export$89da14300d534261 = `VC4pIW_active`;
-$5b721391f7230cb2$export$f38465fe307ff1ea = `VC4pIW_prgsHover`;
+$5b721391f7230cb2$export$76c7e83ecc9cdf05 = `VC4pIW_listItem`;
+$5b721391f7230cb2$export$fe8985bb6374093c = `VC4pIW_hide`;
+$5b721391f7230cb2$export$44601925ebb63135 = `VC4pIW_sliderProgress`;
+$5b721391f7230cb2$export$208d04ce5dd64049 = `VC4pIW_settingWrapper`;
+$5b721391f7230cb2$export$fb184b623420d9be = `VC4pIW_title`;
+$5b721391f7230cb2$export$e9be0fb78d9ff657 = `VC4pIW_centerBtnHide`;
+$5b721391f7230cb2$export$4bc86dd528c758a3 = `VC4pIW_centerBtnShow`;
+$5b721391f7230cb2$export$a1b4384913d28591 = `VC4pIW_osdBar`;
+$5b721391f7230cb2$export$77806bb1d74cd6f6 = `VC4pIW_ctrlContainer`;
+$5b721391f7230cb2$export$fb55bfd207eb66bf = `VC4pIW_ctrlLeft`;
+$5b721391f7230cb2$export$e8e78c978b129247 = `VC4pIW_root`;
+$5b721391f7230cb2$export$5321aef497dbc95 = `VC4pIW_watchTimer`;
+$5b721391f7230cb2$export$ed2652bdb9ef1ad0 = `VC4pIW_toolBar`;
+$5b721391f7230cb2$export$e2b69c907b9ef440 = `VC4pIW_scrubber`;
+$5b721391f7230cb2$export$deaf7926095b512d = `VC4pIW_ctrlRight`;
 
 
 
@@ -328,10 +328,11 @@ const $fef058b85aa29b7a$export$a2d8b23205c25948 = {
 
 
 class $dc4809774f16134c$var$PlayButton {
-    constructor(player){
+    constructor(player, config){
         this._el = (0, $cb7b62809a181794$export$6a41fbcb71523df8)({
             icon: (0, $fef058b85aa29b7a$export$a2d8b23205c25948).PlayIcon
         });
+        if (!config.showPlayPause) this._el.style.display = "none";
         this._el.addEventListener("click", ()=>{
             this.handleClick(player);
         });
@@ -391,9 +392,10 @@ var $cd814a04a144b509$export$2e2bcd8739ae039 = $cd814a04a144b509$var$FullSrcCtrl
 
 
 class $f445d54fe021e316$var$VolumeController {
-    constructor(player){
+    constructor(player, config){
         this._el = document.createElement("div");
         this._el.className = (0, (/*@__PURE__*/$parcel$interopDefault($5b721391f7230cb2$exports))).volCtrlWrapper;
+        if (!config.showVolumeBar) this._el.style.display = "none";
         this.muteCtrl = (0, $cb7b62809a181794$export$6a41fbcb71523df8)({
             icon: player.muted ? (0, $fef058b85aa29b7a$export$a2d8b23205c25948).VolumeOffIcon : (0, $fef058b85aa29b7a$export$a2d8b23205c25948).VolumeOnIcon
         });
@@ -499,9 +501,10 @@ function $c24c819ac9708802$export$a14e8754c327dfd0(e) {
 
 
 class $334dde5b3d0ac967$var$WatchTimer {
-    constructor(){
+    constructor(config){
         this._el = document.createElement("div");
         this._el.className = (0, (/*@__PURE__*/$parcel$interopDefault($5b721391f7230cb2$exports))).watchTimer;
+        if (!config.showTimestamp) this._el.style.display = "none";
         this.durationEl = document.createElement("span");
         this.durationEl.textContent = "00:00";
         this.currTimeEl = document.createElement("span");
@@ -524,12 +527,13 @@ var $334dde5b3d0ac967$export$2e2bcd8739ae039 = $334dde5b3d0ac967$var$WatchTimer;
 
 
 class $728c4b5193bb32ba$var$ProgressBar {
-    constructor(player, osd, video){
+    constructor(player, osd, video, config){
         this.osd = osd;
         this.video = video;
         // The whole progress bar
         this._el = document.createElement("div");
         this._el.className = (0, (/*@__PURE__*/$parcel$interopDefault($5b721391f7230cb2$exports))).prgsContainer;
+        if (!config.showProgressBar) this._el.style.display = "none";
         this.wrapper = document.createElement("div");
         this.wrapper.className = (0, (/*@__PURE__*/$parcel$interopDefault($5b721391f7230cb2$exports))).prgsWrapper;
         // Shows the progess value
@@ -765,7 +769,7 @@ class $9376d712c6e0cc88$var$SettingControl {
     lastChilds = [];
     ctrls = {};
     hlsLevels = [];
-    constructor(player){
+    constructor(player, config){
         this._popupEl = document.createElement("div");
         this._popupEl.className = (0, (/*@__PURE__*/$parcel$interopDefault($5b721391f7230cb2$exports))).settingWrapper;
         this._settingItems = document.createElement("div");
@@ -774,6 +778,7 @@ class $9376d712c6e0cc88$var$SettingControl {
         this._el = (0, $cb7b62809a181794$export$6a41fbcb71523df8)({
             icon: (0, $fef058b85aa29b7a$export$a2d8b23205c25948).SettingIcon
         });
+        if (!config.showSettings) this._el.style.display = "none";
         this._el.addEventListener("click", ()=>{
             this.visible ? this.hide() : this.show();
         });
@@ -949,10 +954,11 @@ var $225affd592a7c01d$export$2e2bcd8739ae039 = $225affd592a7c01d$var$Spinner;
 
 
 class $109647253a166440$var$CenterButton {
-    constructor(player){
+    constructor(player, config){
         this.visible = false;
         this._el = document.createElement("div");
         this._el.className = (0, (/*@__PURE__*/$parcel$interopDefault($5b721391f7230cb2$exports))).centerButton;
+        if (!config.showPlayPause) this._el.style.display = "none";
         this._el.style.mask = `url(${(0, $fef058b85aa29b7a$export$a2d8b23205c25948).PlayIcon})`;
         this._el.style.webkitMask = `url(${(0, $fef058b85aa29b7a$export$a2d8b23205c25948).PlayIcon})`;
         this._el.style.webkitMaskSize = "contain";
@@ -997,9 +1003,10 @@ var $0e176f97376f955a$export$2e2bcd8739ae039 = $0e176f97376f955a$var$PrgsContain
 
 class $8225d9c064d50048$var$Toolbar {
     _visibility = false;
-    constructor(fullscrCtrl, title){
+    constructor(fullscrCtrl, config){
         this._el = document.createElement("div");
         this._el.className = (0, (/*@__PURE__*/$parcel$interopDefault($5b721391f7230cb2$exports))).toolBar;
+        if (!config.showVideoTitle) this._el.style.display = "none";
         this._backBtn = (0, $cb7b62809a181794$export$6a41fbcb71523df8)({
             icon: (0, $fef058b85aa29b7a$export$a2d8b23205c25948).ArrowBackIcon
         });
@@ -1008,7 +1015,7 @@ class $8225d9c064d50048$var$Toolbar {
         });
         this._title = document.createElement("p");
         this._title.className = (0, (/*@__PURE__*/$parcel$interopDefault($5b721391f7230cb2$exports))).title;
-        this._title.textContent = title;
+        this._title.textContent = config.title;
         this._el.append(this._backBtn, this._title, fullscrCtrl.element);
     }
     show() {
@@ -1035,6 +1042,13 @@ const $149c1bd638913645$var$defaultConfig = {
     autoplay: false,
     muted: false,
     loop: false,
+    showPlayPause: true,
+    showProgressBar: true,
+    showTimestamp: true,
+    showVolumeBar: true,
+    showVideoTitle: true,
+    showSettings: true,
+    toggleFullscreen: false,
     theme: {
         colors: {
             primary: "",
@@ -1073,7 +1087,7 @@ const $149c1bd638913645$var$defaultConfig = {
         // Setting default variables
         this._prgsBar = null;
         this.events = {};
-        this._isFullscreen = false;
+        this._isFullscreen = config.toggleFullscreen;
         this.hls = null;
         // The the root element 
         // FIXME: This can be a `Node` or `string`
@@ -1096,10 +1110,10 @@ const $149c1bd638913645$var$defaultConfig = {
         this._videoEl.muted = this.config.muted;
         this._videoEl.loop = this.config.loop;
         this._videoEl.className = (0, (/*@__PURE__*/$parcel$interopDefault($5b721391f7230cb2$exports))).video;
-        this._playBtn = new (0, $dc4809774f16134c$export$2e2bcd8739ae039)(this);
-        this._volCtrl = new (0, $f445d54fe021e316$export$2e2bcd8739ae039)(this);
-        this._watchTimer = new (0, $334dde5b3d0ac967$export$2e2bcd8739ae039)();
-        this._setting = new (0, $9376d712c6e0cc88$export$2e2bcd8739ae039)(this);
+        this._playBtn = new (0, $dc4809774f16134c$export$2e2bcd8739ae039)(this, this.config);
+        this._volCtrl = new (0, $f445d54fe021e316$export$2e2bcd8739ae039)(this, this.config);
+        this._watchTimer = new (0, $334dde5b3d0ac967$export$2e2bcd8739ae039)(this.config);
+        this._setting = new (0, $9376d712c6e0cc88$export$2e2bcd8739ae039)(this, this.config);
         // Creating the OSD 
         this._osdBar = new (0, $a7c4fe41cf509b16$export$2e2bcd8739ae039)({
             left: [
@@ -1110,7 +1124,7 @@ const $149c1bd638913645$var$defaultConfig = {
                 this._setting
             ]
         });
-        this._progressBar = new (0, $728c4b5193bb32ba$export$2e2bcd8739ae039)(this, this._osdBar, this._videoEl);
+        this._progressBar = new (0, $728c4b5193bb32ba$export$2e2bcd8739ae039)(this, this._osdBar, this._videoEl, this.config);
         const progressContainerWrapper = new (0, $0e176f97376f955a$export$2e2bcd8739ae039)(this._progressBar, this._watchTimer);
         // Adding progess bar in the OSD
         // @ts-ignore
@@ -1133,11 +1147,11 @@ const $149c1bd638913645$var$defaultConfig = {
         // The spinner while player waits for data
         this._spinner = new (0, $225affd592a7c01d$export$2e2bcd8739ae039)();
         this._spinner.addTo(this._root);
-        this._centerBtn = new (0, $109647253a166440$export$2e2bcd8739ae039)(this);
+        this._centerBtn = new (0, $109647253a166440$export$2e2bcd8739ae039)(this, this.config);
         this._root.appendChild(this._centerBtn.element);
         // Showing the center button at initial because player autoplay is off
         this._centerBtn.show();
-        this._toolBar = new (0, $8225d9c064d50048$export$2e2bcd8739ae039)(new (0, $cd814a04a144b509$export$2e2bcd8739ae039)(this), this.config.title);
+        this._toolBar = new (0, $8225d9c064d50048$export$2e2bcd8739ae039)(new (0, $cd814a04a144b509$export$2e2bcd8739ae039)(this), this.config);
         // attaching events
         this.attachEventListeners();
         // Keyboard shortcuts

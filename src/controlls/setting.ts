@@ -1,6 +1,6 @@
 import Hls, { Level } from "hls.js";
 import { Controll } from ".";
-import SkaraPlayer from "..";
+import SkaraPlayer, { PlayerConfig } from "..";
 import { createCtrl } from "../components/play-button";
 import { Material } from "../icons";
 import styles from "../style.module.css";
@@ -83,7 +83,7 @@ class QualityItem implements Controll {
   private _el: HTMLDivElement;
   private indicatorWrapper: HTMLDivElement;
 
-  constructor(props: { level: Level, id: number, onClick: () => void, setCurr?: boolean, default?:boolean }) {
+  constructor(props: { level: Level, id: number, onClick: () => void, setCurr?: boolean, default?: boolean }) {
     this._el = document.createElement('div')
     this._el.className = styles.listItem
     this.indicatorWrapper = document.createElement('div');
@@ -124,7 +124,7 @@ class SpeedItem implements Controll {
   private _el: HTMLDivElement;
   private indicatorWrapper: HTMLDivElement;
 
-  constructor(props: { speed: number, onClick: () => void, setCurr?: boolean, default?:boolean }) {
+  constructor(props: { speed: number, onClick: () => void, setCurr?: boolean, default?: boolean }) {
     this._el = document.createElement('div')
     this._el.className = styles.listItem;
     this.indicatorWrapper = document.createElement('div');
@@ -135,7 +135,7 @@ class SpeedItem implements Controll {
     labelNode.textContent = props.speed.toString() || ""
     this._el.appendChild(this.indicatorWrapper)
     this._el.appendChild(labelNode)
-    
+
     props.default && this.setAsCurrent()
 
 
@@ -183,7 +183,7 @@ class SettingControl implements Controll {
   private ctrls: Record<string, SettingItem> = {};
   private hlsLevels: Level[] = [];
 
-  constructor(player: SkaraPlayer) {
+  constructor(player: SkaraPlayer, config: PlayerConfig) {
     this._popupEl = document.createElement('div');
     this._popupEl.className = styles.settingWrapper;
     this._settingItems = document.createElement('div');
@@ -191,6 +191,7 @@ class SettingControl implements Controll {
     this._innerEl = document.createElement('div');
 
     this._el = createCtrl({ icon: Material.SettingIcon });
+    if (!config.showSettings) this._el.style.display = "none";
 
     this._el.addEventListener('click', () => {
       this.visible ? this.hide() : this.show();
@@ -299,7 +300,7 @@ class SettingControl implements Controll {
         this.quality = idx
       },
       setCurr: true,
-      ...(idx === 0 && {default: true})
+      ...(idx === 0 && { default: true })
     }));
 
     this._levelPopup.append(...this._levels.map(l => l.element));
@@ -321,7 +322,7 @@ class SettingControl implements Controll {
         this._innerEl.replaceChildren(this._settingItems);
       },
       setCurr: true,
-      ...(speed === 1 && {default: true})
+      ...(speed === 1 && { default: true })
     }));
 
     this._speedPopup.append(...this._speeds.map(s => s.element));

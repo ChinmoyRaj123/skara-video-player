@@ -1,5 +1,5 @@
 import { Controll } from ".";
-import SkaraPlayer from "..";
+import SkaraPlayer, { PlayerConfig } from "..";
 import { downScaler, secondsToTime, upScaler } from "../helper";
 import styles from "../style.module.css";
 import Osd from "./osd";
@@ -15,12 +15,13 @@ class ProgressBar implements Controll {
   private osd: Osd;
   private video: HTMLVideoElement;
 
-  constructor(player: SkaraPlayer, osd: Osd, video: HTMLVideoElement) {
+  constructor(player: SkaraPlayer, osd: Osd, video: HTMLVideoElement, config: PlayerConfig) {
     this.osd = osd;
     this.video = video;
     // The whole progress bar
     this._el = document.createElement('div');
     this._el.className = styles.prgsContainer;
+    if (!config.showProgressBar) this._el.style.display = "none";
     this.wrapper = document.createElement('div');
     this.wrapper.className = styles.prgsWrapper;
 

@@ -1,3 +1,4 @@
+import Hls, { Level } from "hls.js";
 declare const theme: {
     colors: {
         primary: string;
@@ -14,6 +15,85 @@ declare const theme: {
     };
 };
 type Theme = typeof theme;
+interface Controll {
+    element: HTMLElement;
+}
+declare class PlayButton implements Controll {
+    constructor(player: SkaraPlayer, config: PlayerConfig);
+    addTo(el: HTMLElement): void;
+    changeIcon(icon: string): void;
+    get element(): HTMLElement;
+}
+declare class FullSrcCtrl implements Controll {
+    constructor(player: SkaraPlayer);
+    get element(): HTMLElement;
+}
+declare class VolumeController implements Controll {
+    constructor(player: SkaraPlayer, config: PlayerConfig);
+    update(player: SkaraPlayer): void;
+    get element(): HTMLElement;
+}
+type OsdParams = {
+    left: Controll[];
+    right: Controll[];
+};
+declare class Osd implements Controll {
+    constructor({ left, right }: OsdParams);
+    get element(): HTMLElement;
+    get visible(): boolean;
+    show(): void;
+    hide(): void;
+    append(ctrl: Controll): void;
+    prepend(ctrl: Controll): void;
+}
+declare class WatchTimer implements Controll {
+    constructor(config: PlayerConfig);
+    setDuration(time: number): void;
+    setCurrentTime(time: number): void;
+    get element(): HTMLElement;
+}
+declare class ProgressBar implements Controll {
+    constructor(player: SkaraPlayer, osd: Osd, video: HTMLVideoElement, config: PlayerConfig);
+    update(player: SkaraPlayer, time: number): void;
+    get element(): HTMLElement;
+}
+type CreateSettingWindowProps = {
+    player: SkaraPlayer;
+    levels?: Level[];
+    hls?: Hls;
+};
+declare class SettingControl implements Controll {
+    visible: boolean;
+    constructor(player: SkaraPlayer, config: PlayerConfig);
+    show(): void;
+    hide(): void;
+    set quality(id: number);
+    set playbackRate(rate: number);
+    createWindow({ player, levels, hls }: CreateSettingWindowProps): HTMLElement;
+    createLevelSelector(levels: Level[], hls: Hls): void;
+    get element(): HTMLElement;
+    contains(el: HTMLElement): boolean;
+}
+declare class Spinner {
+    constructor();
+    get(): HTMLDivElement;
+    show(): void;
+    hide(): void;
+    addTo(el: HTMLElement): void;
+}
+declare class CenterButton implements Controll {
+    constructor(player: SkaraPlayer, config: PlayerConfig);
+    show(): void;
+    hide(): void;
+    get element(): HTMLElement;
+}
+declare class Toolbar implements Controll {
+    constructor(fullscrCtrl: FullSrcCtrl, config: PlayerConfig);
+    show(): void;
+    hide(): void;
+    get element(): HTMLElement;
+    get visible(): boolean;
+}
 export type PlayerConfig = {
     src: string;
     height?: string;
@@ -23,6 +103,13 @@ export type PlayerConfig = {
     autoplay: boolean;
     muted: boolean;
     loop: boolean;
+    showPlayPause: boolean;
+    showProgressBar: boolean;
+    showTimestamp: boolean;
+    showVolumeBar: boolean;
+    showVideoTitle: boolean;
+    showSettings: boolean;
+    toggleFullscreen: boolean;
 };
 type EventName = 'loaded' | 'metadataloaded' | 'playing' | 'pause' | 'ended' | 'volumechange' | 'ratechange' | 'timeupdate' | 'waiting' | 'stalled' | 'abort' | 'suspend';
 /**
@@ -30,6 +117,24 @@ type EventName = 'loaded' | 'metadataloaded' | 'playing' | 'pause' | 'ended' | '
  */
 export default class SkaraPlayer {
     config: PlayerConfig;
+    /**
+    * The pogress bar inside the osd.
+    * This is the bar which actually changes its background with time change
+    */
+    _prgsBar: HTMLDivElement | null;
+    /**
+    * The whole OSD bar element. The parent of progess bar and other control elements
+    */
+    _osdBar: Osd;
+    _playBtn: PlayButton;
+    _volCtrl: VolumeController;
+    _watchTimer: WatchTimer;
+    _progressBar: ProgressBar;
+    _setting: SettingControl;
+    _centerBtn: CenterButton;
+    _spinner: Spinner;
+    _toolBar: Toolbar;
+    _isFullscreen: boolean;
     /**
      * @constructor
      * @param el - The html element where the player will be mounted

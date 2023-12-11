@@ -1,5 +1,5 @@
 import { Controll } from ".";
-import SkaraPlayer from "..";
+import SkaraPlayer, { PlayerConfig } from "..";
 import { createCtrl, replaceIcon } from "../components/play-button";
 import { VOL_CHANGE_STEP } from "../constant";
 import { Material } from "../icons";
@@ -10,9 +10,10 @@ class VolumeController implements Controll {
   private muteCtrl: HTMLDivElement;
   private volSlider: HTMLInputElement;
 
-  constructor(player: SkaraPlayer) {
+  constructor(player: SkaraPlayer, config: PlayerConfig) {
     this._el = document.createElement('div');
     this._el.className = styles.volCtrlWrapper;
+    if (!config.showVolumeBar) this._el.style.display = "none";
     this.muteCtrl = createCtrl({ icon: player.muted ? Material.VolumeOffIcon : Material.VolumeOnIcon });
     this.volSlider = document.createElement('input')
 

@@ -1,5 +1,5 @@
 import { Controll } from ".";
-import SkaraPlayer from "..";
+import SkaraPlayer, { PlayerConfig } from "..";
 import { Material } from "../icons";
 import styles from "../style.module.css";
 
@@ -7,10 +7,11 @@ class CenterButton implements Controll {
   private visible: boolean;
   private _el: HTMLElement;
 
-  constructor(player: SkaraPlayer) {
+  constructor(player: SkaraPlayer, config: PlayerConfig) {
     this.visible = false;
     this._el = document.createElement('div');
     this._el.className = styles.centerButton;
+    if (!config.showPlayPause) this._el.style.display = "none";
     this._el.style.mask = `url(${Material.PlayIcon})`;
     this._el.style.webkitMask = `url(${Material.PlayIcon})`;
     this._el.style.webkitMaskSize = 'contain';

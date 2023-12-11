@@ -27,6 +27,13 @@ export type PlayerConfig = {
   autoplay: boolean
   muted: boolean
   loop: boolean
+  showPlayPause: boolean
+  showProgressBar: boolean
+  showTimestamp: boolean
+  showVolumeBar: boolean
+  showVideoTitle: boolean
+  showSettings: boolean
+  toggleFullscreen: boolean
 }
 
 type EventName = 'loaded' |
@@ -48,6 +55,13 @@ const defaultConfig: PlayerConfig = {
   autoplay: false,
   muted: false,
   loop: false,
+  showPlayPause: true,
+  showProgressBar: true,
+  showTimestamp: true,
+  showVolumeBar: true,
+  showVideoTitle: true,
+  showSettings: true,
+  toggleFullscreen: false,
   theme: {
     colors: { primary: "", secondary: "", buttonColor: "", brandColor: "" },
     spacing: { margin: "", padding: "", bottomBarSpacing: "", playerControlMargin: "", playerCornerRadius: "" },
@@ -83,26 +97,26 @@ class SkaraPlayer {
   * The pogress bar inside the osd. 
   * This is the bar which actually changes its background with time change
   */
-  private _prgsBar: HTMLDivElement | null
+  public _prgsBar: HTMLDivElement | null
 
   /** 
   * The whole OSD bar element. The parent of progess bar and other control elements
   */
-  private _osdBar: Osd;
+  public _osdBar: Osd;
 
   // Controlls and Components
-  private _playBtn: PlayButton;
-  private _volCtrl: VolumeController;
-  private _watchTimer: WatchTimer;
-  private _progressBar: ProgressBar;
-  private _setting: SettingControl;
-  private _centerBtn: CenterButton;
-  private _spinner: Spinner;
-  private _toolBar: Toolbar;
+  public _playBtn: PlayButton;
+  public _volCtrl: VolumeController;
+  public _watchTimer: WatchTimer;
+  public _progressBar: ProgressBar;
+  public _setting: SettingControl;
+  public _centerBtn: CenterButton;
+  public _spinner: Spinner;
+  public _toolBar: Toolbar;
 
   private detachKeyHandler;
 
-  private _isFullscreen: boolean
+  public _isFullscreen: boolean
 
 
   // Events
@@ -119,8 +133,7 @@ class SkaraPlayer {
     // Setting default variables
     this._prgsBar = null;
     this.events = {}
-    this._isFullscreen = false;
-
+    this._isFullscreen = config.toggleFullscreen;
     this.hls = null;
 
 
@@ -151,10 +164,10 @@ class SkaraPlayer {
     this._videoEl.loop = this.config.loop
     this._videoEl.className = styles.video
 
-    this._playBtn = new PlayButton(this);
-    this._volCtrl = new VolumeController(this);
-    this._watchTimer = new WatchTimer();
-    this._setting = new SettingControl(this);
+    this._playBtn = new PlayButton(this, this.config);
+    this._volCtrl = new VolumeController(this, this.config);
+    this._watchTimer = new WatchTimer(this.config);
+    this._setting = new SettingControl(this, this.config);
 
 
     // Creating the OSD 
@@ -165,7 +178,7 @@ class SkaraPlayer {
       ]
     })
 
-    this._progressBar = new ProgressBar(this, this._osdBar, this._videoEl);
+    this._progressBar = new ProgressBar(this, this._osdBar, this._videoEl, this.config);
     const progressContainerWrapper = new PrgsContainerWrapper(this._progressBar, this._watchTimer)
 
     // Adding progess bar in the OSD
@@ -193,12 +206,12 @@ class SkaraPlayer {
     this._spinner = new Spinner();
     this._spinner.addTo(this._root)
 
-    this._centerBtn = new CenterButton(this);
+    this._centerBtn = new CenterButton(this, this.config);
     this._root.appendChild(this._centerBtn.element);
     // Showing the center button at initial because player autoplay is off
     this._centerBtn.show();
 
-    this._toolBar = new Toolbar(new FullSrcCtrl(this), this.config.title);
+    this._toolBar = new Toolbar(new FullSrcCtrl(this), this.config);
     // attaching events
     this.attachEventListeners();
 
