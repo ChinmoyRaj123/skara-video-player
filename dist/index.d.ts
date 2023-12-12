@@ -3,8 +3,13 @@ declare const theme: {
     colors: {
         primary: string;
         secondary: string;
-        buttonColor: string;
+        iconButtonColor: string;
+        iconButtonHoverColor: string;
         brandColor: string;
+        progressBGColor: string;
+        progressLoadedColor: string;
+        settingsBGColor: string;
+        settingsTextColor: string;
     };
     spacing: {
         padding: string;
@@ -12,6 +17,8 @@ declare const theme: {
         bottomBarSpacing: string;
         playerControlMargin: string;
         playerCornerRadius: string;
+        iconButtonCornerRadius: string;
+        iconButtonPadding: string;
     };
 };
 type Theme = typeof theme;
@@ -25,7 +32,7 @@ declare class PlayButton implements Controll {
     get element(): HTMLElement;
 }
 declare class FullSrcCtrl implements Controll {
-    constructor(player: SkaraPlayer);
+    constructor(player: SkaraPlayer, config: PlayerConfig);
     get element(): HTMLElement;
 }
 declare class VolumeController implements Controll {
@@ -109,7 +116,7 @@ export type PlayerConfig = {
     showVolumeBar: boolean;
     showVideoTitle: boolean;
     showSettings: boolean;
-    toggleFullscreen: boolean;
+    showFullscreen: boolean;
 };
 type EventName = 'loaded' | 'metadataloaded' | 'playing' | 'pause' | 'ended' | 'volumechange' | 'ratechange' | 'timeupdate' | 'waiting' | 'stalled' | 'abort' | 'suspend';
 /**
@@ -314,8 +321,13 @@ export default class SkaraPlayer {
         colors: {
             primary: string;
             secondary: string;
-            buttonColor: string;
+            iconButtonColor: string;
+            iconButtonHoverColor: string;
             brandColor: string;
+            progressBGColor: string;
+            progressLoadedColor: string;
+            settingsBGColor: string;
+            settingsTextColor: string;
         };
         spacing: {
             padding: string;
@@ -323,6 +335,8 @@ export default class SkaraPlayer {
             bottomBarSpacing: string;
             playerControlMargin: string;
             playerCornerRadius: string;
+            iconButtonCornerRadius: string;
+            iconButtonPadding: string;
         };
     };
 }

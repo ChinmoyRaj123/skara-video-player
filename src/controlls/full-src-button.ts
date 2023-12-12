@@ -1,12 +1,13 @@
 import { Controll } from ".";
-import SkaraPlayer from "..";
+import SkaraPlayer, { PlayerConfig } from "..";
 import { createCtrl, replaceIcon } from "../components/play-button";
 import { Material } from "../icons";
 
 class FullSrcCtrl implements Controll {
   private _el: HTMLElement;
-  constructor(player: SkaraPlayer) {
+  constructor(player: SkaraPlayer, config: PlayerConfig) {
     this._el = createCtrl({ icon: Material.FullScreenIcon });
+    if (!config.showFullscreen) this._el.style.display = "none";
     this.attachListener();
     this._el.addEventListener('click', () => {
       this.clickHandler(player)

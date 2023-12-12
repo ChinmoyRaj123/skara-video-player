@@ -10,9 +10,20 @@
   --skaraVideoPopupBg: #02122A;
   --skaraVideoOsdBg: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
   --skaraVideoToolbarBg: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+
   --bottomBarSpacing: "8px";
   --playerControlMargin: "8px";
   --playerCornerRadius: "0px";
+  --iconButtonCornerRadius: 50%;
+  --iconButtonPadding: 10px;
+
+  --iconButtonColor: red;
+  --iconButtonHoverColor: brown;
+  --brandColor: yellow;
+  --progressBGColor: green;
+  --progressLoadedColor: blue;
+  --settingsBGColor: violet;
+  --settingsTextColor: red;
 }
 
 * {
@@ -81,7 +92,7 @@
   height: 14px;
   width: 14px;
   border-radius: 50%;
-  background-color: var(--skaraVideoPrimaryColor);
+  background-color: var(--progressLoadedColor);
   opacity: 0;
   transition: opacity 300ms ease-out;
   cursor: pointer;
@@ -154,7 +165,7 @@
 
 .prgsWrapper {
   height: 4px;
-  background-color: var(--skaraVideoSecondaryColor);
+  background-color: var(--progressBGColor);
   width: 100%;
   position: relative;
   cursor: pointer;
@@ -165,7 +176,7 @@
 .prgsBar {
   position: absolute;
   height: 4px;
-  background-color: var(--skaraVideoPrimaryColor);
+  background-color: var(--progressLoadedColor);
   width: 0;
   cursor: pointer;
   z-index: 20;
@@ -176,7 +187,7 @@
 .prgsHover {
   position: absolute;
   height: 4px;
-  background-color: var(--skaraVideoPrimaryColor);
+  background-color: var(--progressLoadedColor);
   opacity: 0.5;
   width: 0;
   cursor: pointer;
@@ -221,7 +232,7 @@
 
 .seekTimeTooltip {
   position: absolute;
-  color: var(--skaraVideoSecondaryColor);
+  color: var(--progressLoadedColor);
   background-color: var(--skaraVideoPopupBg);
   padding: 6px 12px;
   opacity: 0;
@@ -465,10 +476,11 @@
 }
 
 .icon {
-  background-color: var(--skaraVideoSecondaryColor);
+  background-color: var(--iconButtonColor);
   height: 18px;
   width: 18px;
-  padding: 4px;
+  padding: var(--iconButtonPadding);
+  border-radius: var(--iconButtonCornerRadius);
 }
 
 .settingWrapper {
@@ -562,7 +574,7 @@
 .controls {
   padding: 4px;
   border-radius: 2px;
-  background-color: var(--skaraVideoSecondaryColor);
+  background-color: var(--iconButtonColor);
   height: 36px;
   width: 36px;
   cursor: pointer
@@ -602,14 +614,28 @@
 
 .centerButton {
   cursor: pointer;
-  height: 140px;
-  width: 140px;
-  background-color: var(--skaraVideoSecondaryColor);
+  height: 80px;
+  width: 80px;
+  background-color: var(--iconButtonColor);
+  border-radius: var(--iconButtonCornerRadius);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
   transition: all 200s ease-out;
+  padding: var(--iconButtonPadding);
+}
+
+/* .centerButton:hover {
+  background-color: var(--iconButtonHoverColor);
+} */
+
+.centerButtonImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 8%;
 }
 
 .watchTimer {

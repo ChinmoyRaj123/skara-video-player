@@ -33,7 +33,7 @@ export type PlayerConfig = {
   showVolumeBar: boolean
   showVideoTitle: boolean
   showSettings: boolean
-  toggleFullscreen: boolean
+  showFullscreen: boolean
 }
 
 type EventName = 'loaded' |
@@ -61,10 +61,28 @@ const defaultConfig: PlayerConfig = {
   showVolumeBar: true,
   showVideoTitle: true,
   showSettings: true,
-  toggleFullscreen: false,
+  showFullscreen: true,
   theme: {
-    colors: { primary: "", secondary: "", buttonColor: "", brandColor: "" },
-    spacing: { margin: "", padding: "", bottomBarSpacing: "", playerControlMargin: "", playerCornerRadius: "" },
+    colors: {
+      primary: "",
+      secondary: "",
+      iconButtonColor: "",
+      iconButtonHoverColor: "",
+      brandColor: "",
+      progressBGColor: "",
+      progressLoadedColor: "",
+      settingsBGColor: "",
+      settingsTextColor: ""
+    },
+    spacing: {
+      padding: "",
+      margin: "",
+      bottomBarSpacing: "",
+      playerControlMargin: "",
+      playerCornerRadius: "",
+      iconButtonCornerRadius: "",
+      iconButtonPadding: ""
+    },
   }
 }
 /**
@@ -133,7 +151,7 @@ class SkaraPlayer {
     // Setting default variables
     this._prgsBar = null;
     this.events = {}
-    this._isFullscreen = config.toggleFullscreen;
+    this._isFullscreen = false;
     this.hls = null;
 
 
@@ -190,11 +208,23 @@ class SkaraPlayer {
       const setRootVariables = (vars: Record<string, string>) => Object.entries(vars).forEach(v => newtheme?.style?.setProperty(v[0], v[1]));
       const colorVariables = {
         // "--skaraVideoPrimaryColor": this.theme?.colors?.primary,
-        "--skaraVideoPrimaryColor": this.theme?.colors?.brandColor,
-        "--skaraVideoSecondaryColor": this.theme?.colors?.buttonColor,
+        "--skaraVideoPrimaryColor": this.theme?.colors?.primary,
+        "--skaraVideoSecondaryColor": this.theme?.colors?.secondary,
+
         "--bottomBarSpacing": this.theme?.spacing?.bottomBarSpacing,
         "--playerControlMargin": this.theme?.spacing?.playerControlMargin,
-        "--playerCornerRadius": this.theme?.spacing?.playerCornerRadius
+        "--playerCornerRadius": this.theme?.spacing?.playerCornerRadius,
+        "--iconButtonCornerRadius": this.theme?.spacing?.iconButtonCornerRadius,
+        "--iconButtonPadding": this.theme?.spacing?.iconButtonPadding,
+
+        "--iconButtonColor": this.theme?.colors?.iconButtonColor,
+        "--iconButtonHoverColor": this.theme?.colors?.iconButtonHoverColor,
+        "--brandColor": this.theme?.colors?.brandColor,
+        "--progressBGColor": this.theme?.colors?.progressBGColor,
+        "--progressLoadedColor": this.theme?.colors?.progressLoadedColor,
+        "--settingsBGColor": this.theme?.colors?.settingsBGColor,
+        "--settingsTextColor": this.theme?.colors?.settingsTextColor
+
       }
       setRootVariables(colorVariables)
     }
@@ -211,7 +241,7 @@ class SkaraPlayer {
     // Showing the center button at initial because player autoplay is off
     this._centerBtn.show();
 
-    this._toolBar = new Toolbar(new FullSrcCtrl(this), this.config);
+    this._toolBar = new Toolbar(new FullSrcCtrl(this, this.config), this.config);
     // attaching events
     this.attachEventListeners();
 
