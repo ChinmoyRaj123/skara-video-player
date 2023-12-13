@@ -3,13 +3,14 @@ declare const theme: {
     colors: {
         primary: string;
         secondary: string;
-        iconButtonColor: string;
-        iconButtonHoverColor: string;
+        centerIconButtonColor: string;
+        centerIconButtonHoverColor: string;
         brandColor: string;
         progressBGColor: string;
         progressLoadedColor: string;
         settingsBGColor: string;
         settingsTextColor: string;
+        settingsHoverColor: string;
     };
     spacing: {
         padding: string;
@@ -19,6 +20,8 @@ declare const theme: {
         playerCornerRadius: string;
         iconButtonCornerRadius: string;
         iconButtonPadding: string;
+        progressBarHeight: string;
+        progressBarHoverScale: string;
     };
 };
 type Theme = typeof theme;
@@ -321,13 +324,14 @@ export default class SkaraPlayer {
         colors: {
             primary: string;
             secondary: string;
-            iconButtonColor: string;
-            iconButtonHoverColor: string;
+            centerIconButtonColor: string;
+            centerIconButtonHoverColor: string;
             brandColor: string;
             progressBGColor: string;
             progressLoadedColor: string;
             settingsBGColor: string;
             settingsTextColor: string;
+            settingsHoverColor: string;
         };
         spacing: {
             padding: string;
@@ -337,6 +341,8 @@ export default class SkaraPlayer {
             playerCornerRadius: string;
             iconButtonCornerRadius: string;
             iconButtonPadding: string;
+            progressBarHeight: string;
+            progressBarHoverScale: string;
         };
     };
 }

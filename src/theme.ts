@@ -2,13 +2,14 @@ export const theme = {
   colors: {
     primary: "#00b428",
     secondary: "#e8dd26",
-    iconButtonColor: "green",
-    iconButtonHoverColor: "yellow",
+    centerIconButtonColor: "green",
+    centerIconButtonHoverColor: "yellow",
     brandColor: "blue",
     progressBGColor: "red",
     progressLoadedColor: "blue",
     settingsBGColor: "blue",
-    settingsTextColor: "red"
+    settingsTextColor: "red",
+    settingsHoverColor: "green"
   },
   spacing: {
     padding: "6px",
@@ -17,7 +18,9 @@ export const theme = {
     playerControlMargin: "31px",
     playerCornerRadius: "12px",
     iconButtonCornerRadius: "4px",
-    iconButtonPadding: "4px"
+    iconButtonPadding: "4px",
+    progressBarHeight: "4px",
+    progressBarHoverScale: "1.8"
   }
 }
 

@@ -15,13 +15,16 @@
   --playerCornerRadius: "0px";
   --iconButtonCornerRadius: 50%;
   --iconButtonPadding: 10px;
-  --iconButtonColor: red;
-  --iconButtonHoverColor: brown;
+  --progressBarHeight: "4px";
+  --progressBarHoverScale: 1.8;
+  --centerIconButtonColor: red;
+  --centerIconButtonHoverColor: brown;
   --brandColor: yellow;
   --progressBGColor: green;
   --progressLoadedColor: blue;
   --settingsBGColor: violet;
   --settingsTextColor: red;
+  --settingsHoverColor: green;
 }
 
 * {
@@ -83,8 +86,8 @@
 
 .VC4pIW_scrubber {
   z-index: 20;
-  height: 14px;
-  width: 14px;
+  height: var(--progressBarHeight);
+  width: var(--progressBarHeight);
   background-color: var(--progressLoadedColor);
   opacity: 0;
   cursor: pointer;
@@ -94,7 +97,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate3d(-50%, -33%, 0);
+  scale: 1.5;
 }
 
 .VC4pIW_root {
@@ -145,7 +148,7 @@
 }
 
 .VC4pIW_prgsWrapper {
-  height: 4px;
+  height: var(--progressBarHeight);
   background-color: var(--progressBGColor);
   width: 100%;
   cursor: pointer;
@@ -155,7 +158,7 @@
 }
 
 .VC4pIW_prgsBar {
-  height: 4px;
+  height: var(--progressBarHeight);
   background-color: var(--progressLoadedColor);
   width: 0;
   cursor: pointer;
@@ -165,7 +168,7 @@
 }
 
 .VC4pIW_prgsHover {
-  height: 4px;
+  height: var(--progressBarHeight);
   background-color: var(--progressLoadedColor);
   opacity: .5;
   width: 0;
@@ -176,15 +179,18 @@
 }
 
 .VC4pIW_prgsContainer:hover .VC4pIW_prgsWrapper, .VC4pIW_prgsContainer:hover .VC4pIW_prgsBar, .VC4pIW_prgsContainer:hover .VC4pIW_prgsHover {
-  transform: scale3d(1, 1.8, 1);
+  transform: scale3d(1, var(--progressBarHoverScale), 1);
 }
 
 .VC4pIW_prgsContainer:hover .VC4pIW_scrubber {
+  width: calc(var(--progressBarHeight) * var(--progressBarHoverScale));
+  height: calc(var(--progressBarHeight) * var(--progressBarHoverScale));
   opacity: 1;
+  transform: translate3d(-50%, -25%, 0);
 }
 
 .VC4pIW_prgsContainer:active .VC4pIW_prgsWrapper, .VC4pIW_prgsContainer:active .VC4pIW_prgsBar, .VC4pIW_prgsContainer:active .VC4pIW_prgsHover {
-  transform: scale3d(1, 1.8, 1);
+  transform: scale3d(1, var(--progressBarHoverScale), 1);
 }
 
 .VC4pIW_prgsContainer:active .VC4pIW_scrubber {
@@ -432,7 +438,7 @@
 }
 
 .VC4pIW_icon {
-  background-color: var(--iconButtonColor);
+  background-color: var(--skaraVideoPrimaryColor);
   height: 18px;
   width: 18px;
   padding: var(--iconButtonPadding);
@@ -443,7 +449,7 @@
   z-index: -16;
   width: 280px;
   max-height: 260px;
-  background-color: var(--skaraVideoPopupBg);
+  background-color: var(--settingsBGColor);
   border-radius: 2px;
   display: none;
   position: absolute;
@@ -454,7 +460,7 @@
 }
 
 .VC4pIW_settingItem {
-  color: var(--skaraVideoSecondaryColor);
+  color: var(--settingsTextColor);
   cursor: pointer;
   border-radius: 2px;
   justify-content: space-between;
@@ -468,7 +474,7 @@
 }
 
 .VC4pIW_settingItem:hover {
-  background-color: var(--skaraVideoPopup);
+  background-color: var(--settingsHoverColor);
 }
 
 .VC4pIW_settingPopup {
@@ -489,7 +495,7 @@
 }
 
 .VC4pIW_listItem {
-  color: var(--skaraVideoSecondaryColor);
+  color: var(--settingsTextColor);
   cursor: pointer;
   align-items: center;
   gap: 8px;
@@ -502,7 +508,7 @@
 }
 
 .VC4pIW_listItem:hover, .VC4pIW_active {
-  background-color: var(--skaraVideoPopup);
+  background-color: var(--settingsHoverColor);
 }
 
 .VC4pIW_activeIconWrapper {
@@ -521,7 +527,7 @@
 }
 
 .VC4pIW_controls {
-  background-color: var(--iconButtonColor);
+  background-color: var(--skaraVideoPrimaryColor);
   height: 36px;
   width: 36px;
   cursor: pointer;
@@ -564,7 +570,7 @@
   cursor: pointer;
   height: 80px;
   width: 80px;
-  background-color: var(--iconButtonColor);
+  background-color: var(--centerIconButtonColor);
   border-radius: var(--iconButtonCornerRadius);
   padding: var(--iconButtonPadding);
   transition: all 200s ease-out;

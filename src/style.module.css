@@ -16,14 +16,17 @@
   --playerCornerRadius: "0px";
   --iconButtonCornerRadius: 50%;
   --iconButtonPadding: 10px;
+  --progressBarHeight: "4px";
+  --progressBarHoverScale: 1.8;
 
-  --iconButtonColor: red;
-  --iconButtonHoverColor: brown;
+  --centerIconButtonColor: red;
+  --centerIconButtonHoverColor: brown;
   --brandColor: yellow;
   --progressBGColor: green;
   --progressLoadedColor: blue;
   --settingsBGColor: violet;
   --settingsTextColor: red;
+  --settingsHoverColor: green;
 }
 
 * {
@@ -88,9 +91,10 @@
   z-index: 20;
   left: 0;
   top: 0;
-  transform: translate3d(-50%, -33%, 0);
-  height: 14px;
-  width: 14px;
+  scale: 1.5;
+  /* transform: translate3d(-50%, -33%, 0); */
+  height: var(--progressBarHeight);
+  width: var(--progressBarHeight);
   border-radius: 50%;
   background-color: var(--progressLoadedColor);
   opacity: 0;
@@ -164,7 +168,7 @@
 }
 
 .prgsWrapper {
-  height: 4px;
+  height: var(--progressBarHeight);
   background-color: var(--progressBGColor);
   width: 100%;
   position: relative;
@@ -175,7 +179,7 @@
 
 .prgsBar {
   position: absolute;
-  height: 4px;
+  height: var(--progressBarHeight);
   background-color: var(--progressLoadedColor);
   width: 0;
   cursor: pointer;
@@ -186,7 +190,7 @@
 
 .prgsHover {
   position: absolute;
-  height: 4px;
+  height: var(--progressBarHeight);
   background-color: var(--progressLoadedColor);
   opacity: 0.5;
   width: 0;
@@ -196,32 +200,34 @@
 }
 
 .prgsContainer:hover .prgsWrapper {
-  transform: scale3d(1, 1.8, 1);
+  transform: scale3d(1, var(--progressBarHoverScale), 1);
 }
 
 .prgsContainer:hover .prgsBar {
-  transform: scale3d(1, 1.8, 1);
+  transform: scale3d(1, var(--progressBarHoverScale), 1);
 }
 
 .prgsContainer:hover .prgsHover {
-  transform: scale3d(1, 1.8, 1);
+  transform: scale3d(1, var(--progressBarHoverScale), 1);
 }
 
 .prgsContainer:hover .scrubber {
-  /* transform: translate3d(-50%, -35%, 0);  */
+  transform: translate3d(-50%, -25%, 0);
+  width: calc(var(--progressBarHeight)*var(--progressBarHoverScale));
+  height: calc(var(--progressBarHeight)*var(--progressBarHoverScale));
   opacity: 1;
 }
 
 .prgsContainer:active .prgsWrapper {
-  transform: scale3d(1, 1.8, 1);
+  transform: scale3d(1, var(--progressBarHoverScale), 1);
 }
 
 .prgsContainer:active .prgsBar {
-  transform: scale3d(1, 1.8, 1);
+  transform: scale3d(1, var(--progressBarHoverScale), 1);
 }
 
 .prgsContainer:active .prgsHover {
-  transform: scale3d(1, 1.8, 1);
+  transform: scale3d(1, var(--progressBarHoverScale), 1);
 }
 
 .prgsContainer:active .scrubber {
@@ -476,7 +482,7 @@
 }
 
 .icon {
-  background-color: var(--iconButtonColor);
+  background-color: var(--skaraVideoPrimaryColor);
   height: 18px;
   width: 18px;
   padding: var(--iconButtonPadding);
@@ -490,7 +496,7 @@
   right: 60px;
   width: 280px;
   max-height: 260px;
-  background-color: var(--skaraVideoPopupBg);
+  background-color: var(--settingsBGColor);
   /* opacity: 0; */
   display: none;
   border-radius: 2px;
@@ -505,7 +511,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--skaraVideoSecondaryColor);
+  color: var(--settingsTextColor);
   position: relative;
   font-size: 16px;
   font-weight: 400;
@@ -515,7 +521,7 @@
 }
 
 .settingItem:hover {
-  background-color: var(--skaraVideoPopup)
+  background-color: var(--settingsHoverColor)
 }
 
 .settingPopup {
@@ -539,7 +545,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--skaraVideoSecondaryColor);
+  color: var(--settingsTextColor);
   position: relative;
   padding: 12px;
   font-size: 16px;
@@ -549,11 +555,11 @@
 }
 
 .listItem:hover {
-  background-color: var(--skaraVideoPopup)
+  background-color: var(--settingsHoverColor)
 }
 
 .active {
-  background-color: var(--skaraVideoPopup)
+  background-color: var(--settingsHoverColor)
 }
 
 .activeIconWrapper {
@@ -574,7 +580,7 @@
 .controls {
   padding: 4px;
   border-radius: 2px;
-  background-color: var(--iconButtonColor);
+  background-color: var(--skaraVideoPrimaryColor);
   height: 36px;
   width: 36px;
   cursor: pointer
@@ -616,7 +622,7 @@
   cursor: pointer;
   height: 80px;
   width: 80px;
-  background-color: var(--iconButtonColor);
+  background-color: var(--centerIconButtonColor);
   border-radius: var(--iconButtonCornerRadius);
   position: absolute;
   top: 50%;
@@ -627,7 +633,7 @@
 }
 
 /* .centerButton:hover {
-  background-color: var(--iconButtonHoverColor);
+  background-color: var(--centerIconButtonHoverColor);
 } */
 
 .centerButtonImage {

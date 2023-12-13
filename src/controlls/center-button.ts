@@ -23,11 +23,11 @@ class CenterButton implements Controll {
     // this._el.style.webkitMaskRepeat = 'no-repeat';
 
     this._el.addEventListener('mouseover', () => {
-      this._el.style.backgroundColor = config.theme?.colors?.iconButtonHoverColor as string;
+      this._el.style.backgroundColor = config.theme?.colors?.centerIconButtonHoverColor as string;
     })
 
     this._el.addEventListener('mouseleave', () => {
-      this._el.style.backgroundColor = config.theme?.colors?.iconButtonColor as string;
+      this._el.style.backgroundColor = config.theme?.colors?.centerIconButtonColor as string;
     })
 
     this._el.addEventListener('click', () => {

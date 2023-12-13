@@ -66,13 +66,14 @@ const defaultConfig: PlayerConfig = {
     colors: {
       primary: "",
       secondary: "",
-      iconButtonColor: "",
-      iconButtonHoverColor: "",
+      centerIconButtonColor: "",
+      centerIconButtonHoverColor: "",
       brandColor: "",
       progressBGColor: "",
       progressLoadedColor: "",
       settingsBGColor: "",
-      settingsTextColor: ""
+      settingsTextColor: "",
+      settingsHoverColor: ""
     },
     spacing: {
       padding: "",
@@ -81,7 +82,9 @@ const defaultConfig: PlayerConfig = {
       playerControlMargin: "",
       playerCornerRadius: "",
       iconButtonCornerRadius: "",
-      iconButtonPadding: ""
+      iconButtonPadding: "",
+      progressBarHeight: "",
+      progressBarHoverScale: ""
     },
   }
 }
@@ -216,14 +219,17 @@ class SkaraPlayer {
         "--playerCornerRadius": this.theme?.spacing?.playerCornerRadius,
         "--iconButtonCornerRadius": this.theme?.spacing?.iconButtonCornerRadius,
         "--iconButtonPadding": this.theme?.spacing?.iconButtonPadding,
+        "--progressBarHeight": this.theme?.spacing?.progressBarHeight,
+        "--progressBarHoverScale": this.theme?.spacing?.progressBarHoverScale,
 
-        "--iconButtonColor": this.theme?.colors?.iconButtonColor,
-        "--iconButtonHoverColor": this.theme?.colors?.iconButtonHoverColor,
+        "--centerIconButtonColor": this.theme?.colors?.centerIconButtonColor,
+        "--centerIconButtonHoverColor": this.theme?.colors?.centerIconButtonHoverColor,
         "--brandColor": this.theme?.colors?.brandColor,
         "--progressBGColor": this.theme?.colors?.progressBGColor,
         "--progressLoadedColor": this.theme?.colors?.progressLoadedColor,
         "--settingsBGColor": this.theme?.colors?.settingsBGColor,
-        "--settingsTextColor": this.theme?.colors?.settingsTextColor
+        "--settingsTextColor": this.theme?.colors?.settingsTextColor,
+        "--settingsHoverColor": this.theme?.colors?.settingsHoverColor,
 
       }
       setRootVariables(colorVariables)
