@@ -13,12 +13,15 @@
   --bottomBarSpacing: "8px";
   --playerControlMargin: "8px";
   --playerCornerRadius: "0px";
+  --centerIconButtonCornerRadius: 50%;
   --iconButtonCornerRadius: 50%;
   --iconButtonPadding: 10px;
   --progressBarHeight: "4px";
   --progressBarHoverScale: 1.8;
   --centerIconButtonColor: red;
   --centerIconButtonHoverColor: brown;
+  --iconButtonColor: red;
+  --iconButtonHoverColor: brown;
   --brandColor: yellow;
   --progressBGColor: green;
   --progressLoadedColor: blue;
@@ -438,7 +441,7 @@
 }
 
 .VC4pIW_icon {
-  background-color: var(--skaraVideoPrimaryColor);
+  background-color: var(--iconButtonColor);
   height: 18px;
   width: 18px;
   padding: var(--iconButtonPadding);
@@ -527,12 +530,12 @@
 }
 
 .VC4pIW_controls {
-  background-color: var(--skaraVideoPrimaryColor);
+  padding: var(--iconButtonPadding);
+  border-radius: var(--iconButtonCornerRadius);
+  background-color: var(--iconButtonColor);
   height: 36px;
   width: 36px;
   cursor: pointer;
-  border-radius: 2px;
-  padding: 4px;
 }
 
 .VC4pIW_hide {
@@ -571,7 +574,7 @@
   height: 80px;
   width: 80px;
   background-color: var(--centerIconButtonColor);
-  border-radius: var(--iconButtonCornerRadius);
+  border-radius: var(--centerIconButtonCornerRadius);
   padding: var(--iconButtonPadding);
   transition: all 200s ease-out;
   position: absolute;

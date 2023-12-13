@@ -194,27 +194,30 @@ class SettingControl implements Controll {
     if (!config.showSettings) this._el.style.display = "none";
 
     this._el.addEventListener('click', () => {
+      console.log("thisvisible eventlistener", this.visible);
+
       this.visible ? this.hide() : this.show();
     });
 
     this.createSpeedSelector(player)
-
   }
 
   public show() {
     if (this.visible) return;
     this.visible = true;
-    // this._popupEl.style.opacity = "1";
+    console.log("settshow ran", this.visible);
+
+    this._popupEl.style.display = "block";
     this._popupEl.style.zIndex = "16";
-    this._popupEl.style.display = 'block';
   }
 
   public hide() {
     if (!this.visible) return;
     this.visible = false;
-    this._popupEl.style.display = 'none';
+    console.log("setthide ran", this.visible);
+
+    this._popupEl.style.display = "none";
     this._popupEl.style.zIndex = "-16";
-    // this._popupEl.style.opacity = "0";
   }
 
   public set quality(id: number) {

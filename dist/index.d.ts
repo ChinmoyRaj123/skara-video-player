@@ -5,6 +5,8 @@ declare const theme: {
         secondary: string;
         centerIconButtonColor: string;
         centerIconButtonHoverColor: string;
+        iconButtonColor: string;
+        iconButtonHoverColor: string;
         brandColor: string;
         progressBGColor: string;
         progressLoadedColor: string;
@@ -18,6 +20,7 @@ declare const theme: {
         bottomBarSpacing: string;
         playerControlMargin: string;
         playerCornerRadius: string;
+        centerIconButtonCornerRadius: string;
         iconButtonCornerRadius: string;
         iconButtonPadding: string;
         progressBarHeight: string;
@@ -326,6 +329,8 @@ export default class SkaraPlayer {
             secondary: string;
             centerIconButtonColor: string;
             centerIconButtonHoverColor: string;
+            iconButtonColor: string;
+            iconButtonHoverColor: string;
             brandColor: string;
             progressBGColor: string;
             progressLoadedColor: string;
@@ -339,6 +344,7 @@ export default class SkaraPlayer {
             bottomBarSpacing: string;
             playerControlMargin: string;
             playerCornerRadius: string;
+            centerIconButtonCornerRadius: string;
             iconButtonCornerRadius: string;
             iconButtonPadding: string;
             progressBarHeight: string;

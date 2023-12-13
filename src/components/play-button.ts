@@ -9,10 +9,15 @@ export const createCtrl = (cfg: ControlProps = {}) => {
   const btn = document.createElement('div');
   if (cfg.text) btn.textContent = cfg.text;
   if (cfg.icon) {
-    btn.style.mask = `url(${cfg.icon})`
-    btn.style.webkitMask = `url(${cfg.icon})`
-    btn.style.webkitMaskSize = 'contain'
-    btn.style.webkitMaskRepeat = 'no-repeat'
+    const el = document.createElement("img");
+    el.src = cfg.icon;
+    el.style.width = "100%";
+    el.style.height = "100%";
+    btn.appendChild(el)
+    // btn.style.mask = `url(${cfg.icon})`
+    // btn.style.webkitMask = `url(${cfg.icon})`
+    // btn.style.webkitMaskSize = 'contain'
+    // btn.style.webkitMaskRepeat = 'no-repeat'
   }
 
   if (cfg.style) {
@@ -24,8 +29,10 @@ export const createCtrl = (cfg: ControlProps = {}) => {
 }
 
 export const replaceIcon = (el: HTMLElement, icon: string) => {
-  el.style.mask = `url(${icon})`
-  el.style.webkitMask = `url(${icon})`
-  el.style.webkitMaskSize = 'contain'
-  el.style.webkitMaskRepeat = 'no-repeat'
+  const imgel = el.children[0] as HTMLImageElement
+  imgel.src = icon
+  // el.style.mask = `url(${icon})`
+  // el.style.webkitMask = `url(${icon})`
+  // el.style.webkitMaskSize = 'contain'
+  // el.style.webkitMaskRepeat = 'no-repeat'
 }
