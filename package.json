@@ -1,6 +1,6 @@
 {
   "name": "skara-test-video-player",
-  "version": "0.0.58",
+  "version": "0.0.63",
   "description": "A flexible, customizale video player",
   "source": "src/index.ts",
   "main": "dist/index.js",

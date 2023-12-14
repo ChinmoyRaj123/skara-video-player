@@ -76,7 +76,7 @@ type CreateSettingWindowProps = {
     hls?: Hls;
 };
 declare class SettingControl implements Controll {
-    visible: boolean;
+    popupVisible: boolean;
     constructor(player: SkaraPlayer, config: PlayerConfig);
     show(): void;
     hide(): void;
