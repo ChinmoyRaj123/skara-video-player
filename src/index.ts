@@ -676,13 +676,13 @@ class SkaraPlayer {
         return;
       }
 
-      if (this._setting.visible) {
+      if (this._setting.popupVisible) {
         this._setting.hide();
       }
     });
 
     this._videoEl.addEventListener('click', (_) => {
-      if (this._setting.visible) return;
+      if (this._setting.popupVisible) return;
 
       if (!this._toolBar.visible || !this._osdBar.visible) {
         this.showCtrls();
@@ -693,7 +693,7 @@ class SkaraPlayer {
     });
 
     this._videoEl.addEventListener('touch', (_) => {
-      if (this._setting.visible) return;
+      if (this._setting.popupVisible) return;
 
       if (!this._toolBar.visible || !this._osdBar.visible) {
         this.showCtrls();
