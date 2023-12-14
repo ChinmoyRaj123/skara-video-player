@@ -538,6 +538,10 @@
   cursor: pointer;
 }
 
+.VC4pIW_controls:hover {
+  background-color: var(--iconButtonHoverColor);
+}
+
 .VC4pIW_hide {
   display: none;
 }
@@ -583,12 +587,19 @@
   transform: translate3d(-50%, -50%, 0);
 }
 
+.VC4pIW_centerButton:hover {
+  background-color: var(--centerIconButtonHoverColor);
+}
+
 .VC4pIW_centerButtonImage {
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 8%;
+  padding-left: 7%;
+}
+
+.VC4pIW_iconButtonImage {
+  width: 100%;
+  height: 100%;
 }
 
 .VC4pIW_watchTimer {

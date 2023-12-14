@@ -676,9 +676,9 @@ class SkaraPlayer {
         return;
       }
 
-      if (this._setting.popupVisible) {
-        this._setting.hide();
-      }
+      // if (this._setting.popupVisible) {
+      //   this._setting.hide();
+      // }
     });
 
     this._videoEl.addEventListener('click', (_) => {

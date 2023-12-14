@@ -11,8 +11,7 @@ export const createCtrl = (cfg: ControlProps = {}) => {
   if (cfg.icon) {
     const el = document.createElement("img");
     el.src = cfg.icon;
-    el.style.width = "100%";
-    el.style.height = "100%";
+    el.className = styles.iconButtonImage;
     btn.appendChild(el)
     // btn.style.mask = `url(${cfg.icon})`
     // btn.style.webkitMask = `url(${cfg.icon})`

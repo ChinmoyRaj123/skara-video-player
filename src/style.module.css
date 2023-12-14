@@ -586,7 +586,11 @@
   background-color: var(--iconButtonColor);
   height: 36px;
   width: 36px;
-  cursor: pointer
+  cursor: pointer;
+}
+
+.controls:hover {
+  background-color: var(--iconButtonHoverColor);
 }
 
 
@@ -635,16 +639,19 @@
   padding: var(--iconButtonPadding);
 }
 
-/* .centerButton:hover {
+.centerButton:hover {
   background-color: var(--centerIconButtonHoverColor);
-} */
+}
 
 .centerButtonImage {
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 8%;
+  padding-left: 7%;
+}
+
+.iconButtonImage {
+  width: 100%;
+  height: 100%;
 }
 
 .watchTimer {
