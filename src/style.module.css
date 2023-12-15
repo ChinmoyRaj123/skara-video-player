@@ -15,6 +15,7 @@
   --playerControlMargin: "20px";
   --playerCornerRadius: "0px";
   --centerIconButtonCornerRadius: 50%;
+  --centerIconButtonPadding: 10px;
   --iconButtonCornerRadius: 50%;
   --iconButtonPadding: 10px;
   --progressBarHeight: "4px";
@@ -485,6 +486,7 @@
 }
 
 .icon {
+  box-sizing: border-box;
   background-color: var(--iconButtonColor);
   height: 18px;
   width: 18px;
@@ -581,6 +583,7 @@
 }
 
 .controls {
+  box-sizing: border-box;
   padding: var(--iconButtonPadding);
   border-radius: var(--iconButtonCornerRadius);
   background-color: var(--iconButtonColor);
@@ -626,6 +629,7 @@
 }
 
 .centerButton {
+  box-sizing: border-box;
   cursor: pointer;
   height: 80px;
   width: 80px;
@@ -635,8 +639,8 @@
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
-  transition: all 200s ease-out;
-  padding: var(--iconButtonPadding);
+  /* transition: all 200s ease-out; */
+  padding: var(--centerIconButtonPadding);
 }
 
 .centerButton:hover {

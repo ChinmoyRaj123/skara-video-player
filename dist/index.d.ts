@@ -21,6 +21,7 @@ declare const theme: {
         playerControlMargin: string;
         playerCornerRadius: string;
         centerIconButtonCornerRadius: string;
+        centerIconButtonPadding: string;
         iconButtonCornerRadius: string;
         iconButtonPadding: string;
         progressBarHeight: string;
@@ -345,6 +346,7 @@ export default class SkaraPlayer {
             playerControlMargin: string;
             playerCornerRadius: string;
             centerIconButtonCornerRadius: string;
+            centerIconButtonPadding: string;
             iconButtonCornerRadius: string;
             iconButtonPadding: string;
             progressBarHeight: string;

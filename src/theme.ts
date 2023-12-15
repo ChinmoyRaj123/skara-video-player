@@ -20,6 +20,7 @@ export const theme = {
     playerControlMargin: "20px",
     playerCornerRadius: "12px",
     centerIconButtonCornerRadius: "4px",
+    centerIconButtonPadding: "4px",
     iconButtonCornerRadius: "4px",
     iconButtonPadding: "4px",
     progressBarHeight: "4px",
