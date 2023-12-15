@@ -12,7 +12,7 @@
   --skaraVideoToolbarBg: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 
   --bottomBarSpacing: "8px";
-  --playerControlMargin: "8px";
+  --playerControlMargin: "20px";
   --playerCornerRadius: "0px";
   --centerIconButtonCornerRadius: 50%;
   --iconButtonCornerRadius: 50%;
@@ -41,7 +41,7 @@
 }
 
 .toolBar {
-  padding: 20px 60px 56px 60px;
+  padding: var(--playerControlMargin);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,14 +69,14 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 56px 60px 40px 60px;
+  padding: var(--playerControlMargin);
   opacity: 0;
   transition: all 200ms ease-out;
 }
 
 .innerOsd {
   width: 100%;
-  gap: 8px;
+  gap: var(--bottomBarSpacing);
   display: flex;
   flex-direction: column;
   box-sizing: border-box;

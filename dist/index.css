@@ -11,7 +11,7 @@
   --skaraVideoOsdBg: linear-gradient(180deg, #0000 0%, #000c 100%);
   --skaraVideoToolbarBg: linear-gradient(180deg, #000c 0%, #0000 100%);
   --bottomBarSpacing: "8px";
-  --playerControlMargin: "8px";
+  --playerControlMargin: "20px";
   --playerCornerRadius: "0px";
   --centerIconButtonCornerRadius: 50%;
   --iconButtonCornerRadius: 50%;
@@ -39,13 +39,13 @@
 }
 
 .VC4pIW_toolBar {
+  padding: var(--playerControlMargin);
   width: 100%;
   box-sizing: border-box;
   background-image: var(--skaraVideoToolbarBg);
   opacity: 0;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px 56px;
   transition: all .2s ease-out;
   display: flex;
   position: absolute;
@@ -61,10 +61,10 @@
   background-image: var(--skaraVideoOsdBg);
   width: 100%;
   box-sizing: border-box;
+  padding: var(--playerControlMargin);
   opacity: 0;
   flex-direction: column;
   gap: 8px;
-  padding: 56px 60px 40px;
   transition: all .2s ease-out;
   display: flex;
   position: absolute;
@@ -74,10 +74,10 @@
 
 .VC4pIW_innerOsd {
   width: 100%;
+  gap: var(--bottomBarSpacing);
   box-sizing: border-box;
   background: none;
   flex-direction: column;
-  gap: 8px;
   display: flex;
   position: relative;
 }

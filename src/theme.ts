@@ -17,7 +17,7 @@ export const theme = {
     padding: "6px",
     margin: "20px",
     bottomBarSpacing: "21px",
-    playerControlMargin: "31px",
+    playerControlMargin: "20px",
     playerCornerRadius: "12px",
     centerIconButtonCornerRadius: "4px",
     iconButtonCornerRadius: "4px",
