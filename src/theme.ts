@@ -11,7 +11,9 @@ export const theme = {
     progressLoadedColor: "blue",
     settingsBGColor: "blue",
     settingsTextColor: "red",
-    settingsHoverColor: "green"
+    settingsHoverColor: "green",
+    tooltipTextColor: "blue",
+    tooltipBGColor: "pink",
   },
   spacing: {
     padding: "6px",

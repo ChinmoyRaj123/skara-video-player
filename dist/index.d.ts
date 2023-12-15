@@ -13,6 +13,8 @@ declare const theme: {
         settingsBGColor: string;
         settingsTextColor: string;
         settingsHoverColor: string;
+        tooltipTextColor: string;
+        tooltipBGColor: string;
     };
     spacing: {
         padding: string;
@@ -338,6 +340,8 @@ export default class SkaraPlayer {
             settingsBGColor: string;
             settingsTextColor: string;
             settingsHoverColor: string;
+            tooltipTextColor: string;
+            tooltipBGColor: string;
         };
         spacing: {
             padding: string;

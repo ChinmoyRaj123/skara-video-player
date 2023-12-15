@@ -9,136 +9,136 @@ function $parcel$export(e, n, v, s) {
 }
 var $5b721391f7230cb2$exports = {};
 
-$parcel$export($5b721391f7230cb2$exports, "root", () => $5b721391f7230cb2$export$e8e78c978b129247, (v) => $5b721391f7230cb2$export$e8e78c978b129247 = v);
-$parcel$export($5b721391f7230cb2$exports, "innerOsd", () => $5b721391f7230cb2$export$5bbce59cbad6e3b7, (v) => $5b721391f7230cb2$export$5bbce59cbad6e3b7 = v);
-$parcel$export($5b721391f7230cb2$exports, "centerBtnHide", () => $5b721391f7230cb2$export$e9be0fb78d9ff657, (v) => $5b721391f7230cb2$export$e9be0fb78d9ff657 = v);
-$parcel$export($5b721391f7230cb2$exports, "listItem", () => $5b721391f7230cb2$export$76c7e83ecc9cdf05, (v) => $5b721391f7230cb2$export$76c7e83ecc9cdf05 = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsBar", () => $5b721391f7230cb2$export$e475d70d0abfaf0c, (v) => $5b721391f7230cb2$export$e475d70d0abfaf0c = v);
-$parcel$export($5b721391f7230cb2$exports, "watchTimer", () => $5b721391f7230cb2$export$5321aef497dbc95, (v) => $5b721391f7230cb2$export$5321aef497dbc95 = v);
-$parcel$export($5b721391f7230cb2$exports, "centerBtnShow", () => $5b721391f7230cb2$export$4bc86dd528c758a3, (v) => $5b721391f7230cb2$export$4bc86dd528c758a3 = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsContainer", () => $5b721391f7230cb2$export$22702ef448665b4d, (v) => $5b721391f7230cb2$export$22702ef448665b4d = v);
-$parcel$export($5b721391f7230cb2$exports, "spinn", () => $5b721391f7230cb2$export$b082c0b7a6cd56b2, (v) => $5b721391f7230cb2$export$b082c0b7a6cd56b2 = v);
-$parcel$export($5b721391f7230cb2$exports, "activeIconWrapper", () => $5b721391f7230cb2$export$54384a8b841c9096, (v) => $5b721391f7230cb2$export$54384a8b841c9096 = v);
-$parcel$export($5b721391f7230cb2$exports, "toolBar", () => $5b721391f7230cb2$export$ed2652bdb9ef1ad0, (v) => $5b721391f7230cb2$export$ed2652bdb9ef1ad0 = v);
-$parcel$export($5b721391f7230cb2$exports, "hide", () => $5b721391f7230cb2$export$fe8985bb6374093c, (v) => $5b721391f7230cb2$export$fe8985bb6374093c = v);
-$parcel$export($5b721391f7230cb2$exports, "volCtrlWrapper", () => $5b721391f7230cb2$export$328af1edb566eae3, (v) => $5b721391f7230cb2$export$328af1edb566eae3 = v);
-$parcel$export($5b721391f7230cb2$exports, "iconmd", () => $5b721391f7230cb2$export$ea551f4aac394d83, (v) => $5b721391f7230cb2$export$ea551f4aac394d83 = v);
-$parcel$export($5b721391f7230cb2$exports, "indicatorIcon", () => $5b721391f7230cb2$export$37c675ad6e14d9ff, (v) => $5b721391f7230cb2$export$37c675ad6e14d9ff = v);
-$parcel$export($5b721391f7230cb2$exports, "icon", () => $5b721391f7230cb2$export$1ca1ec8b29a4ce27, (v) => $5b721391f7230cb2$export$1ca1ec8b29a4ce27 = v);
-$parcel$export($5b721391f7230cb2$exports, "title", () => $5b721391f7230cb2$export$fb184b623420d9be, (v) => $5b721391f7230cb2$export$fb184b623420d9be = v);
 $parcel$export($5b721391f7230cb2$exports, "volSlider", () => $5b721391f7230cb2$export$523cee24344607ef, (v) => $5b721391f7230cb2$export$523cee24344607ef = v);
-$parcel$export($5b721391f7230cb2$exports, "centerButton", () => $5b721391f7230cb2$export$a2b3dd87d3e471be, (v) => $5b721391f7230cb2$export$a2b3dd87d3e471be = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsHover", () => $5b721391f7230cb2$export$f38465fe307ff1ea, (v) => $5b721391f7230cb2$export$f38465fe307ff1ea = v);
-$parcel$export($5b721391f7230cb2$exports, "settingPopup", () => $5b721391f7230cb2$export$5e53b5cc6c2ef6ac, (v) => $5b721391f7230cb2$export$5e53b5cc6c2ef6ac = v);
+$parcel$export($5b721391f7230cb2$exports, "toolBar", () => $5b721391f7230cb2$export$ed2652bdb9ef1ad0, (v) => $5b721391f7230cb2$export$ed2652bdb9ef1ad0 = v);
+$parcel$export($5b721391f7230cb2$exports, "indicatorIcon", () => $5b721391f7230cb2$export$37c675ad6e14d9ff, (v) => $5b721391f7230cb2$export$37c675ad6e14d9ff = v);
 $parcel$export($5b721391f7230cb2$exports, "iconButtonImage", () => $5b721391f7230cb2$export$1f490cbad58081d8, (v) => $5b721391f7230cb2$export$1f490cbad58081d8 = v);
+$parcel$export($5b721391f7230cb2$exports, "spinner", () => $5b721391f7230cb2$export$641374ffb95bc399, (v) => $5b721391f7230cb2$export$641374ffb95bc399 = v);
+$parcel$export($5b721391f7230cb2$exports, "centerBtnHide", () => $5b721391f7230cb2$export$e9be0fb78d9ff657, (v) => $5b721391f7230cb2$export$e9be0fb78d9ff657 = v);
+$parcel$export($5b721391f7230cb2$exports, "innerOsd", () => $5b721391f7230cb2$export$5bbce59cbad6e3b7, (v) => $5b721391f7230cb2$export$5bbce59cbad6e3b7 = v);
+$parcel$export($5b721391f7230cb2$exports, "listItem", () => $5b721391f7230cb2$export$76c7e83ecc9cdf05, (v) => $5b721391f7230cb2$export$76c7e83ecc9cdf05 = v);
+$parcel$export($5b721391f7230cb2$exports, "root", () => $5b721391f7230cb2$export$e8e78c978b129247, (v) => $5b721391f7230cb2$export$e8e78c978b129247 = v);
 $parcel$export($5b721391f7230cb2$exports, "sliderProgress", () => $5b721391f7230cb2$export$44601925ebb63135, (v) => $5b721391f7230cb2$export$44601925ebb63135 = v);
 $parcel$export($5b721391f7230cb2$exports, "active", () => $5b721391f7230cb2$export$89da14300d534261, (v) => $5b721391f7230cb2$export$89da14300d534261 = v);
-$parcel$export($5b721391f7230cb2$exports, "ctrlLeft", () => $5b721391f7230cb2$export$fb55bfd207eb66bf, (v) => $5b721391f7230cb2$export$fb55bfd207eb66bf = v);
-$parcel$export($5b721391f7230cb2$exports, "sliderWrapper", () => $5b721391f7230cb2$export$b99e7c702abdb77a, (v) => $5b721391f7230cb2$export$b99e7c702abdb77a = v);
-$parcel$export($5b721391f7230cb2$exports, "ctrlContainer", () => $5b721391f7230cb2$export$77806bb1d74cd6f6, (v) => $5b721391f7230cb2$export$77806bb1d74cd6f6 = v);
 $parcel$export($5b721391f7230cb2$exports, "osdBar", () => $5b721391f7230cb2$export$a1b4384913d28591, (v) => $5b721391f7230cb2$export$a1b4384913d28591 = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsWrapper", () => $5b721391f7230cb2$export$2f388bdb5e147bac, (v) => $5b721391f7230cb2$export$2f388bdb5e147bac = v);
-$parcel$export($5b721391f7230cb2$exports, "settingWrapper", () => $5b721391f7230cb2$export$208d04ce5dd64049, (v) => $5b721391f7230cb2$export$208d04ce5dd64049 = v);
-$parcel$export($5b721391f7230cb2$exports, "spinner", () => $5b721391f7230cb2$export$641374ffb95bc399, (v) => $5b721391f7230cb2$export$641374ffb95bc399 = v);
-$parcel$export($5b721391f7230cb2$exports, "button", () => $5b721391f7230cb2$export$2ba01fb71ed41cb6, (v) => $5b721391f7230cb2$export$2ba01fb71ed41cb6 = v);
-$parcel$export($5b721391f7230cb2$exports, "scrubber", () => $5b721391f7230cb2$export$e2b69c907b9ef440, (v) => $5b721391f7230cb2$export$e2b69c907b9ef440 = v);
-$parcel$export($5b721391f7230cb2$exports, "seekTimeTooltip", () => $5b721391f7230cb2$export$b0904f355cb5d789, (v) => $5b721391f7230cb2$export$b0904f355cb5d789 = v);
-$parcel$export($5b721391f7230cb2$exports, "settingItem", () => $5b721391f7230cb2$export$d9d30bff7354568a, (v) => $5b721391f7230cb2$export$d9d30bff7354568a = v);
 $parcel$export($5b721391f7230cb2$exports, "video", () => $5b721391f7230cb2$export$5f8d3589eb8441ca, (v) => $5b721391f7230cb2$export$5f8d3589eb8441ca = v);
-$parcel$export($5b721391f7230cb2$exports, "controls", () => $5b721391f7230cb2$export$cc1adf6fb659c762, (v) => $5b721391f7230cb2$export$cc1adf6fb659c762 = v);
-$parcel$export($5b721391f7230cb2$exports, "centerButtonImage", () => $5b721391f7230cb2$export$502df2ec96816c8c, (v) => $5b721391f7230cb2$export$502df2ec96816c8c = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsContainerWrapper", () => $5b721391f7230cb2$export$49ee957901f7a027, (v) => $5b721391f7230cb2$export$49ee957901f7a027 = v);
-$parcel$export($5b721391f7230cb2$exports, "osdActive", () => $5b721391f7230cb2$export$26238087290c1f5b, (v) => $5b721391f7230cb2$export$26238087290c1f5b = v);
-$parcel$export($5b721391f7230cb2$exports, "rotate", () => $5b721391f7230cb2$export$bb628a54ab399bc9, (v) => $5b721391f7230cb2$export$bb628a54ab399bc9 = v);
+$parcel$export($5b721391f7230cb2$exports, "settingWrapper", () => $5b721391f7230cb2$export$208d04ce5dd64049, (v) => $5b721391f7230cb2$export$208d04ce5dd64049 = v);
 $parcel$export($5b721391f7230cb2$exports, "iconSmall", () => $5b721391f7230cb2$export$934587b1a6f00472, (v) => $5b721391f7230cb2$export$934587b1a6f00472 = v);
+$parcel$export($5b721391f7230cb2$exports, "activeIconWrapper", () => $5b721391f7230cb2$export$54384a8b841c9096, (v) => $5b721391f7230cb2$export$54384a8b841c9096 = v);
+$parcel$export($5b721391f7230cb2$exports, "watchTimer", () => $5b721391f7230cb2$export$5321aef497dbc95, (v) => $5b721391f7230cb2$export$5321aef497dbc95 = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsWrapper", () => $5b721391f7230cb2$export$2f388bdb5e147bac, (v) => $5b721391f7230cb2$export$2f388bdb5e147bac = v);
+$parcel$export($5b721391f7230cb2$exports, "centerBtnShow", () => $5b721391f7230cb2$export$4bc86dd528c758a3, (v) => $5b721391f7230cb2$export$4bc86dd528c758a3 = v);
 $parcel$export($5b721391f7230cb2$exports, "ctrlRight", () => $5b721391f7230cb2$export$deaf7926095b512d, (v) => $5b721391f7230cb2$export$deaf7926095b512d = v);
-var $5b721391f7230cb2$export$e8e78c978b129247;
-var $5b721391f7230cb2$export$5bbce59cbad6e3b7;
-var $5b721391f7230cb2$export$e9be0fb78d9ff657;
-var $5b721391f7230cb2$export$76c7e83ecc9cdf05;
-var $5b721391f7230cb2$export$e475d70d0abfaf0c;
-var $5b721391f7230cb2$export$5321aef497dbc95;
-var $5b721391f7230cb2$export$4bc86dd528c758a3;
-var $5b721391f7230cb2$export$22702ef448665b4d;
-var $5b721391f7230cb2$export$b082c0b7a6cd56b2;
-var $5b721391f7230cb2$export$54384a8b841c9096;
-var $5b721391f7230cb2$export$ed2652bdb9ef1ad0;
-var $5b721391f7230cb2$export$fe8985bb6374093c;
-var $5b721391f7230cb2$export$328af1edb566eae3;
-var $5b721391f7230cb2$export$ea551f4aac394d83;
-var $5b721391f7230cb2$export$37c675ad6e14d9ff;
-var $5b721391f7230cb2$export$1ca1ec8b29a4ce27;
-var $5b721391f7230cb2$export$fb184b623420d9be;
+$parcel$export($5b721391f7230cb2$exports, "settingPopup", () => $5b721391f7230cb2$export$5e53b5cc6c2ef6ac, (v) => $5b721391f7230cb2$export$5e53b5cc6c2ef6ac = v);
+$parcel$export($5b721391f7230cb2$exports, "settingItem", () => $5b721391f7230cb2$export$d9d30bff7354568a, (v) => $5b721391f7230cb2$export$d9d30bff7354568a = v);
+$parcel$export($5b721391f7230cb2$exports, "scrubber", () => $5b721391f7230cb2$export$e2b69c907b9ef440, (v) => $5b721391f7230cb2$export$e2b69c907b9ef440 = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsContainerWrapper", () => $5b721391f7230cb2$export$49ee957901f7a027, (v) => $5b721391f7230cb2$export$49ee957901f7a027 = v);
+$parcel$export($5b721391f7230cb2$exports, "controls", () => $5b721391f7230cb2$export$cc1adf6fb659c762, (v) => $5b721391f7230cb2$export$cc1adf6fb659c762 = v);
+$parcel$export($5b721391f7230cb2$exports, "volCtrlWrapper", () => $5b721391f7230cb2$export$328af1edb566eae3, (v) => $5b721391f7230cb2$export$328af1edb566eae3 = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsBar", () => $5b721391f7230cb2$export$e475d70d0abfaf0c, (v) => $5b721391f7230cb2$export$e475d70d0abfaf0c = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsHover", () => $5b721391f7230cb2$export$f38465fe307ff1ea, (v) => $5b721391f7230cb2$export$f38465fe307ff1ea = v);
+$parcel$export($5b721391f7230cb2$exports, "osdActive", () => $5b721391f7230cb2$export$26238087290c1f5b, (v) => $5b721391f7230cb2$export$26238087290c1f5b = v);
+$parcel$export($5b721391f7230cb2$exports, "ctrlLeft", () => $5b721391f7230cb2$export$fb55bfd207eb66bf, (v) => $5b721391f7230cb2$export$fb55bfd207eb66bf = v);
+$parcel$export($5b721391f7230cb2$exports, "spinn", () => $5b721391f7230cb2$export$b082c0b7a6cd56b2, (v) => $5b721391f7230cb2$export$b082c0b7a6cd56b2 = v);
+$parcel$export($5b721391f7230cb2$exports, "iconmd", () => $5b721391f7230cb2$export$ea551f4aac394d83, (v) => $5b721391f7230cb2$export$ea551f4aac394d83 = v);
+$parcel$export($5b721391f7230cb2$exports, "ctrlContainer", () => $5b721391f7230cb2$export$77806bb1d74cd6f6, (v) => $5b721391f7230cb2$export$77806bb1d74cd6f6 = v);
+$parcel$export($5b721391f7230cb2$exports, "sliderWrapper", () => $5b721391f7230cb2$export$b99e7c702abdb77a, (v) => $5b721391f7230cb2$export$b99e7c702abdb77a = v);
+$parcel$export($5b721391f7230cb2$exports, "seekTimeTooltip", () => $5b721391f7230cb2$export$b0904f355cb5d789, (v) => $5b721391f7230cb2$export$b0904f355cb5d789 = v);
+$parcel$export($5b721391f7230cb2$exports, "hide", () => $5b721391f7230cb2$export$fe8985bb6374093c, (v) => $5b721391f7230cb2$export$fe8985bb6374093c = v);
+$parcel$export($5b721391f7230cb2$exports, "title", () => $5b721391f7230cb2$export$fb184b623420d9be, (v) => $5b721391f7230cb2$export$fb184b623420d9be = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsContainer", () => $5b721391f7230cb2$export$22702ef448665b4d, (v) => $5b721391f7230cb2$export$22702ef448665b4d = v);
+$parcel$export($5b721391f7230cb2$exports, "icon", () => $5b721391f7230cb2$export$1ca1ec8b29a4ce27, (v) => $5b721391f7230cb2$export$1ca1ec8b29a4ce27 = v);
+$parcel$export($5b721391f7230cb2$exports, "centerButton", () => $5b721391f7230cb2$export$a2b3dd87d3e471be, (v) => $5b721391f7230cb2$export$a2b3dd87d3e471be = v);
+$parcel$export($5b721391f7230cb2$exports, "centerButtonImage", () => $5b721391f7230cb2$export$502df2ec96816c8c, (v) => $5b721391f7230cb2$export$502df2ec96816c8c = v);
+$parcel$export($5b721391f7230cb2$exports, "rotate", () => $5b721391f7230cb2$export$bb628a54ab399bc9, (v) => $5b721391f7230cb2$export$bb628a54ab399bc9 = v);
+$parcel$export($5b721391f7230cb2$exports, "button", () => $5b721391f7230cb2$export$2ba01fb71ed41cb6, (v) => $5b721391f7230cb2$export$2ba01fb71ed41cb6 = v);
 var $5b721391f7230cb2$export$523cee24344607ef;
-var $5b721391f7230cb2$export$a2b3dd87d3e471be;
-var $5b721391f7230cb2$export$f38465fe307ff1ea;
-var $5b721391f7230cb2$export$5e53b5cc6c2ef6ac;
+var $5b721391f7230cb2$export$ed2652bdb9ef1ad0;
+var $5b721391f7230cb2$export$37c675ad6e14d9ff;
 var $5b721391f7230cb2$export$1f490cbad58081d8;
+var $5b721391f7230cb2$export$641374ffb95bc399;
+var $5b721391f7230cb2$export$e9be0fb78d9ff657;
+var $5b721391f7230cb2$export$5bbce59cbad6e3b7;
+var $5b721391f7230cb2$export$76c7e83ecc9cdf05;
+var $5b721391f7230cb2$export$e8e78c978b129247;
 var $5b721391f7230cb2$export$44601925ebb63135;
 var $5b721391f7230cb2$export$89da14300d534261;
-var $5b721391f7230cb2$export$fb55bfd207eb66bf;
-var $5b721391f7230cb2$export$b99e7c702abdb77a;
-var $5b721391f7230cb2$export$77806bb1d74cd6f6;
 var $5b721391f7230cb2$export$a1b4384913d28591;
-var $5b721391f7230cb2$export$2f388bdb5e147bac;
-var $5b721391f7230cb2$export$208d04ce5dd64049;
-var $5b721391f7230cb2$export$641374ffb95bc399;
-var $5b721391f7230cb2$export$2ba01fb71ed41cb6;
-var $5b721391f7230cb2$export$e2b69c907b9ef440;
-var $5b721391f7230cb2$export$b0904f355cb5d789;
-var $5b721391f7230cb2$export$d9d30bff7354568a;
 var $5b721391f7230cb2$export$5f8d3589eb8441ca;
-var $5b721391f7230cb2$export$cc1adf6fb659c762;
-var $5b721391f7230cb2$export$502df2ec96816c8c;
-var $5b721391f7230cb2$export$49ee957901f7a027;
-var $5b721391f7230cb2$export$26238087290c1f5b;
-var $5b721391f7230cb2$export$bb628a54ab399bc9;
+var $5b721391f7230cb2$export$208d04ce5dd64049;
 var $5b721391f7230cb2$export$934587b1a6f00472;
+var $5b721391f7230cb2$export$54384a8b841c9096;
+var $5b721391f7230cb2$export$5321aef497dbc95;
+var $5b721391f7230cb2$export$2f388bdb5e147bac;
+var $5b721391f7230cb2$export$4bc86dd528c758a3;
 var $5b721391f7230cb2$export$deaf7926095b512d;
-$5b721391f7230cb2$export$e8e78c978b129247 = `VC4pIW_root`;
-$5b721391f7230cb2$export$5bbce59cbad6e3b7 = `VC4pIW_innerOsd`;
-$5b721391f7230cb2$export$e9be0fb78d9ff657 = `VC4pIW_centerBtnHide`;
-$5b721391f7230cb2$export$76c7e83ecc9cdf05 = `VC4pIW_listItem`;
-$5b721391f7230cb2$export$e475d70d0abfaf0c = `VC4pIW_prgsBar`;
-$5b721391f7230cb2$export$5321aef497dbc95 = `VC4pIW_watchTimer`;
-$5b721391f7230cb2$export$4bc86dd528c758a3 = `VC4pIW_centerBtnShow`;
-$5b721391f7230cb2$export$22702ef448665b4d = `VC4pIW_prgsContainer`;
-$5b721391f7230cb2$export$b082c0b7a6cd56b2 = `VC4pIW_spinn`;
-$5b721391f7230cb2$export$b082c0b7a6cd56b2;
-$5b721391f7230cb2$export$54384a8b841c9096 = `VC4pIW_activeIconWrapper`;
-$5b721391f7230cb2$export$ed2652bdb9ef1ad0 = `VC4pIW_toolBar`;
-$5b721391f7230cb2$export$fe8985bb6374093c = `VC4pIW_hide`;
-$5b721391f7230cb2$export$328af1edb566eae3 = `VC4pIW_volCtrlWrapper`;
-$5b721391f7230cb2$export$ea551f4aac394d83 = `VC4pIW_iconmd`;
-$5b721391f7230cb2$export$37c675ad6e14d9ff = `VC4pIW_indicatorIcon`;
-$5b721391f7230cb2$export$1ca1ec8b29a4ce27 = `VC4pIW_icon`;
-$5b721391f7230cb2$export$fb184b623420d9be = `VC4pIW_title`;
+var $5b721391f7230cb2$export$5e53b5cc6c2ef6ac;
+var $5b721391f7230cb2$export$d9d30bff7354568a;
+var $5b721391f7230cb2$export$e2b69c907b9ef440;
+var $5b721391f7230cb2$export$49ee957901f7a027;
+var $5b721391f7230cb2$export$cc1adf6fb659c762;
+var $5b721391f7230cb2$export$328af1edb566eae3;
+var $5b721391f7230cb2$export$e475d70d0abfaf0c;
+var $5b721391f7230cb2$export$f38465fe307ff1ea;
+var $5b721391f7230cb2$export$26238087290c1f5b;
+var $5b721391f7230cb2$export$fb55bfd207eb66bf;
+var $5b721391f7230cb2$export$b082c0b7a6cd56b2;
+var $5b721391f7230cb2$export$ea551f4aac394d83;
+var $5b721391f7230cb2$export$77806bb1d74cd6f6;
+var $5b721391f7230cb2$export$b99e7c702abdb77a;
+var $5b721391f7230cb2$export$b0904f355cb5d789;
+var $5b721391f7230cb2$export$fe8985bb6374093c;
+var $5b721391f7230cb2$export$fb184b623420d9be;
+var $5b721391f7230cb2$export$22702ef448665b4d;
+var $5b721391f7230cb2$export$1ca1ec8b29a4ce27;
+var $5b721391f7230cb2$export$a2b3dd87d3e471be;
+var $5b721391f7230cb2$export$502df2ec96816c8c;
+var $5b721391f7230cb2$export$bb628a54ab399bc9;
+var $5b721391f7230cb2$export$2ba01fb71ed41cb6;
 $5b721391f7230cb2$export$523cee24344607ef = `VC4pIW_volSlider`;
-$5b721391f7230cb2$export$a2b3dd87d3e471be = `VC4pIW_centerButton`;
-$5b721391f7230cb2$export$f38465fe307ff1ea = `VC4pIW_prgsHover`;
-$5b721391f7230cb2$export$5e53b5cc6c2ef6ac = `VC4pIW_settingPopup`;
+$5b721391f7230cb2$export$ed2652bdb9ef1ad0 = `VC4pIW_toolBar`;
+$5b721391f7230cb2$export$37c675ad6e14d9ff = `VC4pIW_indicatorIcon`;
 $5b721391f7230cb2$export$1f490cbad58081d8 = `VC4pIW_iconButtonImage`;
+$5b721391f7230cb2$export$641374ffb95bc399 = `VC4pIW_spinner`;
+$5b721391f7230cb2$export$e9be0fb78d9ff657 = `VC4pIW_centerBtnHide`;
+$5b721391f7230cb2$export$5bbce59cbad6e3b7 = `VC4pIW_innerOsd`;
+$5b721391f7230cb2$export$76c7e83ecc9cdf05 = `VC4pIW_listItem`;
+$5b721391f7230cb2$export$e8e78c978b129247 = `VC4pIW_root`;
 $5b721391f7230cb2$export$44601925ebb63135 = `VC4pIW_sliderProgress`;
 $5b721391f7230cb2$export$89da14300d534261 = `VC4pIW_active`;
-$5b721391f7230cb2$export$fb55bfd207eb66bf = `VC4pIW_ctrlLeft`;
-$5b721391f7230cb2$export$b99e7c702abdb77a = `VC4pIW_sliderWrapper`;
-$5b721391f7230cb2$export$77806bb1d74cd6f6 = `VC4pIW_ctrlContainer`;
 $5b721391f7230cb2$export$a1b4384913d28591 = `VC4pIW_osdBar`;
-$5b721391f7230cb2$export$2f388bdb5e147bac = `VC4pIW_prgsWrapper`;
-$5b721391f7230cb2$export$208d04ce5dd64049 = `VC4pIW_settingWrapper`;
-$5b721391f7230cb2$export$641374ffb95bc399 = `VC4pIW_spinner`;
-$5b721391f7230cb2$export$2ba01fb71ed41cb6 = `VC4pIW_button`;
-$5b721391f7230cb2$export$e2b69c907b9ef440 = `VC4pIW_scrubber`;
-$5b721391f7230cb2$export$b0904f355cb5d789 = `VC4pIW_seekTimeTooltip`;
-$5b721391f7230cb2$export$d9d30bff7354568a = `VC4pIW_settingItem`;
 $5b721391f7230cb2$export$5f8d3589eb8441ca = `VC4pIW_video`;
-$5b721391f7230cb2$export$cc1adf6fb659c762 = `VC4pIW_controls`;
-$5b721391f7230cb2$export$502df2ec96816c8c = `VC4pIW_centerButtonImage`;
-$5b721391f7230cb2$export$49ee957901f7a027 = `VC4pIW_prgsContainerWrapper`;
-$5b721391f7230cb2$export$26238087290c1f5b = `VC4pIW_osdActive`;
-$5b721391f7230cb2$export$bb628a54ab399bc9 = `VC4pIW_rotate`;
+$5b721391f7230cb2$export$208d04ce5dd64049 = `VC4pIW_settingWrapper`;
 $5b721391f7230cb2$export$934587b1a6f00472 = `VC4pIW_iconSmall`;
+$5b721391f7230cb2$export$54384a8b841c9096 = `VC4pIW_activeIconWrapper`;
+$5b721391f7230cb2$export$5321aef497dbc95 = `VC4pIW_watchTimer`;
+$5b721391f7230cb2$export$2f388bdb5e147bac = `VC4pIW_prgsWrapper`;
+$5b721391f7230cb2$export$4bc86dd528c758a3 = `VC4pIW_centerBtnShow`;
 $5b721391f7230cb2$export$deaf7926095b512d = `VC4pIW_ctrlRight`;
+$5b721391f7230cb2$export$5e53b5cc6c2ef6ac = `VC4pIW_settingPopup`;
+$5b721391f7230cb2$export$d9d30bff7354568a = `VC4pIW_settingItem`;
+$5b721391f7230cb2$export$e2b69c907b9ef440 = `VC4pIW_scrubber`;
+$5b721391f7230cb2$export$49ee957901f7a027 = `VC4pIW_prgsContainerWrapper`;
+$5b721391f7230cb2$export$cc1adf6fb659c762 = `VC4pIW_controls`;
+$5b721391f7230cb2$export$328af1edb566eae3 = `VC4pIW_volCtrlWrapper`;
+$5b721391f7230cb2$export$e475d70d0abfaf0c = `VC4pIW_prgsBar`;
+$5b721391f7230cb2$export$f38465fe307ff1ea = `VC4pIW_prgsHover`;
+$5b721391f7230cb2$export$26238087290c1f5b = `VC4pIW_osdActive`;
+$5b721391f7230cb2$export$fb55bfd207eb66bf = `VC4pIW_ctrlLeft`;
+$5b721391f7230cb2$export$b082c0b7a6cd56b2 = `VC4pIW_spinn`;
+$5b721391f7230cb2$export$b082c0b7a6cd56b2;
+$5b721391f7230cb2$export$ea551f4aac394d83 = `VC4pIW_iconmd`;
+$5b721391f7230cb2$export$77806bb1d74cd6f6 = `VC4pIW_ctrlContainer`;
+$5b721391f7230cb2$export$b99e7c702abdb77a = `VC4pIW_sliderWrapper`;
+$5b721391f7230cb2$export$b0904f355cb5d789 = `VC4pIW_seekTimeTooltip`;
+$5b721391f7230cb2$export$fe8985bb6374093c = `VC4pIW_hide`;
+$5b721391f7230cb2$export$fb184b623420d9be = `VC4pIW_title`;
+$5b721391f7230cb2$export$22702ef448665b4d = `VC4pIW_prgsContainer`;
+$5b721391f7230cb2$export$1ca1ec8b29a4ce27 = `VC4pIW_icon`;
+$5b721391f7230cb2$export$a2b3dd87d3e471be = `VC4pIW_centerButton`;
+$5b721391f7230cb2$export$502df2ec96816c8c = `VC4pIW_centerButtonImage`;
+$5b721391f7230cb2$export$bb628a54ab399bc9 = `VC4pIW_rotate`;
+$5b721391f7230cb2$export$2ba01fb71ed41cb6 = `VC4pIW_button`;
 
 
 
@@ -155,7 +155,9 @@ const $b44f59079fca3750$export$bca14c5b3b88a9c9 = {
         progressLoadedColor: "blue",
         settingsBGColor: "blue",
         settingsTextColor: "red",
-        settingsHoverColor: "green"
+        settingsHoverColor: "green",
+        tooltipTextColor: "blue",
+        tooltipBGColor: "pink"
     },
     spacing: {
         padding: "6px",
@@ -1097,7 +1099,9 @@ const $149c1bd638913645$var$defaultConfig = {
             progressLoadedColor: "",
             settingsBGColor: "",
             settingsTextColor: "",
-            settingsHoverColor: ""
+            settingsHoverColor: "",
+            tooltipTextColor: "",
+            tooltipBGColor: ""
         },
         spacing: {
             padding: "",
@@ -1203,7 +1207,9 @@ const $149c1bd638913645$var$defaultConfig = {
                 "--progressLoadedColor": this.theme?.colors?.progressLoadedColor,
                 "--settingsBGColor": this.theme?.colors?.settingsBGColor,
                 "--settingsTextColor": this.theme?.colors?.settingsTextColor,
-                "--settingsHoverColor": this.theme?.colors?.settingsHoverColor
+                "--settingsHoverColor": this.theme?.colors?.settingsHoverColor,
+                "--tooltipTextColor": this.theme?.colors?.tooltipTextColor,
+                "--tooltipBGColor": this.theme?.colors?.tooltipBGColor
             };
             setRootVariables(colorVariables);
         }

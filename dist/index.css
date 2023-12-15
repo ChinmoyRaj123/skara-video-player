@@ -29,6 +29,8 @@
   --settingsBGColor: violet;
   --settingsTextColor: red;
   --settingsHoverColor: green;
+  --tooltipTextColor: blue;
+  --tooltipBGColor: pink;
 }
 
 * {
@@ -202,8 +204,8 @@
 }
 
 .VC4pIW_seekTimeTooltip {
-  color: var(--progressLoadedColor);
-  background-color: var(--progressBGColor);
+  color: var(--tooltipTextColor);
+  background-color: var(--tooltipBGColor);
   opacity: 0;
   text-align: center;
   padding: 6px 12px;

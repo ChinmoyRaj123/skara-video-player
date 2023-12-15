@@ -75,7 +75,9 @@ const defaultConfig: PlayerConfig = {
       progressLoadedColor: "",
       settingsBGColor: "",
       settingsTextColor: "",
-      settingsHoverColor: ""
+      settingsHoverColor: "",
+      tooltipTextColor: "",
+      tooltipBGColor: "",
     },
     spacing: {
       padding: "",
@@ -238,6 +240,8 @@ class SkaraPlayer {
         "--settingsBGColor": this.theme?.colors?.settingsBGColor,
         "--settingsTextColor": this.theme?.colors?.settingsTextColor,
         "--settingsHoverColor": this.theme?.colors?.settingsHoverColor,
+        "--tooltipTextColor": this.theme?.colors?.tooltipTextColor,
+        "--tooltipBGColor": this.theme?.colors?.tooltipBGColor,
 
       }
       setRootVariables(colorVariables)
