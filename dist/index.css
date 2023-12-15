@@ -203,7 +203,7 @@
 
 .VC4pIW_seekTimeTooltip {
   color: var(--progressLoadedColor);
-  background-color: var(--skaraVideoPopupBg);
+  background-color: var(--progressBGColor);
   opacity: 0;
   text-align: center;
   padding: 6px 12px;
