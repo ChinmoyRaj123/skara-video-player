@@ -49,7 +49,7 @@
   padding: var(--playerControlMargin);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   position: absolute;
   top: 0;
   left: 0;
@@ -62,6 +62,27 @@
 
 .title {
   color: var(--skaraVideoSecondaryColor);
+}
+
+.backArrowMainDiv {
+  width: 33.33%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.titleMainDiv {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullScrMainDiv {
+  width: 33.33%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .osdBar {
