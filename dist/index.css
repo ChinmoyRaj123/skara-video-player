@@ -18,6 +18,7 @@
   --centerIconButtonSize: 80px;
   --iconButtonCornerRadius: 50%;
   --iconButtonPadding: 10px;
+  --iconButtonSize: 36px;
   --progressBarHeight: "4px";
   --progressBarHoverScale: 1.8;
   --centerIconButtonColor: red;
@@ -536,11 +537,10 @@
 
 .VC4pIW_controls {
   box-sizing: border-box;
-  padding: var(--iconButtonPadding);
   border-radius: var(--iconButtonCornerRadius);
   background-color: var(--iconButtonColor);
-  height: 36px;
-  width: 36px;
+  height: var(--iconButtonSize);
+  width: var(--iconButtonSize);
   cursor: pointer;
 }
 
@@ -586,7 +586,6 @@
   width: var(--centerIconButtonSize);
   background-color: var(--centerIconButtonColor);
   border-radius: var(--centerIconButtonCornerRadius);
-  padding: var(--centerIconButtonPadding);
   position: absolute;
   top: 50%;
   left: 50%;

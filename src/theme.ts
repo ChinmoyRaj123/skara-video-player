@@ -26,6 +26,7 @@ export const theme = {
     centerIconButtonSize: "80px",
     iconButtonCornerRadius: "4px",
     iconButtonPadding: "4px",
+    iconButtonSize: "36px",
     progressBarHeight: "4px",
     progressBarHoverScale: "1.8"
   }

@@ -92,6 +92,7 @@ const defaultConfig: PlayerConfig = {
       centerIconButtonSize: "",
       iconButtonCornerRadius: "",
       iconButtonPadding: "",
+      iconButtonSize: "",
       progressBarHeight: "",
       progressBarHoverScale: ""
     },
@@ -231,6 +232,7 @@ class SkaraPlayer {
         "--centerIconButtonSize": this.theme?.spacing?.centerIconButtonSize,
         "--iconButtonCornerRadius": this.theme?.spacing?.iconButtonCornerRadius,
         "--iconButtonPadding": this.theme?.spacing?.iconButtonPadding,
+        "--iconButtonSize": this.theme?.spacing?.iconButtonSize,
         "--progressBarHeight": this.theme?.spacing?.progressBarHeight,
         "--progressBarHoverScale": this.theme?.spacing?.progressBarHoverScale,
 

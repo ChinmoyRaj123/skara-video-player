@@ -27,6 +27,7 @@ declare const theme: {
         centerIconButtonSize: string;
         iconButtonCornerRadius: string;
         iconButtonPadding: string;
+        iconButtonSize: string;
         progressBarHeight: string;
         progressBarHoverScale: string;
     };
@@ -356,6 +357,7 @@ export default class SkaraPlayer {
             centerIconButtonSize: string;
             iconButtonCornerRadius: string;
             iconButtonPadding: string;
+            iconButtonSize: string;
             progressBarHeight: string;
             progressBarHoverScale: string;
         };
