@@ -16,6 +16,7 @@
   --playerCornerRadius: "0px";
   --centerIconButtonCornerRadius: 50%;
   --centerIconButtonPadding: 10px;
+  --centerIconButtonSize: 80px;
   --iconButtonCornerRadius: 50%;
   --iconButtonPadding: 10px;
   --progressBarHeight: "4px";
@@ -633,8 +634,8 @@
 .centerButton {
   box-sizing: border-box;
   cursor: pointer;
-  height: 80px;
-  width: 80px;
+  height: var(--centerIconButtonSize);
+  width: var(--centerIconButtonSize);
   background-color: var(--centerIconButtonColor);
   border-radius: var(--centerIconButtonCornerRadius);
   position: absolute;

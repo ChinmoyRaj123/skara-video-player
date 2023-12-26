@@ -24,6 +24,7 @@ declare const theme: {
         playerCornerRadius: string;
         centerIconButtonCornerRadius: string;
         centerIconButtonPadding: string;
+        centerIconButtonSize: string;
         iconButtonCornerRadius: string;
         iconButtonPadding: string;
         progressBarHeight: string;
@@ -119,6 +120,7 @@ export type PlayerConfig = {
     autoplay: boolean;
     muted: boolean;
     loop: boolean;
+    showCenterPlayPause: boolean;
     showPlayPause: boolean;
     showProgressBar: boolean;
     showTimestamp: boolean;
@@ -351,6 +353,7 @@ export default class SkaraPlayer {
             playerCornerRadius: string;
             centerIconButtonCornerRadius: string;
             centerIconButtonPadding: string;
+            centerIconButtonSize: string;
             iconButtonCornerRadius: string;
             iconButtonPadding: string;
             progressBarHeight: string;

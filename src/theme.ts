@@ -23,6 +23,7 @@ export const theme = {
     playerCornerRadius: "12px",
     centerIconButtonCornerRadius: "4px",
     centerIconButtonPadding: "4px",
+    centerIconButtonSize: "80px",
     iconButtonCornerRadius: "4px",
     iconButtonPadding: "4px",
     progressBarHeight: "4px",

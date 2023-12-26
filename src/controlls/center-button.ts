@@ -12,7 +12,7 @@ class CenterButton implements Controll {
     this.visible = false;
     this._el = document.createElement('div');
     this._el.className = styles.centerButton;
-    if (!config.showPlayPause) this._el.style.display = "none";
+    if (!config.showCenterPlayPause) this._el.style.display = "none";
     this._iconel = document.createElement('img');
     this._iconel.src = Material.PlayIcon;
     this._iconel.className = styles.centerButtonImage;

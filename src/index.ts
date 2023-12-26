@@ -27,6 +27,7 @@ export type PlayerConfig = {
   autoplay: boolean
   muted: boolean
   loop: boolean
+  showCenterPlayPause: boolean
   showPlayPause: boolean
   showProgressBar: boolean
   showTimestamp: boolean
@@ -55,6 +56,7 @@ const defaultConfig: PlayerConfig = {
   autoplay: false,
   muted: false,
   loop: false,
+  showCenterPlayPause: true,
   showPlayPause: true,
   showProgressBar: true,
   showTimestamp: true,
@@ -87,6 +89,7 @@ const defaultConfig: PlayerConfig = {
       playerCornerRadius: "",
       centerIconButtonCornerRadius: "",
       centerIconButtonPadding: "",
+      centerIconButtonSize: "",
       iconButtonCornerRadius: "",
       iconButtonPadding: "",
       progressBarHeight: "",
@@ -225,6 +228,7 @@ class SkaraPlayer {
         "--playerCornerRadius": this.theme?.spacing?.playerCornerRadius,
         "--centerIconButtonCornerRadius": this.theme?.spacing?.centerIconButtonCornerRadius,
         "--centerIconButtonPadding": this.theme?.spacing?.centerIconButtonPadding,
+        "--centerIconButtonSize": this.theme?.spacing?.centerIconButtonSize,
         "--iconButtonCornerRadius": this.theme?.spacing?.iconButtonCornerRadius,
         "--iconButtonPadding": this.theme?.spacing?.iconButtonPadding,
         "--progressBarHeight": this.theme?.spacing?.progressBarHeight,
