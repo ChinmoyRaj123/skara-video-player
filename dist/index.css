@@ -537,6 +537,7 @@
 
 .VC4pIW_controls {
   box-sizing: border-box;
+  padding: var(--iconButtonPadding);
   border-radius: var(--iconButtonCornerRadius);
   background-color: var(--iconButtonColor);
   height: var(--iconButtonSize);
@@ -586,6 +587,7 @@
   width: var(--centerIconButtonSize);
   background-color: var(--centerIconButtonColor);
   border-radius: var(--centerIconButtonCornerRadius);
+  padding: var(--centerIconButtonPadding);
   position: absolute;
   top: 50%;
   left: 50%;

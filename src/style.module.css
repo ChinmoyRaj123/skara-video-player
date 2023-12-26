@@ -588,7 +588,7 @@
 
 .controls {
   box-sizing: border-box;
-  /* padding: var(--iconButtonPadding); */
+  padding: var(--iconButtonPadding);
   border-radius: var(--iconButtonCornerRadius);
   background-color: var(--iconButtonColor);
   height: var(--iconButtonSize);
@@ -643,8 +643,8 @@
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
+  padding: var(--centerIconButtonPadding);
   /* transition: all 200s ease-out; */
-  /* padding: var(--centerIconButtonPadding); */
 }
 
 .centerButton:hover {
