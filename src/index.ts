@@ -253,7 +253,9 @@ class SkaraPlayer {
     }
 
     // Attch the idle and inactivity checker
-    window.onload = () => this.idleHandler();
+    window.onload = () => {
+      this.idleHandler()
+    };
 
     // The spinner while player waits for data
     this._spinner = new Spinner();
@@ -281,6 +283,7 @@ class SkaraPlayer {
    * Starts the player 
    */
   async start() {
+    this.idleHandler()
     // let fileType
     // const hlsarr = ["audio/x-mpegurl", "application/vnd.apple.mpegurl", "application/x-mpegurl"]
     // const r = await fetch(this.config.src, { method: 'HEAD' })
@@ -608,36 +611,47 @@ class SkaraPlayer {
       document.addEventListener(name, resetTimer, true);
     });
     this._osdBar.element.addEventListener('mouseenter', () => {
+      console.log("mousenter osd");
       this.showCtrls()
       clearTimeout(time)
     })
     this._osdBar.element.addEventListener('mouseleave', () => {
+      console.log("mouseleave osd");
       this.hideCtrls()
       resetTimer()
     })
     this._osdBar.element.addEventListener('mousemove', () => {
+      console.log("mousemove osd");
       this.showCtrls()
       clearTimeout(time)
     })
     this._toolBar.element.addEventListener('mouseenter', () => {
+      console.log("mousenter tool");
       this.showCtrls()
       clearTimeout(time)
     })
     this._toolBar.element.addEventListener('mouseleave', () => {
+      console.log("mouseleave tool");
       this.hideCtrls()
       resetTimer()
     })
     this._toolBar.element.addEventListener('mousemove', () => {
+      console.log("mousemove tool");
       this.showCtrls()
       clearTimeout(time)
     })
 
     this._videoEl.addEventListener('mouseenter', () => {
+      console.log("mousenter");
       if (window.navigator.maxTouchPoints > 0) return;
       this.showCtrls();
     })
-    this._videoEl.addEventListener('mouseleave', () => this.hideCtrls())
+    this._videoEl.addEventListener('mouseleave', () => {
+      console.log("mouseleave");
+      this.hideCtrls()
+    })
     this._videoEl.addEventListener('mousemove', () => {
+      console.log("mousemove");
       if (window.navigator.maxTouchPoints > 0) return;
       this.showCtrls();
     })
