@@ -160,7 +160,6 @@ class SkaraPlayer {
    * @returns SkaraPlayer
    */
   constructor(el: HTMLDivElement | string, public config: PlayerConfig = defaultConfig) {
-
     // Setting default variables
     this._prgsBar = null;
     this.events = {}
