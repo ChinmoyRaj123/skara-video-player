@@ -329,6 +329,9 @@ class SettingControl implements Controll {
   public get element() {
     return this._el;
   }
+  public get innerElement() {
+    return this._el.firstChild as HTMLElement;
+  }
   private getChild(el: HTMLElement) {
     if (!el.hasChildNodes()) return [el];
     const allChilds: Array<HTMLElement> = [];

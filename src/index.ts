@@ -685,16 +685,15 @@ class SkaraPlayer {
   private attachEventListeners() {
     document.addEventListener('click', (e) => {
       const target = e.target;
-
-      if (this._setting.element.isSameNode(target as HTMLElement)) return;
-
+      if (this._setting.innerElement.isSameNode(target as HTMLElement)) {
+        return
+      };
       if (this._setting.contains(target as HTMLElement)) {
         return;
       }
-
-      // if (this._setting.popupVisible) {
-      //   this._setting.hide();
-      // }
+      if (this._setting.popupVisible) {
+        this._setting.hide();
+      }
     });
 
     this._videoEl.addEventListener('click', (_) => {

@@ -90,6 +90,7 @@ declare class SettingControl implements Controll {
     createWindow({ player, levels, hls }: CreateSettingWindowProps): HTMLElement;
     createLevelSelector(levels: Level[], hls: Hls): void;
     get element(): HTMLElement;
+    get innerElement(): HTMLElement;
     contains(el: HTMLElement): boolean;
 }
 declare class Spinner {
