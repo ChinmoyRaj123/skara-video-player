@@ -618,13 +618,7 @@
   background-color: var(--centerIconButtonHoverColor);
 }
 
-.VC4pIW_centerButtonImage {
-  width: 100%;
-  height: 100%;
-  padding-left: 7%;
-}
-
-.VC4pIW_iconButtonImage {
+.VC4pIW_centerButtonImage, .VC4pIW_iconButtonImage {
   width: 100%;
   height: 100%;
 }
