@@ -115,6 +115,7 @@ declare class Toolbar implements Controll {
 }
 export type PlayerConfig = {
     src: string;
+    mediaType: string;
     height?: string;
     width?: string;
     theme?: Theme;

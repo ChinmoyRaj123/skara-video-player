@@ -20,6 +20,7 @@ import OrientationLock from "./controlls/orientation"
 
 export type PlayerConfig = {
   src: string
+  mediaType: string
   height?: string
   width?: string
   theme?: Theme
@@ -53,6 +54,7 @@ type EventName = 'loaded' |
 const defaultConfig: PlayerConfig = {
   title: "",
   src: "",
+  mediaType: "",
   autoplay: false,
   muted: false,
   loop: false,
@@ -288,62 +290,62 @@ class SkaraPlayer {
     // const hlsarr = ["audio/x-mpegurl", "application/vnd.apple.mpegurl", "application/x-mpegurl"]
     // const r = await fetch(this.config.src, { method: 'HEAD' })
     // fileType = r.headers.get('Content-Type')
-    // if (hlsarr.includes(fileType?.toLowerCase() as string)) {
-    if (Hls.isSupported()) {
-      this.hls = new Hls()
-      this.hls.loadSource(this.config.src)
-      this.hls.attachMedia(this._videoEl)
-      this.hls.on(Hls.Events.MEDIA_ATTACHED, function () {
-        console.log('video and hls.js are now bound together !');
-      });
-      this.hls.on(Hls.Events.LEVEL_LOADED, () => {
-        if (this.levelLoaded) return
-        const setting = this._setting.createWindow({ player: this, levels: this.hls?.levels, hls: this.hls as Hls })
-        this._root.appendChild(setting)
-        this.levelLoaded = true
-      });
+    if (this.config.mediaType === "m3u8") {
+      if (Hls.isSupported()) {
+        this.hls = new Hls()
+        this.hls.loadSource(this.config.src)
+        this.hls.attachMedia(this._videoEl)
+        this.hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+          console.log('video and hls.js are now bound together !');
+        });
+        this.hls.on(Hls.Events.LEVEL_LOADED, () => {
+          if (this.levelLoaded) return
+          const setting = this._setting.createWindow({ player: this, levels: this.hls?.levels, hls: this.hls as Hls })
+          this._root.appendChild(setting)
+          this.levelLoaded = true
+        });
 
-      this.hls.on(Hls.Events.LEVEL_SWITCHED, () => {
-        // TODO: when fixed from setting itself remove this code
-        const activeIconWrapper = document.querySelectorAll(".iconWrapper")
-        activeIconWrapper.forEach((item) => {
-          if (item.hasChildNodes()) {
-            item.firstChild?.remove()
-          }
-          if (item.getAttribute('data-id') === `quality_${this.hls?.currentLevel}`) {
-            const activeIcon = document.createElement('div');
-            activeIcon.className = styles.indicatorIcon
-            item.appendChild(activeIcon)
+        this.hls.on(Hls.Events.LEVEL_SWITCHED, () => {
+          // TODO: when fixed from setting itself remove this code
+          const activeIconWrapper = document.querySelectorAll(".iconWrapper")
+          activeIconWrapper.forEach((item) => {
+            if (item.hasChildNodes()) {
+              item.firstChild?.remove()
+            }
+            if (item.getAttribute('data-id') === `quality_${this.hls?.currentLevel}`) {
+              const activeIcon = document.createElement('div');
+              activeIcon.className = styles.indicatorIcon
+              item.appendChild(activeIcon)
+            }
+          });
+          this._setting.quality = this.hls?.currentLevel as number;
+        })
+
+        this.hls.on(Hls.Events.ERROR, (_, data) => {
+          if (data.fatal) {
+            switch (data.type) {
+              case Hls.ErrorTypes.NETWORK_ERROR:
+                // try to recover network error
+                console.log('fatal network error encountered, try to recover');
+                this.hls?.startLoad();
+                break;
+              case Hls.ErrorTypes.MEDIA_ERROR:
+                console.log('fatal media error encountered, try to recover');
+                this.hls?.recoverMediaError();
+                break;
+              default:
+                // cannot recover
+                this.hls?.destroy();
+                break;
+            }
           }
         });
-        this._setting.quality = this.hls?.currentLevel as number;
-      })
-
-      this.hls.on(Hls.Events.ERROR, (_, data) => {
-        if (data.fatal) {
-          switch (data.type) {
-            case Hls.ErrorTypes.NETWORK_ERROR:
-              // try to recover network error
-              console.log('fatal network error encountered, try to recover');
-              this.hls?.startLoad();
-              break;
-            case Hls.ErrorTypes.MEDIA_ERROR:
-              console.log('fatal media error encountered, try to recover');
-              this.hls?.recoverMediaError();
-              break;
-            default:
-              // cannot recover
-              this.hls?.destroy();
-              break;
-          }
-        }
-      });
+      } else {
+        console.log("Your browser does not support hls streaming")
+      }
     } else {
-      console.log("Your browser does not support hls streaming")
+      this._videoEl.src = this.config.src
     }
-    // } else {
-    //   this._videoEl.src = this.config.src
-    // }
   }
 
   /**
