@@ -20,6 +20,7 @@
   --iconButtonPadding: 10px;
   --iconButtonSize: 36px;
   --progressBarHeight: "4px";
+  --volumeBarHeight: "4px";
   --progressBarHoverScale: 1.8;
   --centerIconButtonColor: red;
   --centerIconButtonHoverColor: brown;
@@ -296,8 +297,8 @@
 
 .VC4pIW_volSlider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 14px;
-  height: 14px;
+  width: calc(10px + var(--volumeBarHeight));
+  height: calc(10px + var(--volumeBarHeight));
   background: var(--volumeBarBGColor);
   box-shadow: none;
   border: none;
@@ -306,7 +307,7 @@
 }
 
 .VC4pIW_volSlider::-webkit-slider-runnable-track {
-  height: 4px;
+  height: var(--volumeBarHeight);
   background: var(--volumeBarForegroundColor);
   box-shadow: none;
   border: none;
@@ -342,8 +343,8 @@
 }
 
 .VC4pIW_volSlider::-moz-range-thumb {
-  width: 14px;
-  height: 14px;
+  width: calc(10px + var(--volumeBarHeight));
+  height: calc(10px + var(--volumeBarHeight));
   background: var(--volumeBarBGColor);
   box-shadow: none;
   border: none;
@@ -351,7 +352,7 @@
 }
 
 .VC4pIW_volSlider::-moz-range-track {
-  height: 4px;
+  height: var(--volumeBarHeight);
   background: var(--volumeBarForegroundColor);
   box-shadow: none;
   border: none;
@@ -397,8 +398,8 @@
 }
 
 .VC4pIW_volSlider::-ms-thumb {
-  width: 14px;
-  height: 14px;
+  width: calc(10px + var(--volumeBarHeight));
+  height: calc(10px + var(--volumeBarHeight));
   background: var(--volumeBarBGColor);
   box-shadow: none;
   box-sizing: border-box;
@@ -408,7 +409,7 @@
 }
 
 .VC4pIW_volSlider::-ms-track {
-  height: 4px;
+  height: var(--volumeBarHeight);
   background: var(--volumeBarForegroundColor);
   box-shadow: none;
   box-sizing: border-box;
@@ -433,7 +434,7 @@
 }
 
 .VC4pIW_volSlider.VC4pIW_sliderProgress::-ms-fill-lower {
-  height: 4px;
+  height: var(--volumeBarHeight);
   margin: -undefined 0 -undefined -undefined;
   background: var(--volumeBarBGColor);
   border: none;

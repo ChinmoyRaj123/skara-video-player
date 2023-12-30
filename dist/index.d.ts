@@ -33,6 +33,7 @@ declare const theme: {
         iconButtonSize: string;
         progressBarHeight: string;
         progressBarHoverScale: string;
+        volumeBarHeight: string;
     };
 };
 type Theme = typeof theme;
@@ -369,6 +370,7 @@ export default class SkaraPlayer {
             iconButtonSize: string;
             progressBarHeight: string;
             progressBarHoverScale: string;
+            volumeBarHeight: string;
         };
     };
 }

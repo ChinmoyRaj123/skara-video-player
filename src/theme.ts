@@ -31,7 +31,8 @@ export const theme = {
     iconButtonPadding: "4px",
     iconButtonSize: "36px",
     progressBarHeight: "4px",
-    progressBarHoverScale: "1.8"
+    progressBarHoverScale: "1.8",
+    volumeBarHeight: "4px",
   }
 }
 

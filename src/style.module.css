@@ -21,6 +21,7 @@
   --iconButtonPadding: 10px;
   --iconButtonSize: 36px;
   --progressBarHeight: "4px";
+  --volumeBarHeight: "4px";
   --progressBarHoverScale: 1.8;
 
   --centerIconButtonColor: red;
@@ -339,8 +340,8 @@
 /*webkit*/
 .volSlider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 14px;
-  height: 14px;
+  width: calc(10px + var(--volumeBarHeight));
+  height: calc(10px + var(--volumeBarHeight));
   border-radius: 50%;
   background: var(--volumeBarBGColor);
   border: none;
@@ -349,7 +350,7 @@
 }
 
 .volSlider::-webkit-slider-runnable-track {
-  height: 4px;
+  height: var(--volumeBarHeight);
   border: none;
   border-radius: 0;
   background: var(--volumeBarForegroundColor);
@@ -386,8 +387,8 @@
 
 /*mozilla*/
 .volSlider::-moz-range-thumb {
-  width: 14px;
-  height: 14px;
+  width: calc(10px+ var(--volumeBarHeight));
+  height: calc(10px+ var(--volumeBarHeight));
   border-radius: 50%;
   background: var(--volumeBarBGColor);
   border: none;
@@ -395,7 +396,7 @@
 }
 
 .volSlider::-moz-range-track {
-  height: 4px;
+  height: var(--volumeBarHeight);
   border: none;
   border-radius: 0;
   background: var(--volumeBarForegroundColor);
@@ -442,8 +443,8 @@
 }
 
 .volSlider::-ms-thumb {
-  width: 14px;
-  height: 14px;
+  width: calc(10px+ var(--volumeBarHeight));
+  height: calc(10px+ var(--volumeBarHeight));
   border-radius: 50%;
   background: var(--volumeBarBGColor);
   border: none;
@@ -453,7 +454,7 @@
 }
 
 .volSlider::-ms-track {
-  height: 4px;
+  height: var(--volumeBarHeight);
   border-radius: 0;
   background: var(--volumeBarForegroundColor);
   border: none;
@@ -478,7 +479,7 @@
 }
 
 .volSlider.sliderProgress::-ms-fill-lower {
-  height: 4px;
+  height: var(--volumeBarHeight);
   border-radius: 0px 0 0 0px;
   margin: -undefined 0 -undefined -undefined;
   background: var(--volumeBarBGColor);

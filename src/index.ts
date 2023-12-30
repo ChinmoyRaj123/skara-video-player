@@ -101,7 +101,8 @@ const defaultConfig: PlayerConfig = {
       iconButtonPadding: "",
       iconButtonSize: "",
       progressBarHeight: "",
-      progressBarHoverScale: ""
+      progressBarHoverScale: "",
+      volumeBarHeight: "",
     },
   }
 }
@@ -241,6 +242,7 @@ class SkaraPlayer {
         "--iconButtonSize": this.theme?.spacing?.iconButtonSize,
         "--progressBarHeight": this.theme?.spacing?.progressBarHeight,
         "--progressBarHoverScale": this.theme?.spacing?.progressBarHoverScale,
+        "--volumeBarHeight": this.theme?.spacing?.volumeBarHeight,
 
         "--centerIconButtonColor": this.theme?.colors?.centerIconButtonColor,
         "--centerIconButtonHoverColor": this.theme?.colors?.centerIconButtonHoverColor,
