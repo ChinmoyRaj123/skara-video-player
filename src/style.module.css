@@ -30,6 +30,9 @@
   --brandColor: yellow;
   --progressBGColor: green;
   --progressLoadedColor: blue;
+  --progressForegroundColor: green;
+  --volumeBarBGColor: red;
+  --volumeBarForegroundColor: green;
   --settingsBGColor: violet;
   --settingsTextColor: red;
   --settingsHoverColor: green;
@@ -339,7 +342,7 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
   border: none;
   box-shadow: none;
   margin-top: calc(4px * 0.5 - 14px * 0.5);
@@ -349,36 +352,36 @@
   height: 4px;
   border: none;
   border-radius: 0;
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
   box-shadow: none;
 }
 
 .volSlider::-webkit-slider-thumb:hover {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .volSlider:hover::-webkit-slider-runnable-track {
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
 }
 
 .volSlider::-webkit-slider-thumb:active {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .volSlider:active::-webkit-slider-runnable-track {
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
 }
 
 .volSlider.sliderProgress::-webkit-slider-runnable-track {
-  background: linear-gradient(var(--skaraVideoPrimaryColor), var(--skaraVideoPrimaryColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
 }
 
 .volSlider.sliderProgress:hover::-webkit-slider-runnable-track {
-  background: linear-gradient(var(--skaraVideoPrimaryColor), var(--skaraVideoPrimaryColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
 }
 
 .volSlider.sliderProgress:active::-webkit-slider-runnable-track {
-  background: linear-gradient(var(--skaraVideoPrimaryColor), var(--skaraVideoPrimaryColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
 }
 
 /*mozilla*/
@@ -386,7 +389,7 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
   border: none;
   box-shadow: none;
 }
@@ -395,36 +398,36 @@
   height: 4px;
   border: none;
   border-radius: 0;
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
   box-shadow: none;
 }
 
 .volSlider::-moz-range-thumb:hover {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .volSlider:hover::-moz-range-track {
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
 }
 
 .volSlider::-moz-range-thumb:active {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .volSlider:active::-moz-range-track {
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
 }
 
 .volSlider.sliderProgress::-moz-range-track {
-  background: linear-gradient(var(--skaraVideoPrimaryColor), var(--skaraVideoPrimaryColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
 }
 
 .volSlider.sliderProgress:hover::-moz-range-track {
-  background: linear-gradient(var(--skaraVideoPrimaryColor), var(--skaraVideoPrimaryColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
 }
 
 .volSlider.sliderProgress:active::-moz-range-track {
-  background: linear-gradient(var(--skaraVideoPrimaryColor), var(--skaraVideoPrimaryColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
 }
 
 /*ms*/
@@ -442,7 +445,7 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
   border: none;
   box-shadow: none;
   margin-top: 0;
@@ -452,43 +455,43 @@
 .volSlider::-ms-track {
   height: 4px;
   border-radius: 0;
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
   border: none;
   box-shadow: none;
   box-sizing: border-box;
 }
 
 .volSlider::-ms-thumb:hover {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .volSlider:hover::-ms-track {
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
 }
 
 .volSlider::-ms-thumb:active {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .volSlider:active::-ms-track {
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
 }
 
 .volSlider.sliderProgress::-ms-fill-lower {
   height: 4px;
   border-radius: 0px 0 0 0px;
   margin: -undefined 0 -undefined -undefined;
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
   border: none;
   border-right-width: 0;
 }
 
 .volSlider.sliderProgress:hover::-ms-fill-lower {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .volSlider.sliderProgress:active::-ms-fill-lower {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .volCtrlWrapper {

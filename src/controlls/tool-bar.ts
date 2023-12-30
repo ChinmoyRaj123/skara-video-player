@@ -17,6 +17,7 @@ class Toolbar implements Controll {
     this._el = document.createElement('div');
     this._el.className = styles.toolBar;
     this._backBtn = createCtrl({ icon: Material.ArrowBackIcon });
+    if (!config.showBackButton) this._backBtn.style.visibility = "hidden";
     this._backBtn.addEventListener('click', () => {
       history.back();
     });

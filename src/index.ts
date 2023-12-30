@@ -36,6 +36,7 @@ export type PlayerConfig = {
   showVideoTitle: boolean
   showSettings: boolean
   showFullscreen: boolean
+  showBackButton: boolean
 }
 
 type EventName = 'loaded' |
@@ -66,6 +67,7 @@ const defaultConfig: PlayerConfig = {
   showVideoTitle: true,
   showSettings: true,
   showFullscreen: true,
+  showBackButton: true,
   theme: {
     colors: {
       primary: "",
@@ -77,6 +79,9 @@ const defaultConfig: PlayerConfig = {
       brandColor: "",
       progressBGColor: "",
       progressLoadedColor: "",
+      progressForegroundColor: "",
+      volumeBarBGColor: "",
+      volumeBarForegroundColor: "",
       settingsBGColor: "",
       settingsTextColor: "",
       settingsHoverColor: "",
@@ -244,6 +249,9 @@ class SkaraPlayer {
         "--brandColor": this.theme?.colors?.brandColor,
         "--progressBGColor": this.theme?.colors?.progressBGColor,
         "--progressLoadedColor": this.theme?.colors?.progressLoadedColor,
+        "--progressForegroundColor": this.theme?.colors?.progressForegroundColor,
+        "--volumeBarBGColor": this.theme?.colors?.volumeBarBGColor,
+        "--volumeBarForegroundColor": this.theme?.colors?.volumeBarForegroundColor,
         "--settingsBGColor": this.theme?.colors?.settingsBGColor,
         "--settingsTextColor": this.theme?.colors?.settingsTextColor,
         "--settingsHoverColor": this.theme?.colors?.settingsHoverColor,
