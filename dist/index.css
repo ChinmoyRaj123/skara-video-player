@@ -28,6 +28,9 @@
   --brandColor: yellow;
   --progressBGColor: green;
   --progressLoadedColor: blue;
+  --progressForegroundColor: green;
+  --volumeBarBGColor: red;
+  --volumeBarForegroundColor: green;
   --settingsBGColor: violet;
   --settingsTextColor: red;
   --settingsHoverColor: green;
@@ -295,7 +298,7 @@
   -webkit-appearance: none;
   width: 14px;
   height: 14px;
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
   box-shadow: none;
   border: none;
   border-radius: 50%;
@@ -304,44 +307,44 @@
 
 .VC4pIW_volSlider::-webkit-slider-runnable-track {
   height: 4px;
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
   box-shadow: none;
   border: none;
   border-radius: 0;
 }
 
 .VC4pIW_volSlider::-webkit-slider-thumb:hover {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .VC4pIW_volSlider:hover::-webkit-slider-runnable-track {
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
 }
 
 .VC4pIW_volSlider::-webkit-slider-thumb:active {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .VC4pIW_volSlider:active::-webkit-slider-runnable-track {
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
 }
 
 .VC4pIW_volSlider.VC4pIW_sliderProgress::-webkit-slider-runnable-track {
-  background: linear-gradient(var(--skaraVideoPrimaryColor), var(--skaraVideoPrimaryColor)) 0 / var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0 / var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
 }
 
 .VC4pIW_volSlider.VC4pIW_sliderProgress:hover::-webkit-slider-runnable-track {
-  background: linear-gradient(var(--skaraVideoPrimaryColor), var(--skaraVideoPrimaryColor)) 0 / var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0 / var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
 }
 
 .VC4pIW_volSlider.VC4pIW_sliderProgress:active::-webkit-slider-runnable-track {
-  background: linear-gradient(var(--skaraVideoPrimaryColor), var(--skaraVideoPrimaryColor)) 0 / var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0 / var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
 }
 
 .VC4pIW_volSlider::-moz-range-thumb {
   width: 14px;
   height: 14px;
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
   box-shadow: none;
   border: none;
   border-radius: 50%;
@@ -349,38 +352,38 @@
 
 .VC4pIW_volSlider::-moz-range-track {
   height: 4px;
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
   box-shadow: none;
   border: none;
   border-radius: 0;
 }
 
 .VC4pIW_volSlider::-moz-range-thumb:hover {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .VC4pIW_volSlider:hover::-moz-range-track {
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
 }
 
 .VC4pIW_volSlider::-moz-range-thumb:active {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .VC4pIW_volSlider:active::-moz-range-track {
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
 }
 
 .VC4pIW_volSlider.VC4pIW_sliderProgress::-moz-range-track {
-  background: linear-gradient(var(--skaraVideoPrimaryColor), var(--skaraVideoPrimaryColor)) 0 / var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0 / var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
 }
 
 .VC4pIW_volSlider.VC4pIW_sliderProgress:hover::-moz-range-track {
-  background: linear-gradient(var(--skaraVideoPrimaryColor), var(--skaraVideoPrimaryColor)) 0 / var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0 / var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
 }
 
 .VC4pIW_volSlider.VC4pIW_sliderProgress:active::-moz-range-track {
-  background: linear-gradient(var(--skaraVideoPrimaryColor), var(--skaraVideoPrimaryColor)) 0 / var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0 / var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
 }
 
 .VC4pIW_volSlider::-ms-fill-upper {
@@ -396,7 +399,7 @@
 .VC4pIW_volSlider::-ms-thumb {
   width: 14px;
   height: 14px;
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
   box-shadow: none;
   box-sizing: border-box;
   border: none;
@@ -406,7 +409,7 @@
 
 .VC4pIW_volSlider::-ms-track {
   height: 4px;
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
   box-shadow: none;
   box-sizing: border-box;
   border: none;
@@ -414,36 +417,36 @@
 }
 
 .VC4pIW_volSlider::-ms-thumb:hover {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .VC4pIW_volSlider:hover::-ms-track {
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
 }
 
 .VC4pIW_volSlider::-ms-thumb:active {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .VC4pIW_volSlider:active::-ms-track {
-  background: var(--skaraVideoSecondaryColor);
+  background: var(--volumeBarForegroundColor);
 }
 
 .VC4pIW_volSlider.VC4pIW_sliderProgress::-ms-fill-lower {
   height: 4px;
   margin: -undefined 0 -undefined -undefined;
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
   border: none;
   border-right-width: 0;
   border-radius: 0;
 }
 
 .VC4pIW_volSlider.VC4pIW_sliderProgress:hover::-ms-fill-lower {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .VC4pIW_volSlider.VC4pIW_sliderProgress:active::-ms-fill-lower {
-  background: var(--skaraVideoPrimaryColor);
+  background: var(--volumeBarBGColor);
 }
 
 .VC4pIW_volCtrlWrapper {

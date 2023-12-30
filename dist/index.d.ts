@@ -10,6 +10,9 @@ declare const theme: {
         brandColor: string;
         progressBGColor: string;
         progressLoadedColor: string;
+        progressForegroundColor: string;
+        volumeBarBGColor: string;
+        volumeBarForegroundColor: string;
         settingsBGColor: string;
         settingsTextColor: string;
         settingsHoverColor: string;
@@ -131,6 +134,7 @@ export type PlayerConfig = {
     showVideoTitle: boolean;
     showSettings: boolean;
     showFullscreen: boolean;
+    showBackButton: boolean;
 };
 type EventName = 'loaded' | 'metadataloaded' | 'playing' | 'pause' | 'ended' | 'volumechange' | 'ratechange' | 'timeupdate' | 'waiting' | 'stalled' | 'abort' | 'suspend';
 /**
@@ -342,6 +346,9 @@ export default class SkaraPlayer {
             brandColor: string;
             progressBGColor: string;
             progressLoadedColor: string;
+            progressForegroundColor: string;
+            volumeBarBGColor: string;
+            volumeBarForegroundColor: string;
             settingsBGColor: string;
             settingsTextColor: string;
             settingsHoverColor: string;
