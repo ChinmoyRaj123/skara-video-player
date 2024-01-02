@@ -17,10 +17,12 @@ import CenterButton from "./controlls/center-button"
 import PrgsContainerWrapper from "./controlls/progress-container-wrapper"
 import Toolbar from "./controlls/tool-bar"
 import OrientationLock from "./controlls/orientation"
+import BrandImage from "./controlls/brand-image"
 
 export type PlayerConfig = {
   src: string
   mediaType: string
+  brandImage: string
   height?: string
   width?: string
   theme?: Theme
@@ -28,6 +30,7 @@ export type PlayerConfig = {
   autoplay: boolean
   muted: boolean
   loop: boolean
+  showBrandImage: boolean
   showCenterPlayPause: boolean
   showPlayPause: boolean
   showProgressBar: boolean
@@ -56,9 +59,11 @@ const defaultConfig: PlayerConfig = {
   title: "",
   src: "",
   mediaType: "",
+  brandImage: "",
   autoplay: false,
   muted: false,
   loop: false,
+  showBrandImage: true,
   showCenterPlayPause: true,
   showPlayPause: true,
   showProgressBar: true,
@@ -152,6 +157,7 @@ class SkaraPlayer {
   public _centerBtn: CenterButton;
   public _spinner: Spinner;
   public _toolBar: Toolbar;
+  public _brandImage: BrandImage;
 
   private detachKeyHandler;
 
@@ -206,12 +212,14 @@ class SkaraPlayer {
     this._volCtrl = new VolumeController(this, this.config);
     this._watchTimer = new WatchTimer(this.config);
     this._setting = new SettingControl(this, this.config);
+    this._brandImage = new BrandImage(this, this.config);
 
 
     // Creating the OSD 
     this._osdBar = new Osd({
       left: [this._playBtn, this._volCtrl],
       right: [
+        this._brandImage,
         this._setting,
       ]
     })

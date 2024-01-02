@@ -117,9 +117,15 @@ declare class Toolbar implements Controll {
     get element(): HTMLElement;
     get visible(): boolean;
 }
+declare class BrandImage implements Controll {
+    constructor(player: SkaraPlayer, config: PlayerConfig);
+    addTo(el: HTMLElement): void;
+    get element(): HTMLImageElement;
+}
 export type PlayerConfig = {
     src: string;
     mediaType: string;
+    brandImage: string;
     height?: string;
     width?: string;
     theme?: Theme;
@@ -127,6 +133,7 @@ export type PlayerConfig = {
     autoplay: boolean;
     muted: boolean;
     loop: boolean;
+    showBrandImage: boolean;
     showCenterPlayPause: boolean;
     showPlayPause: boolean;
     showProgressBar: boolean;
@@ -160,6 +167,7 @@ export default class SkaraPlayer {
     _centerBtn: CenterButton;
     _spinner: Spinner;
     _toolBar: Toolbar;
+    _brandImage: BrandImage;
     _isFullscreen: boolean;
     /**
      * @constructor
