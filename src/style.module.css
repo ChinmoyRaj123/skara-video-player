@@ -697,6 +697,10 @@
   transition: transform 250ms linear;
 }
 
+.brand-image {
+  width: 60px;
+  height: 20px;
+}
 
 @media only screen and (max-device-width: 1017px) {
   .toolBar {

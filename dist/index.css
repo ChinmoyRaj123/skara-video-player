@@ -638,6 +638,11 @@
   transform: rotate(90deg);
 }
 
+.VC4pIW_brand-image {
+  width: 60px;
+  height: 20px;
+}
+
 @media only screen and (max-device-width: 1017px) {
   .VC4pIW_toolBar {
     padding: 20px 30px 48px;
