@@ -119,8 +119,8 @@
 
 .VC4pIW_scrubber {
   z-index: 20;
-  height: var(--progressBarHeight);
-  width: var(--progressBarHeight);
+  height: calc(var(--progressBarHeight)  + 4px);
+  width: calc(var(--progressBarHeight)  + 4px);
   background-color: var(--progressLoadedColor);
   opacity: 0;
   cursor: pointer;
@@ -130,7 +130,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  scale: 1.5;
+  transform: translate3d(-50%, -50%, 0);
 }
 
 .VC4pIW_root {

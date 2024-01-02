@@ -125,10 +125,10 @@
   z-index: 20;
   left: 0;
   top: 0;
-  scale: 1.5;
-  /* transform: translate3d(-50%, -33%, 0); */
-  height: var(--progressBarHeight);
-  width: var(--progressBarHeight);
+  /* scale: 1.5; */
+  transform: translate3d(-50%, -50%, 0);
+  height: calc(var(--progressBarHeight) + 4px);
+  width: calc(var(--progressBarHeight) + 4px);
   border-radius: 50%;
   background-color: var(--progressLoadedColor);
   opacity: 0;
