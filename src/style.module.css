@@ -509,6 +509,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  opacity: var(--volumeOpacity);
 }
 
 .volCtrlWrapper:hover .volSlider {

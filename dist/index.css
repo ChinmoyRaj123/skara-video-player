@@ -462,6 +462,7 @@
 }
 
 .VC4pIW_volCtrlWrapper {
+  opacity: var(--volumeOpacity);
   align-items: center;
   gap: 8px;
   display: flex;
