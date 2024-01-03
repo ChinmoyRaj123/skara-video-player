@@ -473,7 +473,6 @@ class SkaraPlayer {
    * It returns a `Promise` which is resolved when playback has been successfully started. 
    */
   public play() {
-    this._videoThumbnail.style.display = "none";
     return this._videoEl.play();
   }
 
@@ -805,6 +804,7 @@ class SkaraPlayer {
     });
 
     this._videoEl.addEventListener('play', () => {
+      this._videoThumbnail.style.display = "none";
       this._spinner.hide();
       this._playBtn.changeIcon(Material.PauseIcon);
       this._centerBtn.hide();
