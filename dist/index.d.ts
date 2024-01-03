@@ -137,6 +137,7 @@ export type PlayerConfig = {
     src: string;
     mediaType: string;
     brandImage: string;
+    videoThumbnail: string;
     height?: string;
     width?: string;
     theme?: Theme;

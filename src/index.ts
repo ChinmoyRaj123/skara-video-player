@@ -23,6 +23,7 @@ export type PlayerConfig = {
   src: string
   mediaType: string
   brandImage: string
+  videoThumbnail: string
   height?: string
   width?: string
   theme?: Theme
@@ -60,6 +61,7 @@ const defaultConfig: PlayerConfig = {
   src: "",
   mediaType: "",
   brandImage: "",
+  videoThumbnail: "",
   autoplay: false,
   muted: false,
   loop: false,
@@ -136,6 +138,10 @@ class SkaraPlayer {
   */
   private _videoEl: HTMLVideoElement;
 
+  private _videoThumbnail: HTMLDivElement;
+
+  private _thumbnailImage: HTMLImageElement;
+
   private hls: Hls | null
 
   /**
@@ -210,6 +216,15 @@ class SkaraPlayer {
     // Set video element height and width if provided
     if (this.config.width) this._root.style.width = this.config.width;
     if (this.config.height) this._root.style.height = this.config.height;
+
+    //Creating thumbnail for video element
+    this._videoThumbnail = document.createElement('div')
+    this._videoThumbnail.className = styles.videoThumbnail
+    this._thumbnailImage = document.createElement('img')
+    this._thumbnailImage.src = config.videoThumbnail
+    this._thumbnailImage.style.width = "100%"
+    this._thumbnailImage.style.height = "100%"
+    this._videoThumbnail.appendChild(this._thumbnailImage)
 
 
     // Creating the Html5 video element
@@ -326,6 +341,7 @@ class SkaraPlayer {
    */
   async start() {
     this.idleHandler()
+    this._videoThumbnail.style.display = "none"
     // let fileType
     // const hlsarr = ["audio/x-mpegurl", "application/vnd.apple.mpegurl", "application/x-mpegurl"]
     // const r = await fetch(this.config.src, { method: 'HEAD' })
