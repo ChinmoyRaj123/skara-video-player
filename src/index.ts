@@ -140,7 +140,7 @@ class SkaraPlayer {
 
   private _videoThumbnail: HTMLDivElement;
 
-  private _thumbnailImage: HTMLImageElement;
+  private _thumbnailImage: HTMLImageElement | null;
 
   private hls: Hls | null
 
@@ -198,6 +198,7 @@ class SkaraPlayer {
     this.events = {}
     this._isFullscreen = false;
     this.hls = null;
+    this._thumbnailImage = null;
 
     this.config = { ...defaultConfig, ...config }
 
@@ -220,16 +221,18 @@ class SkaraPlayer {
     if (this.config.width) this._root.style.width = this.config.width;
     if (this.config.height) this._root.style.height = this.config.height;
 
-    //Creating thumbnail for video element
+    //Creating thumbnail for video element if videoThumbnail is there
     this._videoThumbnail = document.createElement('div')
     this._videoThumbnail.style.width = "100%"
     this._videoThumbnail.style.height = "100%"
     this._videoThumbnail.style.zIndex = "13"
-    this._thumbnailImage = document.createElement('img')
-    this._thumbnailImage.src = config.videoThumbnail as string
-    this._thumbnailImage.style.width = "100%"
-    this._thumbnailImage.style.height = "100%"
-    this._videoThumbnail.appendChild(this._thumbnailImage)
+    if (config.videoThumbnail) {
+      this._thumbnailImage = document.createElement('img')
+      this._thumbnailImage.src = config.videoThumbnail as string
+      this._thumbnailImage.style.width = "100%"
+      this._thumbnailImage.style.height = "100%"
+      this._videoThumbnail.appendChild(this._thumbnailImage)
+    }
     this._root.appendChild(this._videoThumbnail)
 
 
