@@ -197,6 +197,8 @@ class SkaraPlayer {
     this._isFullscreen = false;
     this.hls = null;
 
+    console.log("config in player", config);
+
 
     // The the root element 
     // FIXME: This can be a `Node` or `string`
@@ -342,7 +344,6 @@ class SkaraPlayer {
    */
   async start() {
     this.idleHandler()
-    this._videoThumbnail.style.display = "none"
     // let fileType
     // const hlsarr = ["audio/x-mpegurl", "application/vnd.apple.mpegurl", "application/x-mpegurl"]
     // const r = await fetch(this.config.src, { method: 'HEAD' })
@@ -469,6 +470,7 @@ class SkaraPlayer {
    * It returns a `Promise` which is resolved when playback has been successfully started. 
    */
   public play() {
+    this._videoThumbnail.style.display = "none";
     return this._videoEl.play();
   }
 
