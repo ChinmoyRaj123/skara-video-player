@@ -218,7 +218,9 @@ class SkaraPlayer {
 
     //Creating thumbnail for video element
     this._videoThumbnail = document.createElement('div')
-    this._videoThumbnail.className = styles.videoThumbnailDiv
+    this._videoThumbnail.style.width = "100%"
+    this._videoThumbnail.style.height = "100%"
+    this._videoThumbnail.style.zIndex = "13"
     this._thumbnailImage = document.createElement('img')
     this._thumbnailImage.src = config.videoThumbnail
     this._thumbnailImage.style.width = "100%"
