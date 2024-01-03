@@ -77,6 +77,7 @@ const defaultConfig: PlayerConfig = {
     colors: {
       primary: "",
       secondary: "",
+      textColor: "",
       centerIconButtonColor: "",
       centerIconButtonHoverColor: "",
       iconButtonColor: "",
@@ -85,6 +86,7 @@ const defaultConfig: PlayerConfig = {
       progressBGColor: "",
       progressLoadedColor: "",
       progressForegroundColor: "",
+      progressCircleColor: "",
       volumeBarBGColor: "",
       volumeBarForegroundColor: "",
       settingsBGColor: "",
@@ -92,6 +94,14 @@ const defaultConfig: PlayerConfig = {
       settingsHoverColor: "",
       tooltipTextColor: "",
       tooltipBGColor: "",
+      textOpacity: "",
+      centerIconButtonOpacity: "",
+      iconButtonOpacity: "",
+      brandOpacity: "",
+      progressOpacity: "",
+      volumeOpacity: "",
+      settingsOpacity: "",
+      tooltipOpacity: "",
     },
     spacing: {
       padding: "",
@@ -108,6 +118,7 @@ const defaultConfig: PlayerConfig = {
       progressBarHeight: "",
       progressBarHoverScale: "",
       volumeBarHeight: "",
+      tooltipCornerRadius: ""
     },
   }
 }
@@ -238,6 +249,7 @@ class SkaraPlayer {
         // "--skaraVideoPrimaryColor": this.theme?.colors?.primary,
         "--skaraVideoPrimaryColor": this.theme?.colors?.primary,
         "--skaraVideoSecondaryColor": this.theme?.colors?.secondary,
+        "--textColor": this.theme?.colors?.textColor,
 
         "--bottomBarSpacing": this.theme?.spacing?.bottomBarSpacing,
         "--playerControlMargin": this.theme?.spacing?.playerControlMargin,
@@ -251,6 +263,7 @@ class SkaraPlayer {
         "--progressBarHeight": this.theme?.spacing?.progressBarHeight,
         "--progressBarHoverScale": this.theme?.spacing?.progressBarHoverScale,
         "--volumeBarHeight": this.theme?.spacing?.volumeBarHeight,
+        "--tooltipCornerRadius": this.theme?.spacing?.tooltipCornerRadius,
 
         "--centerIconButtonColor": this.theme?.colors?.centerIconButtonColor,
         "--centerIconButtonHoverColor": this.theme?.colors?.centerIconButtonHoverColor,
@@ -260,6 +273,7 @@ class SkaraPlayer {
         "--progressBGColor": this.theme?.colors?.progressBGColor,
         "--progressLoadedColor": this.theme?.colors?.progressLoadedColor,
         "--progressForegroundColor": this.theme?.colors?.progressForegroundColor,
+        "--progressCircleColor": this.theme?.colors?.progressCircleColor,
         "--volumeBarBGColor": this.theme?.colors?.volumeBarBGColor,
         "--volumeBarForegroundColor": this.theme?.colors?.volumeBarForegroundColor,
         "--settingsBGColor": this.theme?.colors?.settingsBGColor,
@@ -268,6 +282,14 @@ class SkaraPlayer {
         "--tooltipTextColor": this.theme?.colors?.tooltipTextColor,
         "--tooltipBGColor": this.theme?.colors?.tooltipBGColor,
 
+
+
+        "--textOpacity": this.theme?.colors?.textOpacity,
+        "--centerIconButtonOpacity": this.theme?.colors?.centerIconButtonOpacity,
+        "--iconButtonOpacity": this.theme?.colors?.iconButtonOpacity,
+        "--progressOpacity": this.theme?.colors?.progressOpacity,
+        "--volumeOpacity": this.theme?.colors?.volumeOpacity,
+        "--settingsOpacity": this.theme?.colors?.settingsOpacity,
       }
       setRootVariables(colorVariables)
     }

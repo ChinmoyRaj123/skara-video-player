@@ -1,6 +1,6 @@
 {
   "name": "skara-player",
-  "version": "0.0.9",
+  "version": "0.0.17",
   "description": "A flexible, customizale video player",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
     "test": "ava",
     "clean": "rm -rf dist",
     "watch": "parcel watch",
-    "build": "pnpm clean && parcel build",
+    "build": "pnpm clean && parcel build --no-cache",
     "example": "live-server"
   },
   "keywords": [],

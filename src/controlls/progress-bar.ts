@@ -15,7 +15,7 @@ class ProgressBar implements Controll {
   private osd: Osd;
   private video: HTMLVideoElement;
 
-  constructor(player: SkaraPlayer, osd: Osd, video: HTMLVideoElement, config: PlayerConfig) {
+  constructor(player: SkaraPlayer, osd: Osd, video: HTMLVideoElement, private config: PlayerConfig) {
     this.osd = osd;
     this.video = video;
     // The whole progress bar
@@ -34,6 +34,7 @@ class ProgressBar implements Controll {
     // Scrubber 
     this.scrubberEl = document.createElement('div');
     this.scrubberEl.className = styles.scrubber;
+    this.wrapper.appendChild(this.scrubberEl);
     //scrubber.draggable = true
     //player.scrubber = scrubber;
 
@@ -47,7 +48,7 @@ class ProgressBar implements Controll {
     this.timeTooltipEl.className = styles.seekTimeTooltip;
     this._el.appendChild(this.timeTooltipEl);
 
-    this._el.appendChild(this.scrubberEl);
+    // this._el.appendChild(this.scrubberEl);
     this._el.appendChild(this.wrapper);
 
     this.addEventListener(player);
@@ -91,7 +92,7 @@ class ProgressBar implements Controll {
       const seekTime = secondsToTime(player.duration * (posInPercent / 100))
       this.timeTooltipEl.textContent = seekTime;
       this.timeTooltipEl.style.left = `${cursorPos}px`
-      this.timeTooltipEl.style.opacity = '1'
+      this.timeTooltipEl.style.opacity = `${this.config.theme?.colors?.tooltipOpacity}`
       this.hoverEl.style.width = `${posInPercent}%`
 
     }

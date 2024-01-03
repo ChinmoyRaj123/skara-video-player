@@ -11,19 +11,20 @@
   --skaraVideoOsdBg: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
   --skaraVideoToolbarBg: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 
-  --bottomBarSpacing: "8px";
-  --playerControlMargin: "20px";
-  --playerCornerRadius: "0px";
+  --bottomBarSpacing: 8px;
+  --playerControlMargin: 20px;
+  --playerCornerRadius: 0px;
   --centerIconButtonCornerRadius: 50%;
   --centerIconButtonPadding: 10px;
   --centerIconButtonSize: 80px;
   --iconButtonCornerRadius: 50%;
   --iconButtonPadding: 10px;
   --iconButtonSize: 36px;
-  --progressBarHeight: "4px";
-  --volumeBarHeight: "4px";
+  --progressBarHeight: 4px;
+  --volumeBarHeight: 4px;
   --progressBarHoverScale: 1.8;
-
+  --tooltipCornerRadius: 4px;
+  --textColor: black;
   --centerIconButtonColor: red;
   --centerIconButtonHoverColor: brown;
   --iconButtonColor: red;
@@ -32,6 +33,7 @@
   --progressBGColor: green;
   --progressLoadedColor: blue;
   --progressForegroundColor: green;
+  --progressCircleColor: blue;
   --volumeBarBGColor: red;
   --volumeBarForegroundColor: green;
   --settingsBGColor: violet;
@@ -39,6 +41,12 @@
   --settingsHoverColor: green;
   --tooltipTextColor: blue;
   --tooltipBGColor: pink;
+  --textOpacity: 100%;
+  --centerIconButtonOpacity: 100%;
+  --iconButtonOpacity: 100%;
+  --progressOpacity: 100%;
+  --volumeOpacity: 100%;
+  --settingsOpacity: 100%;
 }
 
 * {
@@ -46,7 +54,6 @@
   margin: 0;
   font-weight: 500;
   font-family: "Roboto";
-  border-radius: var(--playerCornerRadius);
 }
 
 .toolBar {
@@ -65,7 +72,7 @@
 }
 
 .title {
-  color: var(--skaraVideoSecondaryColor);
+  color: var(--textColor);
 }
 
 .backArrowMainDiv {
@@ -126,11 +133,11 @@
   left: 0;
   top: 0;
   /* scale: 1.5; */
-  transform: translate3d(-50%, -50%, 0);
-  height: calc(var(--progressBarHeight) + 4px);
-  width: calc(var(--progressBarHeight) + 4px);
+  transform: translate3d(-50%, -25%, 0);
+  height: calc(var(--progressBarHeight) * 2);
+  width: calc(var(--progressBarHeight) * 2);
   border-radius: 50%;
-  background-color: var(--progressLoadedColor);
+  background-color: var(--progressCircleColor);
   opacity: 0;
   transition: opacity 300ms ease-out;
   cursor: pointer;
@@ -138,12 +145,13 @@
 }
 
 .root {
+  border-radius: var(--playerCornerRadius);
   background-color: black;
   display: flex;
   align-items: center;
   overflow: hidden;
   position: relative;
-  height: 440px
+  height: 440px;
 }
 
 .video {
@@ -171,21 +179,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: 12px;
 }
 
 .ctrlLeft {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: 12px;
 }
 
 .ctrlRight {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
+  gap: 12px;
 }
 
 .prgsContainerWrapper {
@@ -208,7 +216,8 @@
   position: relative;
   cursor: pointer;
   transition: transform 300ms ease-out;
-  overflow: hidden
+  overflow: hidden;
+  opacity: var(--progressOpacity);
 }
 
 .prgsBar {
@@ -246,7 +255,7 @@
 }
 
 .prgsContainer:hover .scrubber {
-  transform: translate3d(-50%, -25%, 0);
+  transform: translate3d(-50%, -50%, 0);
   width: calc(var(--progressBarHeight)*var(--progressBarHoverScale));
   height: calc(var(--progressBarHeight)*var(--progressBarHoverScale));
   opacity: 1;
@@ -281,6 +290,7 @@
   top: -48px;
   transform: translateX(-50%);
   transition: opacity 100ms ease-out;
+  border-radius: var(--tooltipCornerRadius);
 }
 
 .iconmd {
@@ -374,15 +384,15 @@
 }
 
 .volSlider.sliderProgress::-webkit-slider-runnable-track {
-  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--volumeBarForegroundColor);
 }
 
 .volSlider.sliderProgress:hover::-webkit-slider-runnable-track {
-  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--volumeBarForegroundColor);
 }
 
 .volSlider.sliderProgress:active::-webkit-slider-runnable-track {
-  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--volumeBarForegroundColor);
 }
 
 /*mozilla*/
@@ -420,15 +430,15 @@
 }
 
 .volSlider.sliderProgress::-moz-range-track {
-  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--volumeBarForegroundColor);
 }
 
 .volSlider.sliderProgress:hover::-moz-range-track {
-  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--volumeBarForegroundColor);
 }
 
 .volSlider.sliderProgress:active::-moz-range-track {
-  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--skaraVideoSecondaryColor);
+  background: linear-gradient(var(--volumeBarBGColor), var(--volumeBarBGColor)) 0/var(--sx) 100% no-repeat, var(--volumeBarForegroundColor);
 }
 
 /*ms*/
@@ -522,6 +532,7 @@
   width: 18px;
   padding: var(--iconButtonPadding);
   border-radius: var(--iconButtonCornerRadius);
+  opacity: var(--iconButtonOpacity);
 }
 
 .settingWrapper {
@@ -532,7 +543,7 @@
   width: 280px;
   max-height: 260px;
   background-color: var(--settingsBGColor);
-  /* opacity: 0; */
+  opacity: var(--settingsOpacity);
   display: none;
   border-radius: 2px;
   overflow: hidden;
@@ -635,8 +646,8 @@
   z-index: 100;
   animation: 1.5s linear infinite spinn;
   animation-play-state: inherit;
-  border: solid 5px var(--skaraVideoSecondaryColor);
-  border-bottom-color: var(--skaraVideoPrimaryColor);
+  border: solid 5px var(--progressBGColor);
+  border-bottom-color: var(--progressForegroundColor);
   border-radius: 50%;
   content: "";
   height: 60px;
@@ -670,6 +681,7 @@
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
   padding: var(--centerIconButtonPadding);
+  opacity: var(--centerIconButtonOpacity);
   /* transition: all 200s ease-out; */
 }
 
@@ -689,7 +701,7 @@
 
 .watchTimer {
   display: flex;
-  color: var(--skaraVideoSecondaryColor);
+  color: var(--textColor);
 }
 
 .rotate {

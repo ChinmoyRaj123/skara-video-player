@@ -2,6 +2,7 @@ export const theme = {
   colors: {
     primary: "#00b428",
     secondary: "#e8dd26",
+    textColor: "black",
     centerIconButtonColor: "green",
     centerIconButtonHoverColor: "yellow",
     iconButtonColor: "purple",
@@ -10,6 +11,7 @@ export const theme = {
     progressBGColor: "red",
     progressLoadedColor: "blue",
     progressForegroundColor: "green",
+    progressCircleColor: "blue",
     volumeBarBGColor: "red",
     volumeBarForegroundColor: "green",
     settingsBGColor: "blue",
@@ -17,6 +19,14 @@ export const theme = {
     settingsHoverColor: "green",
     tooltipTextColor: "blue",
     tooltipBGColor: "pink",
+    textOpacity: "100%",
+    centerIconButtonOpacity: "100%",
+    iconButtonOpacity: "100%",
+    brandOpacity: "100%",
+    progressOpacity: "100%",
+    volumeOpacity: "100%",
+    settingsOpacity: "100%",
+    tooltipOpacity: "100%",
   },
   spacing: {
     padding: "6px",
@@ -33,6 +43,7 @@ export const theme = {
     progressBarHeight: "4px",
     progressBarHoverScale: "1.8",
     volumeBarHeight: "4px",
+    tooltipCornerRadius: "4px"
   }
 }
 
