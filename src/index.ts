@@ -197,9 +197,6 @@ class SkaraPlayer {
     this._isFullscreen = false;
     this.hls = null;
 
-    console.log("config in player", config);
-
-
     // The the root element 
     // FIXME: This can be a `Node` or `string`
     if (el instanceof HTMLDivElement) {
@@ -221,7 +218,7 @@ class SkaraPlayer {
 
     //Creating thumbnail for video element
     this._videoThumbnail = document.createElement('div')
-    this._videoThumbnail.className = styles.videoThumbnail
+    this._videoThumbnail.className = styles.videoThumbnailDiv
     this._thumbnailImage = document.createElement('img')
     this._thumbnailImage.src = config.videoThumbnail
     this._thumbnailImage.style.width = "100%"
@@ -261,6 +258,10 @@ class SkaraPlayer {
     this._osdBar.prepend(progressContainerWrapper)
 
     if (config?.theme) {
+
+      console.log("config in player", config);
+
+
       const newtheme = document.querySelector(':root') as HTMLElement;
       const setRootVariables = (vars: Record<string, string>) => Object.entries(vars).forEach(v => newtheme?.style?.setProperty(v[0], v[1]));
       const colorVariables = {
