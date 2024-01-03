@@ -23,7 +23,7 @@ class Toolbar implements Controll {
     });
     this._title = document.createElement('p');
     this._title.className = styles.title;
-    this._title.textContent = config.title;
+    this._title.textContent = config.title as string;
     this._backMain = document.createElement('div');
     this._titleMain = document.createElement('div');
     this._fullScrMain = document.createElement('div');

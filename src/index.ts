@@ -22,25 +22,25 @@ import BrandImage from "./controlls/brand-image"
 export type PlayerConfig = {
   src: string
   mediaType: string
-  brandImage: string
-  videoThumbnail: string
+  brandImage?: string
+  videoThumbnail?: string
   height?: string
   width?: string
   theme?: Theme
-  title: string
-  autoplay: boolean
-  muted: boolean
-  loop: boolean
-  showBrandImage: boolean
-  showCenterPlayPause: boolean
-  showPlayPause: boolean
-  showProgressBar: boolean
-  showTimestamp: boolean
-  showVolumeBar: boolean
-  showVideoTitle: boolean
-  showSettings: boolean
-  showFullscreen: boolean
-  showBackButton: boolean
+  title?: string
+  autoplay?: boolean
+  muted?: boolean
+  loop?: boolean
+  showBrandImage?: boolean
+  showCenterPlayPause?: boolean
+  showPlayPause?: boolean
+  showProgressBar?: boolean
+  showTimestamp?: boolean
+  showVolumeBar?: boolean
+  showVideoTitle?: boolean
+  showSettings?: boolean
+  showFullscreen?: boolean
+  showBackButton?: boolean
 }
 
 type EventName = 'loaded' |
@@ -184,18 +184,22 @@ class SkaraPlayer {
   // Events
   private events: { [k in EventName]?: () => void }
 
+  public config: PlayerConfig
+
   /**
    * @constructor
    * @param el - The html element where the player will be mounted
    * @param config - player options
    * @returns SkaraPlayer
    */
-  constructor(el: HTMLDivElement | string, public config: PlayerConfig = defaultConfig) {
+  constructor(el: HTMLDivElement | string, config: PlayerConfig) {
     // Setting default variables
     this._prgsBar = null;
     this.events = {}
     this._isFullscreen = false;
     this.hls = null;
+
+    this.config = { ...defaultConfig, ...config }
 
     // The the root element 
     // FIXME: This can be a `Node` or `string`
@@ -222,7 +226,7 @@ class SkaraPlayer {
     this._videoThumbnail.style.height = "100%"
     this._videoThumbnail.style.zIndex = "13"
     this._thumbnailImage = document.createElement('img')
-    this._thumbnailImage.src = config.videoThumbnail
+    this._thumbnailImage.src = config.videoThumbnail as string
     this._thumbnailImage.style.width = "100%"
     this._thumbnailImage.style.height = "100%"
     this._videoThumbnail.appendChild(this._thumbnailImage)
@@ -231,9 +235,9 @@ class SkaraPlayer {
 
     // Creating the Html5 video element
     this._videoEl = document.createElement('video')
-    this._videoEl.autoplay = this.config.autoplay
-    this._videoEl.muted = this.config.muted
-    this._videoEl.loop = this.config.loop
+    this._videoEl.autoplay = this.config.autoplay as boolean
+    this._videoEl.muted = this.config.muted as boolean
+    this._videoEl.loop = this.config.loop as boolean
     this._videoEl.className = styles.video
 
     this._playBtn = new PlayButton(this, this.config);
@@ -260,10 +264,6 @@ class SkaraPlayer {
     this._osdBar.prepend(progressContainerWrapper)
 
     if (config?.theme) {
-
-      console.log("config in player", config);
-
-
       const newtheme = document.querySelector(':root') as HTMLElement;
       const setRootVariables = (vars: Record<string, string>) => Object.entries(vars).forEach(v => newtheme?.style?.setProperty(v[0], v[1]));
       const colorVariables = {
@@ -473,6 +473,7 @@ class SkaraPlayer {
    * It returns a `Promise` which is resolved when playback has been successfully started. 
    */
   public play() {
+    this._videoThumbnail.style.display = "none";
     return this._videoEl.play();
   }
 

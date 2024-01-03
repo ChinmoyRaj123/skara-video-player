@@ -136,32 +136,31 @@ declare class BrandImage implements Controll {
 export type PlayerConfig = {
     src: string;
     mediaType: string;
-    brandImage: string;
-    videoThumbnail: string;
+    brandImage?: string;
+    videoThumbnail?: string;
     height?: string;
     width?: string;
     theme?: Theme;
-    title: string;
-    autoplay: boolean;
-    muted: boolean;
-    loop: boolean;
-    showBrandImage: boolean;
-    showCenterPlayPause: boolean;
-    showPlayPause: boolean;
-    showProgressBar: boolean;
-    showTimestamp: boolean;
-    showVolumeBar: boolean;
-    showVideoTitle: boolean;
-    showSettings: boolean;
-    showFullscreen: boolean;
-    showBackButton: boolean;
+    title?: string;
+    autoplay?: boolean;
+    muted?: boolean;
+    loop?: boolean;
+    showBrandImage?: boolean;
+    showCenterPlayPause?: boolean;
+    showPlayPause?: boolean;
+    showProgressBar?: boolean;
+    showTimestamp?: boolean;
+    showVolumeBar?: boolean;
+    showVideoTitle?: boolean;
+    showSettings?: boolean;
+    showFullscreen?: boolean;
+    showBackButton?: boolean;
 };
 type EventName = 'loaded' | 'metadataloaded' | 'playing' | 'pause' | 'ended' | 'volumechange' | 'ratechange' | 'timeupdate' | 'waiting' | 'stalled' | 'abort' | 'suspend';
 /**
  * @class SkaraPlayer
  */
 export default class SkaraPlayer {
-    config: PlayerConfig;
     /**
     * The pogress bar inside the osd.
     * This is the bar which actually changes its background with time change
@@ -181,13 +180,14 @@ export default class SkaraPlayer {
     _toolBar: Toolbar;
     _brandImage: BrandImage;
     _isFullscreen: boolean;
+    config: PlayerConfig;
     /**
      * @constructor
      * @param el - The html element where the player will be mounted
      * @param config - player options
      * @returns SkaraPlayer
      */
-    constructor(el: HTMLDivElement | string, config?: PlayerConfig);
+    constructor(el: HTMLDivElement | string, config: PlayerConfig);
     /**
      * Starts the player
      */

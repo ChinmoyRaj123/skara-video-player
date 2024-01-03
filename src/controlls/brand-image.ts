@@ -10,7 +10,7 @@ class BrandImage implements Controll {
         this._el = document.createElement("div");
         this._el.style.opacity = `${config.theme?.colors?.brandOpacity}`;
         this._iconel = document.createElement("img");
-        this._iconel.src = config.brandImage;
+        this._iconel.src = config.brandImage as string;
         this._iconel.style.width = "100%";
         this._iconel.style.height = "100%";
         this._el.className = styles.brandImage;
