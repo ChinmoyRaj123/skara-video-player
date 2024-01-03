@@ -813,6 +813,7 @@ class SkaraPlayer {
 
     this._videoEl.addEventListener('ended', () => {
       this._playBtn.changeIcon(Material.ReplayIcon);
+      this._videoThumbnail.style.display = "block";
       this.events.ended && this.events.ended()
     })
 
