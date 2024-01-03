@@ -225,6 +225,7 @@ class SkaraPlayer {
     this._thumbnailImage.style.width = "100%"
     this._thumbnailImage.style.height = "100%"
     this._videoThumbnail.appendChild(this._thumbnailImage)
+    this._root.appendChild(this._videoThumbnail)
 
 
     // Creating the Html5 video element
