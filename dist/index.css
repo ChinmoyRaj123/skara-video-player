@@ -127,8 +127,8 @@
 
 .VC4pIW_scrubber {
   z-index: 20;
-  height: calc(var(--progressBarHeight) * 2);
-  width: calc(var(--progressBarHeight) * 2);
+  height: calc(var(--progressBarHeight)  + 10px);
+  width: calc(var(--progressBarHeight)  + 10px);
   background-color: var(--progressCircleColor);
   opacity: 0;
   cursor: pointer;
@@ -136,9 +136,10 @@
   border-radius: 50%;
   transition: opacity .3s ease-out;
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
-  transform: translate3d(-50%, -25%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  box-shadow: 0 19px 38px #0000004d, 0 15px 12px #00000038;
 }
 
 .VC4pIW_root {
@@ -228,13 +229,13 @@
   position: absolute;
 }
 
-.VC4pIW_prgsContainer:hover .VC4pIW_prgsWrapper, .VC4pIW_prgsContainer:hover .VC4pIW_prgsBar, .VC4pIW_prgsContainer:hover .VC4pIW_prgsHover {
+.VC4pIW_prgsContainer:hover, .VC4pIW_prgsContainer:hover .VC4pIW_prgsWrapper, .VC4pIW_prgsContainer:hover .VC4pIW_prgsBar, .VC4pIW_prgsContainer:hover .VC4pIW_prgsHover {
   transform: scale3d(1, var(--progressBarHoverScale), 1);
 }
 
 .VC4pIW_prgsContainer:hover .VC4pIW_scrubber {
-  width: calc(var(--progressBarHeight) * var(--progressBarHoverScale));
-  height: calc(var(--progressBarHeight) * var(--progressBarHoverScale));
+  width: calc(var(--progressBarHeight) * var(--progressBarHoverScale)  + 10px);
+  height: calc(var(--progressBarHeight) * var(--progressBarHoverScale)  + 10px);
   opacity: 1;
   transform: translate3d(-50%, -50%, 0);
 }

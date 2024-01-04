@@ -130,18 +130,19 @@
 .scrubber {
   position: absolute;
   z-index: 20;
+  top: 50%;
   left: 0;
-  top: 0;
   /* scale: 1.5; */
-  transform: translate3d(-50%, -25%, 0);
-  height: calc(var(--progressBarHeight) * 2);
-  width: calc(var(--progressBarHeight) * 2);
+  transform: translate3d(-50%, -50%, 0);
+  height: calc(var(--progressBarHeight) + 10px);
+  width: calc(var(--progressBarHeight) + 10px);
   border-radius: 50%;
   background-color: var(--progressCircleColor);
   opacity: 0;
   transition: opacity 300ms ease-out;
   cursor: pointer;
   pointer-events: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .root {
@@ -249,6 +250,10 @@
   transition: transform 300ms ease-out;
 }
 
+.prgsContainer:hover {
+  transform: scale3d(1, var(--progressBarHoverScale), 1);
+}
+
 .prgsContainer:hover .prgsWrapper {
   transform: scale3d(1, var(--progressBarHoverScale), 1);
 }
@@ -263,8 +268,8 @@
 
 .prgsContainer:hover .scrubber {
   transform: translate3d(-50%, -50%, 0);
-  width: calc(var(--progressBarHeight)*var(--progressBarHoverScale));
-  height: calc(var(--progressBarHeight)*var(--progressBarHoverScale));
+  width: calc(var(--progressBarHeight)*var(--progressBarHoverScale) + 10px);
+  height: calc(var(--progressBarHeight)*var(--progressBarHoverScale) + 10px);
   opacity: 1;
 }
 
