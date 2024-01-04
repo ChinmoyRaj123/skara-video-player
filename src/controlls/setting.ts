@@ -24,12 +24,20 @@ class SettingItem implements Controll {
   constructor(props: SettingItemProps) {
     this._el = document.createElement('div');
     this._el.className = styles.settingItem;
+
     const icon = document.createElement('div');
     icon.className = styles.icon;
-    icon.style.mask = `url(${props.icon})`;
-    icon.style.webkitMask = `url(${props.icon})`;
-    icon.style.webkitMaskSize = 'contain'
-    icon.style.webkitMaskRepeat = 'no-repeat'
+    const iconel = document.createElement('img');
+    iconel.style.width = "100%";
+    iconel.style.height = "100%";
+    iconel.src = props.icon;
+    icon.appendChild(iconel);
+
+    // icon.className = styles.icon;
+    // icon.style.mask = `url(${props.icon})`;
+    // icon.style.webkitMask = `url(${props.icon})`;
+    // icon.style.webkitMaskSize = 'contain'
+    // icon.style.webkitMaskRepeat = 'no-repeat'
 
     const levelDiv = document.createElement('div');
     levelDiv.textContent = props.text
@@ -48,12 +56,19 @@ class SettingItem implements Controll {
 
     const moreIcon = document.createElement('div');
     moreIcon.className = styles.icon;
-    moreIcon.style.mask = `url(${Material.ChevronRightIcon})`;
-    moreIcon.style.webkitMask = `url(${Material.ChevronRightIcon})`;
-    moreIcon.style.webkitMaskSize = 'contain'
-    moreIcon.style.webkitMaskRepeat = 'no-repeat'
-    moreIcon.style.width = '14px';
-    moreIcon.style.height = '14px';
+
+    const iconel2 = document.createElement('img');
+    iconel2.style.width = "100%";
+    iconel2.style.height = "100%";
+    iconel2.src = Material.ChevronRightIcon;
+    moreIcon.appendChild(iconel2);
+
+    // moreIcon.style.mask = `url(${Material.ChevronRightIcon})`;
+    // moreIcon.style.webkitMask = `url(${Material.ChevronRightIcon})`;
+    // moreIcon.style.webkitMaskSize = 'contain'
+    // moreIcon.style.webkitMaskRepeat = 'no-repeat'
+    // moreIcon.style.width = '14px';
+    // moreIcon.style.height = '14px';
 
     const dv2 = document.createElement('div');
     dv2.style.cssText = `
@@ -268,10 +283,18 @@ class SettingControl implements Controll {
 
     const icon = document.createElement('div')
     icon.className = styles.icon
-    icon.style.mask = `url(${Material.ArrowBackIcon})`;
-    icon.style.webkitMask = `url(${Material.ArrowBackIcon})`;
-    icon.style.webkitMaskSize = 'contain'
-    icon.style.webkitMaskRepeat = 'no-repeat'
+
+    const iconel3 = document.createElement('img');
+    iconel3.style.width = "100%";
+    iconel3.style.height = "100%";
+    iconel3.src = Material.ArrowBackIcon;
+    icon.appendChild(iconel3);
+
+
+    // icon.style.mask = `url(${Material.ArrowBackIcon})`;
+    // icon.style.webkitMask = `url(${Material.ArrowBackIcon})`;
+    // icon.style.webkitMaskSize = 'contain'
+    // icon.style.webkitMaskRepeat = 'no-repeat'
 
     btn.prepend(icon)
     btn.addEventListener('click', () => {

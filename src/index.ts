@@ -225,7 +225,7 @@ class SkaraPlayer {
     this._videoThumbnail = document.createElement('div')
     this._videoThumbnail.style.width = "100%"
     this._videoThumbnail.style.height = "100%"
-    this._videoThumbnail.style.zIndex = "13"
+    this._videoThumbnail.style.zIndex = "12"
     if (config.videoThumbnail) {
       this._thumbnailImage = document.createElement('img')
       this._thumbnailImage.src = config.videoThumbnail as string
@@ -294,12 +294,14 @@ class SkaraPlayer {
         "--iconButtonColor": this.theme?.colors?.iconButtonColor,
         "--iconButtonHoverColor": this.theme?.colors?.iconButtonHoverColor,
         "--brandColor": this.theme?.colors?.brandColor,
+
         "--progressBGColor": this.theme?.colors?.progressBGColor,
         "--progressLoadedColor": this.theme?.colors?.progressLoadedColor,
         "--progressForegroundColor": this.theme?.colors?.progressForegroundColor,
         "--progressCircleColor": this.theme?.colors?.progressCircleColor,
         "--volumeBarBGColor": this.theme?.colors?.volumeBarBGColor,
         "--volumeBarForegroundColor": this.theme?.colors?.volumeBarForegroundColor,
+
         "--settingsBGColor": this.theme?.colors?.settingsBGColor,
         "--settingsTextColor": this.theme?.colors?.settingsTextColor,
         "--settingsHoverColor": this.theme?.colors?.settingsHoverColor,
