@@ -234,10 +234,8 @@
 }
 
 .VC4pIW_prgsContainer:hover .VC4pIW_scrubber {
-  width: calc(var(--progressBarHeight) * var(--progressBarHoverScale)  + 10px);
-  height: calc(var(--progressBarHeight) * var(--progressBarHoverScale)  + 10px);
+  width: calc((var(--progressBarHeight)  + 10px) * var(--progressBarHoverScale));
   opacity: 1;
-  transform: translate3d(-50%, -50%, 0);
 }
 
 .VC4pIW_prgsContainer:active .VC4pIW_prgsWrapper, .VC4pIW_prgsContainer:active .VC4pIW_prgsBar, .VC4pIW_prgsContainer:active .VC4pIW_prgsHover {
@@ -590,6 +588,7 @@
   height: var(--iconButtonSize);
   width: var(--iconButtonSize);
   cursor: pointer;
+  opacity: var(--iconButtonOpacity);
 }
 
 .VC4pIW_controls:hover {

@@ -267,9 +267,7 @@
 }
 
 .prgsContainer:hover .scrubber {
-  transform: translate3d(-50%, -50%, 0);
-  width: calc(var(--progressBarHeight)*var(--progressBarHoverScale) + 10px);
-  height: calc(var(--progressBarHeight)*var(--progressBarHoverScale) + 10px);
+  width: calc((var(--progressBarHeight) + 10px)*var(--progressBarHoverScale));
   opacity: 1;
 }
 
@@ -644,6 +642,7 @@
   height: var(--iconButtonSize);
   width: var(--iconButtonSize);
   cursor: pointer;
+  opacity: var(--iconButtonOpacity);
 }
 
 .controls:hover {
