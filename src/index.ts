@@ -75,54 +75,7 @@ const defaultConfig: PlayerConfig = {
   showSettings: true,
   showFullscreen: true,
   showBackButton: true,
-  theme: {
-    colors: {
-      primary: "",
-      secondary: "",
-      textColor: "",
-      centerIconButtonColor: "",
-      centerIconButtonHoverColor: "",
-      iconButtonColor: "",
-      iconButtonHoverColor: "",
-      brandColor: "",
-      progressBGColor: "",
-      progressLoadedColor: "",
-      progressForegroundColor: "",
-      progressCircleColor: "",
-      volumeBarBGColor: "",
-      volumeBarForegroundColor: "",
-      settingsBGColor: "",
-      settingsTextColor: "",
-      settingsHoverColor: "",
-      tooltipTextColor: "",
-      tooltipBGColor: "",
-      textOpacity: "",
-      centerIconButtonOpacity: "",
-      iconButtonOpacity: "",
-      brandOpacity: "",
-      progressOpacity: "",
-      volumeOpacity: "",
-      settingsOpacity: "",
-      tooltipOpacity: "",
-    },
-    spacing: {
-      padding: "",
-      margin: "",
-      bottomBarSpacing: "",
-      playerControlMargin: "",
-      playerCornerRadius: "",
-      centerIconButtonCornerRadius: "",
-      centerIconButtonPadding: "",
-      centerIconButtonSize: "",
-      iconButtonCornerRadius: "",
-      iconButtonPadding: "",
-      iconButtonSize: "",
-      progressBarHeight: "",
-      progressBarHoverScale: "",
-      volumeBarHeight: "",
-      tooltipCornerRadius: ""
-    },
-  }
+  theme: theme,
 }
 /**
  * @class SkaraPlayer
@@ -225,7 +178,7 @@ class SkaraPlayer {
     this._videoThumbnail = document.createElement('div')
     this._videoThumbnail.style.width = "100%"
     this._videoThumbnail.style.height = "100%"
-    this._videoThumbnail.style.zIndex = "13"
+    this._videoThumbnail.style.zIndex = "12"
     if (config.videoThumbnail) {
       this._thumbnailImage = document.createElement('img')
       this._thumbnailImage.src = config.videoThumbnail as string
@@ -267,53 +220,56 @@ class SkaraPlayer {
     this._osdBar.prepend(progressContainerWrapper)
 
     if (config?.theme) {
+
       const newtheme = document.querySelector(':root') as HTMLElement;
       const setRootVariables = (vars: Record<string, string>) => Object.entries(vars).forEach(v => newtheme?.style?.setProperty(v[0], v[1]));
       const colorVariables = {
         // "--skaraVideoPrimaryColor": this.theme?.colors?.primary,
-        "--skaraVideoPrimaryColor": this.theme?.colors?.primary,
-        "--skaraVideoSecondaryColor": this.theme?.colors?.secondary,
-        "--textColor": this.theme?.colors?.textColor,
+        "--skaraVideoPrimaryColor": this.config.theme?.colors?.primary as string,
+        "--skaraVideoSecondaryColor": this.config.theme?.colors?.secondary as string,
+        "--textColor": this.config.theme?.colors?.textColor as string,
 
-        "--bottomBarSpacing": this.theme?.spacing?.bottomBarSpacing,
-        "--playerControlMargin": this.theme?.spacing?.playerControlMargin,
-        "--playerCornerRadius": this.theme?.spacing?.playerCornerRadius,
-        "--centerIconButtonCornerRadius": this.theme?.spacing?.centerIconButtonCornerRadius,
-        "--centerIconButtonPadding": this.theme?.spacing?.centerIconButtonPadding,
-        "--centerIconButtonSize": this.theme?.spacing?.centerIconButtonSize,
-        "--iconButtonCornerRadius": this.theme?.spacing?.iconButtonCornerRadius,
-        "--iconButtonPadding": this.theme?.spacing?.iconButtonPadding,
-        "--iconButtonSize": this.theme?.spacing?.iconButtonSize,
-        "--progressBarHeight": this.theme?.spacing?.progressBarHeight,
-        "--progressBarHoverScale": this.theme?.spacing?.progressBarHoverScale,
-        "--volumeBarHeight": this.theme?.spacing?.volumeBarHeight,
-        "--tooltipCornerRadius": this.theme?.spacing?.tooltipCornerRadius,
+        "--bottomBarSpacing": this.config.theme?.spacing?.bottomBarSpacing as string,
+        "--playerControlMargin": this.config.theme?.spacing?.playerControlMargin as string,
+        "--playerCornerRadius": this.config.theme?.spacing?.playerCornerRadius as string,
+        "--centerIconButtonCornerRadius": this.config.theme?.spacing?.centerIconButtonCornerRadius as string,
+        "--centerIconButtonPadding": this.config.theme?.spacing?.centerIconButtonPadding as string,
+        "--centerIconButtonSize": this.config.theme?.spacing?.centerIconButtonSize as string,
+        "--iconButtonCornerRadius": this.config.theme?.spacing?.iconButtonCornerRadius as string,
+        "--iconButtonPadding": this.config.theme?.spacing?.iconButtonPadding as string,
+        "--iconButtonSize": this.config.theme?.spacing?.iconButtonSize as string,
+        "--progressBarHeight": this.config.theme?.spacing?.progressBarHeight as string,
+        "--progressBarHoverScale": this.config.theme?.spacing?.progressBarHoverScale as string,
+        "--volumeBarHeight": this.config.theme?.spacing?.volumeBarHeight as string,
+        "--tooltipCornerRadius": this.config.theme?.spacing?.tooltipCornerRadius as string,
 
-        "--centerIconButtonColor": this.theme?.colors?.centerIconButtonColor,
-        "--centerIconButtonHoverColor": this.theme?.colors?.centerIconButtonHoverColor,
-        "--iconButtonColor": this.theme?.colors?.iconButtonColor,
-        "--iconButtonHoverColor": this.theme?.colors?.iconButtonHoverColor,
-        "--brandColor": this.theme?.colors?.brandColor,
-        "--progressBGColor": this.theme?.colors?.progressBGColor,
-        "--progressLoadedColor": this.theme?.colors?.progressLoadedColor,
-        "--progressForegroundColor": this.theme?.colors?.progressForegroundColor,
-        "--progressCircleColor": this.theme?.colors?.progressCircleColor,
-        "--volumeBarBGColor": this.theme?.colors?.volumeBarBGColor,
-        "--volumeBarForegroundColor": this.theme?.colors?.volumeBarForegroundColor,
-        "--settingsBGColor": this.theme?.colors?.settingsBGColor,
-        "--settingsTextColor": this.theme?.colors?.settingsTextColor,
-        "--settingsHoverColor": this.theme?.colors?.settingsHoverColor,
-        "--tooltipTextColor": this.theme?.colors?.tooltipTextColor,
-        "--tooltipBGColor": this.theme?.colors?.tooltipBGColor,
+        "--centerIconButtonColor": this.config.theme?.colors?.centerIconButtonColor as string,
+        "--centerIconButtonHoverColor": this.config.theme?.colors?.centerIconButtonHoverColor as string,
+        "--iconButtonColor": this.config.theme?.colors?.iconButtonColor as string,
+        "--iconButtonHoverColor": this.config.theme?.colors?.iconButtonHoverColor as string,
+        "--brandColor": this.config.theme?.colors?.brandColor as string,
+
+        "--progressBGColor": this.config.theme?.colors?.progressBGColor as string,
+        "--progressLoadedColor": this.config.theme?.colors?.progressLoadedColor as string,
+        "--progressForegroundColor": this.config.theme?.colors?.progressForegroundColor as string,
+        "--progressCircleColor": this.config.theme?.colors?.progressCircleColor as string,
+        "--volumeBarBGColor": this.config.theme?.colors?.volumeBarBGColor as string,
+        "--volumeBarForegroundColor": this.config.theme?.colors?.volumeBarForegroundColor as string,
+
+        "--settingsBGColor": this.config.theme?.colors?.settingsBGColor as string,
+        "--settingsTextColor": this.config.theme?.colors?.settingsTextColor as string,
+        "--settingsHoverColor": this.config.theme?.colors?.settingsHoverColor as string,
+        "--tooltipTextColor": this.config.theme?.colors?.tooltipTextColor as string,
+        "--tooltipBGColor": this.config.theme?.colors?.tooltipBGColor as string,
 
 
 
-        "--textOpacity": this.theme?.colors?.textOpacity,
-        "--centerIconButtonOpacity": this.theme?.colors?.centerIconButtonOpacity,
-        "--iconButtonOpacity": this.theme?.colors?.iconButtonOpacity,
-        "--progressOpacity": this.theme?.colors?.progressOpacity,
-        "--volumeOpacity": this.theme?.colors?.volumeOpacity,
-        "--settingsOpacity": this.theme?.colors?.settingsOpacity,
+        "--textOpacity": this.config.theme?.colors?.textOpacity as string,
+        "--centerIconButtonOpacity": this.config.theme?.colors?.centerIconButtonOpacity as string,
+        "--iconButtonOpacity": this.config.theme?.colors?.iconButtonOpacity as string,
+        "--progressOpacity": this.config.theme?.colors?.progressOpacity as string,
+        "--volumeOpacity": this.config.theme?.colors?.volumeOpacity as string,
+        "--settingsOpacity": this.config.theme?.colors?.settingsOpacity as string,
       }
       setRootVariables(colorVariables)
     }
@@ -829,6 +785,8 @@ class SkaraPlayer {
 
     this._videoEl.addEventListener('loadeddata', () => {
       console.log('video loaded')
+      console.log("this.config", this.config)
+
       this._watchTimer.setDuration(this.duration);
       this._spinner.hide()
       this.events.loaded && this.events.loaded()

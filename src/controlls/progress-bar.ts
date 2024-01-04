@@ -34,7 +34,6 @@ class ProgressBar implements Controll {
     // Scrubber 
     this.scrubberEl = document.createElement('div');
     this.scrubberEl.className = styles.scrubber;
-    this.wrapper.appendChild(this.scrubberEl);
     //scrubber.draggable = true
     //player.scrubber = scrubber;
 
@@ -48,7 +47,7 @@ class ProgressBar implements Controll {
     this.timeTooltipEl.className = styles.seekTimeTooltip;
     this._el.appendChild(this.timeTooltipEl);
 
-    // this._el.appendChild(this.scrubberEl);
+    this._el.appendChild(this.scrubberEl);
     this._el.appendChild(this.wrapper);
 
     this.addEventListener(player);
