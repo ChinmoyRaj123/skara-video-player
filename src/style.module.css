@@ -263,8 +263,8 @@
 
 .prgsContainer:hover .scrubber {
   transform: translate3d(-50%, -50%, 0);
-  width: calc(var(--progressBarHeight)*var(--progressBarHoverScale));
-  height: calc(var(--progressBarHeight)*var(--progressBarHoverScale));
+  width: calc(var(--progressBarHeight)*var(--progressBarHoverScale) * 2);
+  height: calc(var(--progressBarHeight)*var(--progressBarHoverScale) * 2);
   opacity: 1;
 }
 
