@@ -541,7 +541,7 @@
   background-color: var(--iconButtonColor);
   height: 18px;
   width: 18px;
-  padding: var(--iconButtonPadding);
+  padding: 2px;
   border-radius: var(--iconButtonCornerRadius);
   opacity: var(--iconButtonOpacity);
 }
