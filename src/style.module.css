@@ -250,9 +250,6 @@
   transition: transform 300ms ease-out;
 }
 
-.prgsContainer:hover {
-  transform: scale3d(1, var(--progressBarHoverScale), 1);
-}
 
 .prgsContainer:hover .prgsWrapper {
   transform: scale3d(1, var(--progressBarHoverScale), 1);
