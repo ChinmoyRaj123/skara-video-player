@@ -3,7 +3,7 @@ name: Build and publish npm package to DEV registry
 on:
   push:
     branches:
-      - "staging"
+      - "main"
 
 jobs:
   build_and_publish:
@@ -19,11 +19,6 @@ jobs:
         run: npm install
       - name: Build Source
         run: npm run build:ci
-      - name: Rename Package Name
-        id: info
-        uses: jaywcjlove/github-action-package@main
-        with:
-          rename: "@skara-live/splay-video"
       - name: Bump Version(patch)
         run: npm version patch --no-git-tag-version
       - name: Publish Package
