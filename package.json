@@ -15,6 +15,7 @@
     "clean": "rm -rf dist",
     "watch": "parcel watch",
     "build": "pnpm clean && parcel build --no-cache",
+    "build:ci": "npm run clean && parcel build --no-cache",
     "example": "live-server"
   },
   "keywords": [],
