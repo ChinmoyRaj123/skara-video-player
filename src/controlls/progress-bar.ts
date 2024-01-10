@@ -60,6 +60,7 @@ class ProgressBar implements Controll {
   private touchHandler(player: SkaraPlayer) {
     this._el.addEventListener('touchmove', (e) => {
       const touchPos = e.touches[0].clientX;
+      if (this.getSeekablePos(touchPos) > 100 || this.getSeekablePos(touchPos) < 0) return
       const seekVal = upScaler(player.duration)(this.getSeekablePos(touchPos))
       this.scrubberEl.style.left = `${this.getSeekablePos(touchPos)}%`;
       this.progressEl.style.width = `${this.getSeekablePos(touchPos)}%`
@@ -70,6 +71,7 @@ class ProgressBar implements Controll {
   private mouseMoveHandler(e: MouseEvent) {
     return (player: SkaraPlayer) => {
       const touchPos = e.clientX - this.wrapper.getBoundingClientRect().left
+      if (this.getSeekablePos(touchPos) > 100 || this.getSeekablePos(touchPos) < 0) return
       const seekVal = upScaler(player.duration)(this.getSeekablePos(touchPos))
       this.scrubberEl.style.left = `${this.getSeekablePos(touchPos)}%`;
       this.progressEl.style.width = `${this.getSeekablePos(touchPos)}%`
@@ -102,20 +104,24 @@ class ProgressBar implements Controll {
 
     this._el.addEventListener('touchmove', () => this.touchHandler(player));
     this.wrapper.addEventListener('mousedown', () => {
+      this.scrubberEl.style.opacity = "0"
       this.video.addEventListener('mousemove', handler, true)
       this.osd.element.addEventListener('mousemove', handler, true)
     }, true)
 
     this.video.addEventListener('mouseup', () => {
+      this.scrubberEl.style.opacity = "1"
       this.video.removeEventListener('mousemove', handler, true)
       this.osd.element.removeEventListener('mousemove', handler, true)
     })
 
     this.osd.element.addEventListener('mouseup', () => {
+      this.scrubberEl.style.opacity = "1"
       this.osd.element.removeEventListener('mousemove', handler, true)
       this.video.removeEventListener('mousemove', handler, true)
     })
     this.wrapper.addEventListener('mouseup', () => {
+      this.scrubberEl.style.opacity = "1"
       this.video.removeEventListener('mousemove', handler, true)
       this.osd.element.addEventListener('mousemove', handler, true)
     }, true);

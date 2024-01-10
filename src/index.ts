@@ -365,6 +365,9 @@ class SkaraPlayer {
       }
     } else {
       this._videoEl.src = this.config.src
+      const setting = this._setting.createWindow({ player: this, levels: this.hls?.levels, hls: this.hls as Hls })
+      this._root.appendChild(setting)
+      this.levelLoaded = true
     }
   }
 

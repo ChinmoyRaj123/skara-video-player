@@ -61,8 +61,9 @@
   box-sizing: border-box;
   background-image: var(--skaraVideoToolbarBg);
   opacity: 0;
+  z-index: 12;
   align-items: center;
-  transition: all .2s ease-out;
+  transition: all .4s ease-out;
   display: flex;
   position: absolute;
   top: 0;
@@ -71,6 +72,7 @@
 
 .VC4pIW_title {
   color: var(--textColor);
+  font-size: 20px;
 }
 
 .VC4pIW_backArrowMainDiv {
@@ -101,9 +103,10 @@
   box-sizing: border-box;
   padding: var(--playerControlMargin);
   opacity: 0;
+  z-index: 12;
   flex-direction: column;
   gap: 8px;
-  transition: all .2s ease-out;
+  transition: all .4s ease-out;
   display: flex;
   position: absolute;
   bottom: 0;
@@ -126,11 +129,11 @@
 }
 
 .VC4pIW_scrubber {
-  z-index: 20;
-  height: calc(var(--progressBarHeight)  + 10px);
-  width: calc(var(--progressBarHeight)  + 10px);
+  z-index: 21;
+  height: calc(var(--progressBarHeight) * 2);
+  width: calc(var(--progressBarHeight) * 2);
   background-color: var(--progressCircleColor);
-  opacity: 0;
+  opacity: 1;
   cursor: pointer;
   pointer-events: none;
   border-radius: 50%;
@@ -203,6 +206,7 @@
   width: 100%;
   cursor: pointer;
   opacity: var(--progressOpacity);
+  border-radius: 1px;
   transition: transform .3s ease-out;
   position: relative;
   overflow: hidden;
@@ -229,12 +233,13 @@
   position: absolute;
 }
 
-.VC4pIW_prgsContainer:hover, .VC4pIW_prgsContainer:hover .VC4pIW_prgsWrapper, .VC4pIW_prgsContainer:hover .VC4pIW_prgsBar, .VC4pIW_prgsContainer:hover .VC4pIW_prgsHover {
+.VC4pIW_prgsContainer:hover .VC4pIW_prgsWrapper, .VC4pIW_prgsContainer:hover .VC4pIW_prgsBar, .VC4pIW_prgsContainer:hover .VC4pIW_prgsHover {
   transform: scale3d(1, var(--progressBarHoverScale), 1);
 }
 
 .VC4pIW_prgsContainer:hover .VC4pIW_scrubber {
-  width: calc((var(--progressBarHeight)  + 10px) * var(--progressBarHoverScale));
+  width: calc((var(--progressBarHeight) * 2) * var(--progressBarHoverScale));
+  height: calc((var(--progressBarHeight) * 2) * var(--progressBarHoverScale));
   opacity: 1;
 }
 
@@ -316,7 +321,7 @@
   -webkit-appearance: none;
   width: calc(10px + var(--volumeBarHeight));
   height: calc(10px + var(--volumeBarHeight));
-  background: var(--volumeBarBGColor);
+  background: var(--volumeBarForegroundColor);
   box-shadow: none;
   border: none;
   border-radius: 50%;
@@ -328,7 +333,7 @@
   background: var(--volumeBarBGColor);
   box-shadow: none;
   border: none;
-  border-radius: 0;
+  border-radius: 2px;
 }
 
 .VC4pIW_volSlider::-webkit-slider-thumb:hover {
@@ -373,7 +378,7 @@
   background: var(--volumeBarBGColor);
   box-shadow: none;
   border: none;
-  border-radius: 0;
+  border-radius: 2px;
 }
 
 .VC4pIW_volSlider::-moz-range-thumb:hover {
@@ -431,7 +436,7 @@
   box-shadow: none;
   box-sizing: border-box;
   border: none;
-  border-radius: 0;
+  border-radius: 2px;
 }
 
 .VC4pIW_volSlider::-ms-thumb:hover {
@@ -490,10 +495,8 @@
 
 .VC4pIW_icon {
   box-sizing: border-box;
-  background-color: var(--iconButtonColor);
-  height: 18px;
-  width: 18px;
-  padding: var(--iconButtonPadding);
+  height: 24px;
+  width: 24px;
   border-radius: var(--iconButtonCornerRadius);
   opacity: var(--iconButtonOpacity);
 }
@@ -504,7 +507,7 @@
   max-height: 260px;
   background-color: var(--settingsBGColor);
   opacity: var(--settingsOpacity);
-  border-radius: 2px;
+  border-radius: 4px;
   display: none;
   position: absolute;
   bottom: 140px;
@@ -519,7 +522,7 @@
   border-radius: 2px;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
+  padding: 12px 8px;
   font-size: 16px;
   font-weight: 400;
   transition: all .3s ease-out;
@@ -576,7 +579,7 @@
 .VC4pIW_indicatorIcon {
   width: 8px;
   height: 8px;
-  background-color: var(--skaraVideoPrimaryColor);
+  background-color: var(--settingsTextColor);
   border-radius: 50%;
 }
 
@@ -661,8 +664,11 @@
 }
 
 .VC4pIW_brandImage {
-  width: 60px;
-  height: 20px;
+  width: auto;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 @media only screen and (max-device-width: 1017px) {

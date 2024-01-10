@@ -197,14 +197,14 @@ class SettingControl implements Controll {
 
   private ctrls: Record<string, SettingItem> = {};
   private hlsLevels: Level[] = [];
-
+  private _config: PlayerConfig
   constructor(player: SkaraPlayer, config: PlayerConfig) {
     this._popupEl = document.createElement('div');
     this._popupEl.className = styles.settingWrapper;
     this._settingItems = document.createElement('div');
     this._settingItems.style.width = '100%';
     this._innerEl = document.createElement('div');
-
+    this._config = config
     this._el = createCtrl({ icon: Material.SettingIcon });
     if (!config.showSettings) this._el.style.display = "none";
 
@@ -259,8 +259,11 @@ class SettingControl implements Controll {
       },
     });
 
-
-    this._settingItems.append(qltyctrl.element, speedCtrl.element);
+    if (this._config.mediaType !== 'm3u8') {
+      this._settingItems.append(speedCtrl.element);
+    } else {
+      this._settingItems.append(qltyctrl.element, speedCtrl.element);
+    }
     this._innerEl.appendChild(this._settingItems);
     this.ctrls.qltyCtrl = qltyctrl;
     this.ctrls.speedCtrl = speedCtrl;

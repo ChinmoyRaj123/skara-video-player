@@ -9,151 +9,151 @@ function $parcel$export(e, n, v, s) {
 }
 var $5b721391f7230cb2$exports = {};
 
-$parcel$export($5b721391f7230cb2$exports, "hide", () => $5b721391f7230cb2$export$fe8985bb6374093c, (v) => $5b721391f7230cb2$export$fe8985bb6374093c = v);
-$parcel$export($5b721391f7230cb2$exports, "spinner", () => $5b721391f7230cb2$export$641374ffb95bc399, (v) => $5b721391f7230cb2$export$641374ffb95bc399 = v);
-$parcel$export($5b721391f7230cb2$exports, "scrubber", () => $5b721391f7230cb2$export$e2b69c907b9ef440, (v) => $5b721391f7230cb2$export$e2b69c907b9ef440 = v);
-$parcel$export($5b721391f7230cb2$exports, "title", () => $5b721391f7230cb2$export$fb184b623420d9be, (v) => $5b721391f7230cb2$export$fb184b623420d9be = v);
-$parcel$export($5b721391f7230cb2$exports, "iconSmall", () => $5b721391f7230cb2$export$934587b1a6f00472, (v) => $5b721391f7230cb2$export$934587b1a6f00472 = v);
-$parcel$export($5b721391f7230cb2$exports, "settingPopup", () => $5b721391f7230cb2$export$5e53b5cc6c2ef6ac, (v) => $5b721391f7230cb2$export$5e53b5cc6c2ef6ac = v);
+$parcel$export($5b721391f7230cb2$exports, "spinn", () => $5b721391f7230cb2$export$b082c0b7a6cd56b2, (v) => $5b721391f7230cb2$export$b082c0b7a6cd56b2 = v);
+$parcel$export($5b721391f7230cb2$exports, "osdActive", () => $5b721391f7230cb2$export$26238087290c1f5b, (v) => $5b721391f7230cb2$export$26238087290c1f5b = v);
+$parcel$export($5b721391f7230cb2$exports, "seekTimeTooltip", () => $5b721391f7230cb2$export$b0904f355cb5d789, (v) => $5b721391f7230cb2$export$b0904f355cb5d789 = v);
 $parcel$export($5b721391f7230cb2$exports, "ctrlLeft", () => $5b721391f7230cb2$export$fb55bfd207eb66bf, (v) => $5b721391f7230cb2$export$fb55bfd207eb66bf = v);
 $parcel$export($5b721391f7230cb2$exports, "active", () => $5b721391f7230cb2$export$89da14300d534261, (v) => $5b721391f7230cb2$export$89da14300d534261 = v);
-$parcel$export($5b721391f7230cb2$exports, "listItem", () => $5b721391f7230cb2$export$76c7e83ecc9cdf05, (v) => $5b721391f7230cb2$export$76c7e83ecc9cdf05 = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsContainer", () => $5b721391f7230cb2$export$22702ef448665b4d, (v) => $5b721391f7230cb2$export$22702ef448665b4d = v);
-$parcel$export($5b721391f7230cb2$exports, "centerButton", () => $5b721391f7230cb2$export$a2b3dd87d3e471be, (v) => $5b721391f7230cb2$export$a2b3dd87d3e471be = v);
-$parcel$export($5b721391f7230cb2$exports, "centerButtonImage", () => $5b721391f7230cb2$export$502df2ec96816c8c, (v) => $5b721391f7230cb2$export$502df2ec96816c8c = v);
-$parcel$export($5b721391f7230cb2$exports, "watchTimer", () => $5b721391f7230cb2$export$5321aef497dbc95, (v) => $5b721391f7230cb2$export$5321aef497dbc95 = v);
-$parcel$export($5b721391f7230cb2$exports, "sliderProgress", () => $5b721391f7230cb2$export$44601925ebb63135, (v) => $5b721391f7230cb2$export$44601925ebb63135 = v);
-$parcel$export($5b721391f7230cb2$exports, "root", () => $5b721391f7230cb2$export$e8e78c978b129247, (v) => $5b721391f7230cb2$export$e8e78c978b129247 = v);
-$parcel$export($5b721391f7230cb2$exports, "ctrlContainer", () => $5b721391f7230cb2$export$77806bb1d74cd6f6, (v) => $5b721391f7230cb2$export$77806bb1d74cd6f6 = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsWrapper", () => $5b721391f7230cb2$export$2f388bdb5e147bac, (v) => $5b721391f7230cb2$export$2f388bdb5e147bac = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsBar", () => $5b721391f7230cb2$export$e475d70d0abfaf0c, (v) => $5b721391f7230cb2$export$e475d70d0abfaf0c = v);
-$parcel$export($5b721391f7230cb2$exports, "seekTimeTooltip", () => $5b721391f7230cb2$export$b0904f355cb5d789, (v) => $5b721391f7230cb2$export$b0904f355cb5d789 = v);
-$parcel$export($5b721391f7230cb2$exports, "osdActive", () => $5b721391f7230cb2$export$26238087290c1f5b, (v) => $5b721391f7230cb2$export$26238087290c1f5b = v);
-$parcel$export($5b721391f7230cb2$exports, "activeIconWrapper", () => $5b721391f7230cb2$export$54384a8b841c9096, (v) => $5b721391f7230cb2$export$54384a8b841c9096 = v);
-$parcel$export($5b721391f7230cb2$exports, "brandImage", () => $5b721391f7230cb2$export$fc08fb1c14557328, (v) => $5b721391f7230cb2$export$fc08fb1c14557328 = v);
-$parcel$export($5b721391f7230cb2$exports, "toolBar", () => $5b721391f7230cb2$export$ed2652bdb9ef1ad0, (v) => $5b721391f7230cb2$export$ed2652bdb9ef1ad0 = v);
-$parcel$export($5b721391f7230cb2$exports, "iconButtonImage", () => $5b721391f7230cb2$export$1f490cbad58081d8, (v) => $5b721391f7230cb2$export$1f490cbad58081d8 = v);
-$parcel$export($5b721391f7230cb2$exports, "volCtrlWrapper", () => $5b721391f7230cb2$export$328af1edb566eae3, (v) => $5b721391f7230cb2$export$328af1edb566eae3 = v);
-$parcel$export($5b721391f7230cb2$exports, "innerOsd", () => $5b721391f7230cb2$export$5bbce59cbad6e3b7, (v) => $5b721391f7230cb2$export$5bbce59cbad6e3b7 = v);
-$parcel$export($5b721391f7230cb2$exports, "video", () => $5b721391f7230cb2$export$5f8d3589eb8441ca, (v) => $5b721391f7230cb2$export$5f8d3589eb8441ca = v);
-$parcel$export($5b721391f7230cb2$exports, "settingWrapper", () => $5b721391f7230cb2$export$208d04ce5dd64049, (v) => $5b721391f7230cb2$export$208d04ce5dd64049 = v);
-$parcel$export($5b721391f7230cb2$exports, "volSlider", () => $5b721391f7230cb2$export$523cee24344607ef, (v) => $5b721391f7230cb2$export$523cee24344607ef = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsHover", () => $5b721391f7230cb2$export$f38465fe307ff1ea, (v) => $5b721391f7230cb2$export$f38465fe307ff1ea = v);
-$parcel$export($5b721391f7230cb2$exports, "centerBtnShow", () => $5b721391f7230cb2$export$4bc86dd528c758a3, (v) => $5b721391f7230cb2$export$4bc86dd528c758a3 = v);
-$parcel$export($5b721391f7230cb2$exports, "rotate", () => $5b721391f7230cb2$export$bb628a54ab399bc9, (v) => $5b721391f7230cb2$export$bb628a54ab399bc9 = v);
-$parcel$export($5b721391f7230cb2$exports, "backArrowMainDiv", () => $5b721391f7230cb2$export$d86087c43b3ca0df, (v) => $5b721391f7230cb2$export$d86087c43b3ca0df = v);
 $parcel$export($5b721391f7230cb2$exports, "controls", () => $5b721391f7230cb2$export$cc1adf6fb659c762, (v) => $5b721391f7230cb2$export$cc1adf6fb659c762 = v);
-$parcel$export($5b721391f7230cb2$exports, "sliderWrapper", () => $5b721391f7230cb2$export$b99e7c702abdb77a, (v) => $5b721391f7230cb2$export$b99e7c702abdb77a = v);
-$parcel$export($5b721391f7230cb2$exports, "spinn", () => $5b721391f7230cb2$export$b082c0b7a6cd56b2, (v) => $5b721391f7230cb2$export$b082c0b7a6cd56b2 = v);
-$parcel$export($5b721391f7230cb2$exports, "centerBtnHide", () => $5b721391f7230cb2$export$e9be0fb78d9ff657, (v) => $5b721391f7230cb2$export$e9be0fb78d9ff657 = v);
-$parcel$export($5b721391f7230cb2$exports, "prgsContainerWrapper", () => $5b721391f7230cb2$export$49ee957901f7a027, (v) => $5b721391f7230cb2$export$49ee957901f7a027 = v);
-$parcel$export($5b721391f7230cb2$exports, "icon", () => $5b721391f7230cb2$export$1ca1ec8b29a4ce27, (v) => $5b721391f7230cb2$export$1ca1ec8b29a4ce27 = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsContainer", () => $5b721391f7230cb2$export$22702ef448665b4d, (v) => $5b721391f7230cb2$export$22702ef448665b4d = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsWrapper", () => $5b721391f7230cb2$export$2f388bdb5e147bac, (v) => $5b721391f7230cb2$export$2f388bdb5e147bac = v);
+$parcel$export($5b721391f7230cb2$exports, "volSlider", () => $5b721391f7230cb2$export$523cee24344607ef, (v) => $5b721391f7230cb2$export$523cee24344607ef = v);
 $parcel$export($5b721391f7230cb2$exports, "titleMainDiv", () => $5b721391f7230cb2$export$939d7654b00a3df9, (v) => $5b721391f7230cb2$export$939d7654b00a3df9 = v);
-$parcel$export($5b721391f7230cb2$exports, "ctrlRight", () => $5b721391f7230cb2$export$deaf7926095b512d, (v) => $5b721391f7230cb2$export$deaf7926095b512d = v);
-$parcel$export($5b721391f7230cb2$exports, "osdBar", () => $5b721391f7230cb2$export$a1b4384913d28591, (v) => $5b721391f7230cb2$export$a1b4384913d28591 = v);
-$parcel$export($5b721391f7230cb2$exports, "iconmd", () => $5b721391f7230cb2$export$ea551f4aac394d83, (v) => $5b721391f7230cb2$export$ea551f4aac394d83 = v);
-$parcel$export($5b721391f7230cb2$exports, "button", () => $5b721391f7230cb2$export$2ba01fb71ed41cb6, (v) => $5b721391f7230cb2$export$2ba01fb71ed41cb6 = v);
-$parcel$export($5b721391f7230cb2$exports, "settingItem", () => $5b721391f7230cb2$export$d9d30bff7354568a, (v) => $5b721391f7230cb2$export$d9d30bff7354568a = v);
-$parcel$export($5b721391f7230cb2$exports, "indicatorIcon", () => $5b721391f7230cb2$export$37c675ad6e14d9ff, (v) => $5b721391f7230cb2$export$37c675ad6e14d9ff = v);
 $parcel$export($5b721391f7230cb2$exports, "videoThumbnailDiv", () => $5b721391f7230cb2$export$e40d2e08bc36029c, (v) => $5b721391f7230cb2$export$e40d2e08bc36029c = v);
+$parcel$export($5b721391f7230cb2$exports, "ctrlRight", () => $5b721391f7230cb2$export$deaf7926095b512d, (v) => $5b721391f7230cb2$export$deaf7926095b512d = v);
+$parcel$export($5b721391f7230cb2$exports, "icon", () => $5b721391f7230cb2$export$1ca1ec8b29a4ce27, (v) => $5b721391f7230cb2$export$1ca1ec8b29a4ce27 = v);
+$parcel$export($5b721391f7230cb2$exports, "iconButtonImage", () => $5b721391f7230cb2$export$1f490cbad58081d8, (v) => $5b721391f7230cb2$export$1f490cbad58081d8 = v);
+$parcel$export($5b721391f7230cb2$exports, "settingPopup", () => $5b721391f7230cb2$export$5e53b5cc6c2ef6ac, (v) => $5b721391f7230cb2$export$5e53b5cc6c2ef6ac = v);
 $parcel$export($5b721391f7230cb2$exports, "fullScrMainDiv", () => $5b721391f7230cb2$export$f2732ff72bedcaa4, (v) => $5b721391f7230cb2$export$f2732ff72bedcaa4 = v);
-var $5b721391f7230cb2$export$fe8985bb6374093c;
-var $5b721391f7230cb2$export$641374ffb95bc399;
-var $5b721391f7230cb2$export$e2b69c907b9ef440;
-var $5b721391f7230cb2$export$fb184b623420d9be;
-var $5b721391f7230cb2$export$934587b1a6f00472;
-var $5b721391f7230cb2$export$5e53b5cc6c2ef6ac;
+$parcel$export($5b721391f7230cb2$exports, "hide", () => $5b721391f7230cb2$export$fe8985bb6374093c, (v) => $5b721391f7230cb2$export$fe8985bb6374093c = v);
+$parcel$export($5b721391f7230cb2$exports, "watchTimer", () => $5b721391f7230cb2$export$5321aef497dbc95, (v) => $5b721391f7230cb2$export$5321aef497dbc95 = v);
+$parcel$export($5b721391f7230cb2$exports, "iconmd", () => $5b721391f7230cb2$export$ea551f4aac394d83, (v) => $5b721391f7230cb2$export$ea551f4aac394d83 = v);
+$parcel$export($5b721391f7230cb2$exports, "sliderWrapper", () => $5b721391f7230cb2$export$b99e7c702abdb77a, (v) => $5b721391f7230cb2$export$b99e7c702abdb77a = v);
+$parcel$export($5b721391f7230cb2$exports, "innerOsd", () => $5b721391f7230cb2$export$5bbce59cbad6e3b7, (v) => $5b721391f7230cb2$export$5bbce59cbad6e3b7 = v);
+$parcel$export($5b721391f7230cb2$exports, "backArrowMainDiv", () => $5b721391f7230cb2$export$d86087c43b3ca0df, (v) => $5b721391f7230cb2$export$d86087c43b3ca0df = v);
+$parcel$export($5b721391f7230cb2$exports, "ctrlContainer", () => $5b721391f7230cb2$export$77806bb1d74cd6f6, (v) => $5b721391f7230cb2$export$77806bb1d74cd6f6 = v);
+$parcel$export($5b721391f7230cb2$exports, "rotate", () => $5b721391f7230cb2$export$bb628a54ab399bc9, (v) => $5b721391f7230cb2$export$bb628a54ab399bc9 = v);
+$parcel$export($5b721391f7230cb2$exports, "centerButtonImage", () => $5b721391f7230cb2$export$502df2ec96816c8c, (v) => $5b721391f7230cb2$export$502df2ec96816c8c = v);
+$parcel$export($5b721391f7230cb2$exports, "brandImage", () => $5b721391f7230cb2$export$fc08fb1c14557328, (v) => $5b721391f7230cb2$export$fc08fb1c14557328 = v);
+$parcel$export($5b721391f7230cb2$exports, "title", () => $5b721391f7230cb2$export$fb184b623420d9be, (v) => $5b721391f7230cb2$export$fb184b623420d9be = v);
+$parcel$export($5b721391f7230cb2$exports, "listItem", () => $5b721391f7230cb2$export$76c7e83ecc9cdf05, (v) => $5b721391f7230cb2$export$76c7e83ecc9cdf05 = v);
+$parcel$export($5b721391f7230cb2$exports, "scrubber", () => $5b721391f7230cb2$export$e2b69c907b9ef440, (v) => $5b721391f7230cb2$export$e2b69c907b9ef440 = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsHover", () => $5b721391f7230cb2$export$f38465fe307ff1ea, (v) => $5b721391f7230cb2$export$f38465fe307ff1ea = v);
+$parcel$export($5b721391f7230cb2$exports, "indicatorIcon", () => $5b721391f7230cb2$export$37c675ad6e14d9ff, (v) => $5b721391f7230cb2$export$37c675ad6e14d9ff = v);
+$parcel$export($5b721391f7230cb2$exports, "settingWrapper", () => $5b721391f7230cb2$export$208d04ce5dd64049, (v) => $5b721391f7230cb2$export$208d04ce5dd64049 = v);
+$parcel$export($5b721391f7230cb2$exports, "iconSmall", () => $5b721391f7230cb2$export$934587b1a6f00472, (v) => $5b721391f7230cb2$export$934587b1a6f00472 = v);
+$parcel$export($5b721391f7230cb2$exports, "volCtrlWrapper", () => $5b721391f7230cb2$export$328af1edb566eae3, (v) => $5b721391f7230cb2$export$328af1edb566eae3 = v);
+$parcel$export($5b721391f7230cb2$exports, "root", () => $5b721391f7230cb2$export$e8e78c978b129247, (v) => $5b721391f7230cb2$export$e8e78c978b129247 = v);
+$parcel$export($5b721391f7230cb2$exports, "settingItem", () => $5b721391f7230cb2$export$d9d30bff7354568a, (v) => $5b721391f7230cb2$export$d9d30bff7354568a = v);
+$parcel$export($5b721391f7230cb2$exports, "centerButton", () => $5b721391f7230cb2$export$a2b3dd87d3e471be, (v) => $5b721391f7230cb2$export$a2b3dd87d3e471be = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsContainerWrapper", () => $5b721391f7230cb2$export$49ee957901f7a027, (v) => $5b721391f7230cb2$export$49ee957901f7a027 = v);
+$parcel$export($5b721391f7230cb2$exports, "prgsBar", () => $5b721391f7230cb2$export$e475d70d0abfaf0c, (v) => $5b721391f7230cb2$export$e475d70d0abfaf0c = v);
+$parcel$export($5b721391f7230cb2$exports, "toolBar", () => $5b721391f7230cb2$export$ed2652bdb9ef1ad0, (v) => $5b721391f7230cb2$export$ed2652bdb9ef1ad0 = v);
+$parcel$export($5b721391f7230cb2$exports, "video", () => $5b721391f7230cb2$export$5f8d3589eb8441ca, (v) => $5b721391f7230cb2$export$5f8d3589eb8441ca = v);
+$parcel$export($5b721391f7230cb2$exports, "centerBtnShow", () => $5b721391f7230cb2$export$4bc86dd528c758a3, (v) => $5b721391f7230cb2$export$4bc86dd528c758a3 = v);
+$parcel$export($5b721391f7230cb2$exports, "osdBar", () => $5b721391f7230cb2$export$a1b4384913d28591, (v) => $5b721391f7230cb2$export$a1b4384913d28591 = v);
+$parcel$export($5b721391f7230cb2$exports, "button", () => $5b721391f7230cb2$export$2ba01fb71ed41cb6, (v) => $5b721391f7230cb2$export$2ba01fb71ed41cb6 = v);
+$parcel$export($5b721391f7230cb2$exports, "sliderProgress", () => $5b721391f7230cb2$export$44601925ebb63135, (v) => $5b721391f7230cb2$export$44601925ebb63135 = v);
+$parcel$export($5b721391f7230cb2$exports, "activeIconWrapper", () => $5b721391f7230cb2$export$54384a8b841c9096, (v) => $5b721391f7230cb2$export$54384a8b841c9096 = v);
+$parcel$export($5b721391f7230cb2$exports, "spinner", () => $5b721391f7230cb2$export$641374ffb95bc399, (v) => $5b721391f7230cb2$export$641374ffb95bc399 = v);
+$parcel$export($5b721391f7230cb2$exports, "centerBtnHide", () => $5b721391f7230cb2$export$e9be0fb78d9ff657, (v) => $5b721391f7230cb2$export$e9be0fb78d9ff657 = v);
+var $5b721391f7230cb2$export$b082c0b7a6cd56b2;
+var $5b721391f7230cb2$export$26238087290c1f5b;
+var $5b721391f7230cb2$export$b0904f355cb5d789;
 var $5b721391f7230cb2$export$fb55bfd207eb66bf;
 var $5b721391f7230cb2$export$89da14300d534261;
-var $5b721391f7230cb2$export$76c7e83ecc9cdf05;
-var $5b721391f7230cb2$export$22702ef448665b4d;
-var $5b721391f7230cb2$export$a2b3dd87d3e471be;
-var $5b721391f7230cb2$export$502df2ec96816c8c;
-var $5b721391f7230cb2$export$5321aef497dbc95;
-var $5b721391f7230cb2$export$44601925ebb63135;
-var $5b721391f7230cb2$export$e8e78c978b129247;
-var $5b721391f7230cb2$export$77806bb1d74cd6f6;
-var $5b721391f7230cb2$export$2f388bdb5e147bac;
-var $5b721391f7230cb2$export$e475d70d0abfaf0c;
-var $5b721391f7230cb2$export$b0904f355cb5d789;
-var $5b721391f7230cb2$export$26238087290c1f5b;
-var $5b721391f7230cb2$export$54384a8b841c9096;
-var $5b721391f7230cb2$export$fc08fb1c14557328;
-var $5b721391f7230cb2$export$ed2652bdb9ef1ad0;
-var $5b721391f7230cb2$export$1f490cbad58081d8;
-var $5b721391f7230cb2$export$328af1edb566eae3;
-var $5b721391f7230cb2$export$5bbce59cbad6e3b7;
-var $5b721391f7230cb2$export$5f8d3589eb8441ca;
-var $5b721391f7230cb2$export$208d04ce5dd64049;
-var $5b721391f7230cb2$export$523cee24344607ef;
-var $5b721391f7230cb2$export$f38465fe307ff1ea;
-var $5b721391f7230cb2$export$4bc86dd528c758a3;
-var $5b721391f7230cb2$export$bb628a54ab399bc9;
-var $5b721391f7230cb2$export$d86087c43b3ca0df;
 var $5b721391f7230cb2$export$cc1adf6fb659c762;
-var $5b721391f7230cb2$export$b99e7c702abdb77a;
-var $5b721391f7230cb2$export$b082c0b7a6cd56b2;
-var $5b721391f7230cb2$export$e9be0fb78d9ff657;
-var $5b721391f7230cb2$export$49ee957901f7a027;
-var $5b721391f7230cb2$export$1ca1ec8b29a4ce27;
+var $5b721391f7230cb2$export$22702ef448665b4d;
+var $5b721391f7230cb2$export$2f388bdb5e147bac;
+var $5b721391f7230cb2$export$523cee24344607ef;
 var $5b721391f7230cb2$export$939d7654b00a3df9;
-var $5b721391f7230cb2$export$deaf7926095b512d;
-var $5b721391f7230cb2$export$a1b4384913d28591;
-var $5b721391f7230cb2$export$ea551f4aac394d83;
-var $5b721391f7230cb2$export$2ba01fb71ed41cb6;
-var $5b721391f7230cb2$export$d9d30bff7354568a;
-var $5b721391f7230cb2$export$37c675ad6e14d9ff;
 var $5b721391f7230cb2$export$e40d2e08bc36029c;
+var $5b721391f7230cb2$export$deaf7926095b512d;
+var $5b721391f7230cb2$export$1ca1ec8b29a4ce27;
+var $5b721391f7230cb2$export$1f490cbad58081d8;
+var $5b721391f7230cb2$export$5e53b5cc6c2ef6ac;
 var $5b721391f7230cb2$export$f2732ff72bedcaa4;
-$5b721391f7230cb2$export$fe8985bb6374093c = `VC4pIW_hide`;
-$5b721391f7230cb2$export$641374ffb95bc399 = `VC4pIW_spinner`;
-$5b721391f7230cb2$export$e2b69c907b9ef440 = `VC4pIW_scrubber`;
-$5b721391f7230cb2$export$fb184b623420d9be = `VC4pIW_title`;
-$5b721391f7230cb2$export$934587b1a6f00472 = `VC4pIW_iconSmall`;
-$5b721391f7230cb2$export$5e53b5cc6c2ef6ac = `VC4pIW_settingPopup`;
-$5b721391f7230cb2$export$fb55bfd207eb66bf = `VC4pIW_ctrlLeft`;
-$5b721391f7230cb2$export$89da14300d534261 = `VC4pIW_active`;
-$5b721391f7230cb2$export$76c7e83ecc9cdf05 = `VC4pIW_listItem`;
-$5b721391f7230cb2$export$22702ef448665b4d = `VC4pIW_prgsContainer`;
-$5b721391f7230cb2$export$a2b3dd87d3e471be = `VC4pIW_centerButton`;
-$5b721391f7230cb2$export$502df2ec96816c8c = `VC4pIW_centerButtonImage`;
-$5b721391f7230cb2$export$5321aef497dbc95 = `VC4pIW_watchTimer`;
-$5b721391f7230cb2$export$44601925ebb63135 = `VC4pIW_sliderProgress`;
-$5b721391f7230cb2$export$e8e78c978b129247 = `VC4pIW_root`;
-$5b721391f7230cb2$export$77806bb1d74cd6f6 = `VC4pIW_ctrlContainer`;
-$5b721391f7230cb2$export$2f388bdb5e147bac = `VC4pIW_prgsWrapper`;
-$5b721391f7230cb2$export$e475d70d0abfaf0c = `VC4pIW_prgsBar`;
-$5b721391f7230cb2$export$b0904f355cb5d789 = `VC4pIW_seekTimeTooltip`;
-$5b721391f7230cb2$export$26238087290c1f5b = `VC4pIW_osdActive`;
-$5b721391f7230cb2$export$54384a8b841c9096 = `VC4pIW_activeIconWrapper`;
-$5b721391f7230cb2$export$fc08fb1c14557328 = `VC4pIW_brandImage`;
-$5b721391f7230cb2$export$ed2652bdb9ef1ad0 = `VC4pIW_toolBar`;
-$5b721391f7230cb2$export$1f490cbad58081d8 = `VC4pIW_iconButtonImage`;
-$5b721391f7230cb2$export$328af1edb566eae3 = `VC4pIW_volCtrlWrapper`;
-$5b721391f7230cb2$export$5bbce59cbad6e3b7 = `VC4pIW_innerOsd`;
-$5b721391f7230cb2$export$5f8d3589eb8441ca = `VC4pIW_video`;
-$5b721391f7230cb2$export$208d04ce5dd64049 = `VC4pIW_settingWrapper`;
-$5b721391f7230cb2$export$523cee24344607ef = `VC4pIW_volSlider`;
-$5b721391f7230cb2$export$f38465fe307ff1ea = `VC4pIW_prgsHover`;
-$5b721391f7230cb2$export$4bc86dd528c758a3 = `VC4pIW_centerBtnShow`;
-$5b721391f7230cb2$export$bb628a54ab399bc9 = `VC4pIW_rotate`;
-$5b721391f7230cb2$export$d86087c43b3ca0df = `VC4pIW_backArrowMainDiv`;
-$5b721391f7230cb2$export$cc1adf6fb659c762 = `VC4pIW_controls`;
-$5b721391f7230cb2$export$b99e7c702abdb77a = `VC4pIW_sliderWrapper`;
+var $5b721391f7230cb2$export$fe8985bb6374093c;
+var $5b721391f7230cb2$export$5321aef497dbc95;
+var $5b721391f7230cb2$export$ea551f4aac394d83;
+var $5b721391f7230cb2$export$b99e7c702abdb77a;
+var $5b721391f7230cb2$export$5bbce59cbad6e3b7;
+var $5b721391f7230cb2$export$d86087c43b3ca0df;
+var $5b721391f7230cb2$export$77806bb1d74cd6f6;
+var $5b721391f7230cb2$export$bb628a54ab399bc9;
+var $5b721391f7230cb2$export$502df2ec96816c8c;
+var $5b721391f7230cb2$export$fc08fb1c14557328;
+var $5b721391f7230cb2$export$fb184b623420d9be;
+var $5b721391f7230cb2$export$76c7e83ecc9cdf05;
+var $5b721391f7230cb2$export$e2b69c907b9ef440;
+var $5b721391f7230cb2$export$f38465fe307ff1ea;
+var $5b721391f7230cb2$export$37c675ad6e14d9ff;
+var $5b721391f7230cb2$export$208d04ce5dd64049;
+var $5b721391f7230cb2$export$934587b1a6f00472;
+var $5b721391f7230cb2$export$328af1edb566eae3;
+var $5b721391f7230cb2$export$e8e78c978b129247;
+var $5b721391f7230cb2$export$d9d30bff7354568a;
+var $5b721391f7230cb2$export$a2b3dd87d3e471be;
+var $5b721391f7230cb2$export$49ee957901f7a027;
+var $5b721391f7230cb2$export$e475d70d0abfaf0c;
+var $5b721391f7230cb2$export$ed2652bdb9ef1ad0;
+var $5b721391f7230cb2$export$5f8d3589eb8441ca;
+var $5b721391f7230cb2$export$4bc86dd528c758a3;
+var $5b721391f7230cb2$export$a1b4384913d28591;
+var $5b721391f7230cb2$export$2ba01fb71ed41cb6;
+var $5b721391f7230cb2$export$44601925ebb63135;
+var $5b721391f7230cb2$export$54384a8b841c9096;
+var $5b721391f7230cb2$export$641374ffb95bc399;
+var $5b721391f7230cb2$export$e9be0fb78d9ff657;
 $5b721391f7230cb2$export$b082c0b7a6cd56b2 = `VC4pIW_spinn`;
 $5b721391f7230cb2$export$b082c0b7a6cd56b2;
-$5b721391f7230cb2$export$e9be0fb78d9ff657 = `VC4pIW_centerBtnHide`;
-$5b721391f7230cb2$export$49ee957901f7a027 = `VC4pIW_prgsContainerWrapper`;
-$5b721391f7230cb2$export$1ca1ec8b29a4ce27 = `VC4pIW_icon`;
+$5b721391f7230cb2$export$26238087290c1f5b = `VC4pIW_osdActive`;
+$5b721391f7230cb2$export$b0904f355cb5d789 = `VC4pIW_seekTimeTooltip`;
+$5b721391f7230cb2$export$fb55bfd207eb66bf = `VC4pIW_ctrlLeft`;
+$5b721391f7230cb2$export$89da14300d534261 = `VC4pIW_active`;
+$5b721391f7230cb2$export$cc1adf6fb659c762 = `VC4pIW_controls`;
+$5b721391f7230cb2$export$22702ef448665b4d = `VC4pIW_prgsContainer`;
+$5b721391f7230cb2$export$2f388bdb5e147bac = `VC4pIW_prgsWrapper`;
+$5b721391f7230cb2$export$523cee24344607ef = `VC4pIW_volSlider`;
 $5b721391f7230cb2$export$939d7654b00a3df9 = `VC4pIW_titleMainDiv`;
-$5b721391f7230cb2$export$deaf7926095b512d = `VC4pIW_ctrlRight`;
-$5b721391f7230cb2$export$a1b4384913d28591 = `VC4pIW_osdBar`;
-$5b721391f7230cb2$export$ea551f4aac394d83 = `VC4pIW_iconmd`;
-$5b721391f7230cb2$export$2ba01fb71ed41cb6 = `VC4pIW_button`;
-$5b721391f7230cb2$export$d9d30bff7354568a = `VC4pIW_settingItem`;
-$5b721391f7230cb2$export$37c675ad6e14d9ff = `VC4pIW_indicatorIcon`;
 $5b721391f7230cb2$export$e40d2e08bc36029c = `VC4pIW_videoThumbnailDiv`;
+$5b721391f7230cb2$export$deaf7926095b512d = `VC4pIW_ctrlRight`;
+$5b721391f7230cb2$export$1ca1ec8b29a4ce27 = `VC4pIW_icon`;
+$5b721391f7230cb2$export$1f490cbad58081d8 = `VC4pIW_iconButtonImage`;
+$5b721391f7230cb2$export$5e53b5cc6c2ef6ac = `VC4pIW_settingPopup`;
 $5b721391f7230cb2$export$f2732ff72bedcaa4 = `VC4pIW_fullScrMainDiv`;
+$5b721391f7230cb2$export$fe8985bb6374093c = `VC4pIW_hide`;
+$5b721391f7230cb2$export$5321aef497dbc95 = `VC4pIW_watchTimer`;
+$5b721391f7230cb2$export$ea551f4aac394d83 = `VC4pIW_iconmd`;
+$5b721391f7230cb2$export$b99e7c702abdb77a = `VC4pIW_sliderWrapper`;
+$5b721391f7230cb2$export$5bbce59cbad6e3b7 = `VC4pIW_innerOsd`;
+$5b721391f7230cb2$export$d86087c43b3ca0df = `VC4pIW_backArrowMainDiv`;
+$5b721391f7230cb2$export$77806bb1d74cd6f6 = `VC4pIW_ctrlContainer`;
+$5b721391f7230cb2$export$bb628a54ab399bc9 = `VC4pIW_rotate`;
+$5b721391f7230cb2$export$502df2ec96816c8c = `VC4pIW_centerButtonImage`;
+$5b721391f7230cb2$export$fc08fb1c14557328 = `VC4pIW_brandImage`;
+$5b721391f7230cb2$export$fb184b623420d9be = `VC4pIW_title`;
+$5b721391f7230cb2$export$76c7e83ecc9cdf05 = `VC4pIW_listItem`;
+$5b721391f7230cb2$export$e2b69c907b9ef440 = `VC4pIW_scrubber`;
+$5b721391f7230cb2$export$f38465fe307ff1ea = `VC4pIW_prgsHover`;
+$5b721391f7230cb2$export$37c675ad6e14d9ff = `VC4pIW_indicatorIcon`;
+$5b721391f7230cb2$export$208d04ce5dd64049 = `VC4pIW_settingWrapper`;
+$5b721391f7230cb2$export$934587b1a6f00472 = `VC4pIW_iconSmall`;
+$5b721391f7230cb2$export$328af1edb566eae3 = `VC4pIW_volCtrlWrapper`;
+$5b721391f7230cb2$export$e8e78c978b129247 = `VC4pIW_root`;
+$5b721391f7230cb2$export$d9d30bff7354568a = `VC4pIW_settingItem`;
+$5b721391f7230cb2$export$a2b3dd87d3e471be = `VC4pIW_centerButton`;
+$5b721391f7230cb2$export$49ee957901f7a027 = `VC4pIW_prgsContainerWrapper`;
+$5b721391f7230cb2$export$e475d70d0abfaf0c = `VC4pIW_prgsBar`;
+$5b721391f7230cb2$export$ed2652bdb9ef1ad0 = `VC4pIW_toolBar`;
+$5b721391f7230cb2$export$5f8d3589eb8441ca = `VC4pIW_video`;
+$5b721391f7230cb2$export$4bc86dd528c758a3 = `VC4pIW_centerBtnShow`;
+$5b721391f7230cb2$export$a1b4384913d28591 = `VC4pIW_osdBar`;
+$5b721391f7230cb2$export$2ba01fb71ed41cb6 = `VC4pIW_button`;
+$5b721391f7230cb2$export$44601925ebb63135 = `VC4pIW_sliderProgress`;
+$5b721391f7230cb2$export$54384a8b841c9096 = `VC4pIW_activeIconWrapper`;
+$5b721391f7230cb2$export$641374ffb95bc399 = `VC4pIW_spinner`;
+$5b721391f7230cb2$export$e9be0fb78d9ff657 = `VC4pIW_centerBtnHide`;
 
 
 
@@ -292,11 +292,11 @@ $4ead0c028cea6c0b$exports = new URL("volume_up.1f65c2af.svg", import.meta.url).t
 
 
 var $57a88ff71fece902$exports = {};
-$57a88ff71fece902$exports = new URL("fullscreen.8b6fbb50.svg", import.meta.url).toString();
+$57a88ff71fece902$exports = new URL("fullscreen.ce1f9948.svg", import.meta.url).toString();
 
 
 var $768f766d02f07086$exports = {};
-$768f766d02f07086$exports = new URL("fullscreen_exit.87a47754.svg", import.meta.url).toString();
+$768f766d02f07086$exports = new URL("fullscreen_exit.d9d4e353.svg", import.meta.url).toString();
 
 
 var $e143e32fdd1edeb5$exports = {};
@@ -328,15 +328,15 @@ $c7010cbb46e44102$exports = new URL("closed_caption_enabled.b74a4bc2.svg", impor
 
 
 var $f615cac97f1db821$exports = {};
-$f615cac97f1db821$exports = new URL("tune.d2ca17c7.svg", import.meta.url).toString();
+$f615cac97f1db821$exports = new URL("tune.35760f97.svg", import.meta.url).toString();
 
 
 var $e5e16ad8991c53fb$exports = {};
-$e5e16ad8991c53fb$exports = new URL("slow_motion_video.f0da7ea2.svg", import.meta.url).toString();
+$e5e16ad8991c53fb$exports = new URL("slow_motion_video.43119542.svg", import.meta.url).toString();
 
 
 var $ab3043e6ffb5d530$exports = {};
-$ab3043e6ffb5d530$exports = new URL("chevron_right.93f52ab4.svg", import.meta.url).toString();
+$ab3043e6ffb5d530$exports = new URL("chevron_right.fcfb0ace.svg", import.meta.url).toString();
 
 
 var $7ed5c60d69c84c24$exports = {};
@@ -344,7 +344,7 @@ $7ed5c60d69c84c24$exports = new URL("chevron_left.e65bd877.svg", import.meta.url
 
 
 var $c59363daf847bdca$exports = {};
-$c59363daf847bdca$exports = new URL("arrow_back.b2bd1896.svg", import.meta.url).toString();
+$c59363daf847bdca$exports = new URL("arrow_back.0e0a60da.svg", import.meta.url).toString();
 
 
 var $2fad106aacbb23a3$exports = {};
@@ -626,6 +626,7 @@ class $728c4b5193bb32ba$var$ProgressBar {
     touchHandler(player) {
         this._el.addEventListener("touchmove", (e)=>{
             const touchPos = e.touches[0].clientX;
+            if (this.getSeekablePos(touchPos) > 100 || this.getSeekablePos(touchPos) < 0) return;
             const seekVal = (0, $c24c819ac9708802$export$649a455e905777fd)(player.duration)(this.getSeekablePos(touchPos));
             this.scrubberEl.style.left = `${this.getSeekablePos(touchPos)}%`;
             this.progressEl.style.width = `${this.getSeekablePos(touchPos)}%`;
@@ -635,6 +636,7 @@ class $728c4b5193bb32ba$var$ProgressBar {
     mouseMoveHandler(e) {
         return (player)=>{
             const touchPos = e.clientX - this.wrapper.getBoundingClientRect().left;
+            if (this.getSeekablePos(touchPos) > 100 || this.getSeekablePos(touchPos) < 0) return;
             const seekVal = (0, $c24c819ac9708802$export$649a455e905777fd)(player.duration)(this.getSeekablePos(touchPos));
             this.scrubberEl.style.left = `${this.getSeekablePos(touchPos)}%`;
             this.progressEl.style.width = `${this.getSeekablePos(touchPos)}%`;
@@ -663,18 +665,22 @@ class $728c4b5193bb32ba$var$ProgressBar {
         const handler = (e)=>this.mouseMoveHandler(e)(player);
         this._el.addEventListener("touchmove", ()=>this.touchHandler(player));
         this.wrapper.addEventListener("mousedown", ()=>{
+            this.scrubberEl.style.opacity = "0";
             this.video.addEventListener("mousemove", handler, true);
             this.osd.element.addEventListener("mousemove", handler, true);
         }, true);
         this.video.addEventListener("mouseup", ()=>{
+            this.scrubberEl.style.opacity = "1";
             this.video.removeEventListener("mousemove", handler, true);
             this.osd.element.removeEventListener("mousemove", handler, true);
         });
         this.osd.element.addEventListener("mouseup", ()=>{
+            this.scrubberEl.style.opacity = "1";
             this.osd.element.removeEventListener("mousemove", handler, true);
             this.video.removeEventListener("mousemove", handler, true);
         });
         this.wrapper.addEventListener("mouseup", ()=>{
+            this.scrubberEl.style.opacity = "1";
             this.video.removeEventListener("mousemove", handler, true);
             this.osd.element.addEventListener("mousemove", handler, true);
         }, true);
@@ -848,6 +854,7 @@ class $9376d712c6e0cc88$var$SettingControl {
         this._settingItems = document.createElement("div");
         this._settingItems.style.width = "100%";
         this._innerEl = document.createElement("div");
+        this._config = config;
         this._el = (0, $cb7b62809a181794$export$6a41fbcb71523df8)({
             icon: (0, $fef058b85aa29b7a$export$a2d8b23205c25948).SettingIcon
         });
@@ -895,7 +902,8 @@ class $9376d712c6e0cc88$var$SettingControl {
                 this._innerEl.replaceChildren(this._levelPopup);
             }
         });
-        this._settingItems.append(qltyctrl.element, speedCtrl.element);
+        if (this._config.mediaType !== "m3u8") this._settingItems.append(speedCtrl.element);
+        else this._settingItems.append(qltyctrl.element, speedCtrl.element);
         this._innerEl.appendChild(this._settingItems);
         this.ctrls.qltyCtrl = qltyctrl;
         this.ctrls.speedCtrl = speedCtrl;
@@ -1142,11 +1150,14 @@ class $38864ce8518765fa$var$BrandImage {
         this._el.style.opacity = `${config.theme?.colors?.brandOpacity}`;
         this._iconel = document.createElement("img");
         this._iconel.src = config.brandImage;
-        this._iconel.style.width = "100%";
-        this._iconel.style.height = "100%";
+        this._iconel.style.width = "auto";
+        this._iconel.style.height = config.theme?.spacing?.iconButtonSize || "100%";
         this._el.className = (0, (/*@__PURE__*/$parcel$interopDefault($5b721391f7230cb2$exports))).brandImage;
         this._el.appendChild(this._iconel);
         if (!config.showBrandImage) this._iconel.style.display = "none";
+        this._el.addEventListener("click", ()=>{
+            window.open("https://splay.skara.app", "_blank");
+        });
     }
     addTo(el) {
         el.appendChild(this._el);
@@ -1382,7 +1393,16 @@ const $149c1bd638913645$var$defaultConfig = {
                     }
                 });
             } else console.log("Your browser does not support hls streaming");
-        } else this._videoEl.src = this.config.src;
+        } else {
+            this._videoEl.src = this.config.src;
+            const setting = this._setting.createWindow({
+                player: this,
+                levels: this.hls?.levels,
+                hls: this.hls
+            });
+            this._root.appendChild(setting);
+            this.levelLoaded = true;
+        }
     }
     /**
    * @summary

@@ -4,7 +4,7 @@
 }
 
 :root {
-  --skaraVideoPrimaryColor: #EF4136;
+  --skaraVideoPrimaryColor: #eba7a2;
   --skaraVideoSecondaryColor: #EFFAB0;
   --skaraVideoPopup: #1655B2;
   --skaraVideoPopupBg: #02122A;
@@ -67,12 +67,14 @@
   width: 100%;
   box-sizing: border-box;
   background-image: var(--skaraVideoToolbarBg);
-  transition: all 200ms ease-out;
+  transition: all 400ms ease-out;
   opacity: 0;
+  z-index: 12;
 }
 
 .title {
   color: var(--textColor);
+  font-size: 20px;
 }
 
 .backArrowMainDiv {
@@ -109,7 +111,8 @@
   box-sizing: border-box;
   padding: var(--playerControlMargin);
   opacity: 0;
-  transition: all 200ms ease-out;
+  transition: all 400ms ease-out;
+  z-index: 12;
 }
 
 .innerOsd {
@@ -129,16 +132,16 @@
 
 .scrubber {
   position: absolute;
-  z-index: 20;
+  z-index: 21;
   top: 50%;
   left: 0;
   /* scale: 1.5; */
   transform: translate3d(-50%, -50%, 0);
-  height: calc(var(--progressBarHeight) + 10px);
-  width: calc(var(--progressBarHeight) + 10px);
+  height: calc(var(--progressBarHeight) * 2);
+  width: calc(var(--progressBarHeight) * 2);
   border-radius: 50%;
   background-color: var(--progressCircleColor);
-  opacity: 0;
+  opacity: 1;
   transition: opacity 300ms ease-out;
   cursor: pointer;
   pointer-events: none;
@@ -226,6 +229,7 @@
   transition: transform 300ms ease-out;
   overflow: hidden;
   opacity: var(--progressOpacity);
+  border-radius: 1px;
 }
 
 .prgsBar {
@@ -264,7 +268,8 @@
 }
 
 .prgsContainer:hover .scrubber {
-  width: calc((var(--progressBarHeight) + 10px)*var(--progressBarHoverScale));
+  width: calc((var(--progressBarHeight) * 2)*var(--progressBarHoverScale));
+  height: calc((var(--progressBarHeight) * 2)*var(--progressBarHoverScale));
   opacity: 1;
 }
 
@@ -360,7 +365,7 @@
   width: calc(10px + var(--volumeBarHeight));
   height: calc(10px + var(--volumeBarHeight));
   border-radius: 50%;
-  background: var(--volumeBarBGColor);
+  background: var(--volumeBarForegroundColor);
   border: none;
   box-shadow: none;
   margin-top: calc(4px * 0.5 - 14px * 0.5);
@@ -369,7 +374,7 @@
 .volSlider::-webkit-slider-runnable-track {
   height: var(--volumeBarHeight);
   border: none;
-  border-radius: 0;
+  border-radius: 2px;
   background: var(--volumeBarBGColor);
   box-shadow: none;
 }
@@ -415,7 +420,7 @@
 .volSlider::-moz-range-track {
   height: var(--volumeBarHeight);
   border: none;
-  border-radius: 0;
+  border-radius: 2px;
   background: var(--volumeBarBGColor);
   box-shadow: none;
 }
@@ -472,7 +477,7 @@
 
 .volSlider::-ms-track {
   height: var(--volumeBarHeight);
-  border-radius: 0;
+  border-radius: 2px;
   background: var(--volumeBarBGColor);
   border: none;
   box-shadow: none;
@@ -535,10 +540,8 @@
 
 .icon {
   box-sizing: border-box;
-  background-color: var(--iconButtonColor);
-  height: 18px;
-  width: 18px;
-  padding: 2px;
+  height: 24px;
+  width: 24px;
   border-radius: var(--iconButtonCornerRadius);
   opacity: var(--iconButtonOpacity);
 }
@@ -553,7 +556,7 @@
   background-color: var(--settingsBGColor);
   opacity: var(--settingsOpacity);
   display: none;
-  border-radius: 2px;
+  border-radius: 4px;
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(2, 18, 42, 0.5);
   -moz-box-shadow: 0px 0px 20px 0px rgba(2, 18, 42, 0.5);
@@ -561,7 +564,7 @@
 }
 
 .settingItem {
-  padding: 12px;
+  padding: 12px 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -628,7 +631,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: var(--skaraVideoPrimaryColor);
+  background-color: var(--settingsTextColor);
 }
 
 .controls {
@@ -719,8 +722,11 @@
 }
 
 .brandImage {
-  width: 60px;
-  height: 20px;
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-device-width: 1017px) {
