@@ -19,8 +19,6 @@ jobs:
         run: npm install
       - name: Build Source
         run: npm run build:ci
-      - name: Bump Version(patch)
-        run: npm version patch --no-git-tag-version
       - name: Publish Package
         uses: JS-DevTools/npm-publish@v3
         with:
