@@ -1,13 +1,14 @@
 import { Controll } from ".";
 import SkaraPlayer, { PlayerConfig } from "..";
 import { createCtrl, replaceIcon } from "../components/play-button";
+import Unicode from "../iconUnicode";
 import { Material } from "../icons";
 
 class PlayButton implements Controll {
   private _el: HTMLElement;
 
   constructor(player: SkaraPlayer, config: PlayerConfig) {
-    this._el = createCtrl({ icon: Material.PlayIcon });
+    this._el = createCtrl({ icon: Unicode.play });
     if (!config.showPlayPause) this._el.style.display = "none";
     this._el.addEventListener('click', () => {
       this.handleClick(player)

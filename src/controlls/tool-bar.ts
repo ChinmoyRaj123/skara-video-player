@@ -1,6 +1,7 @@
 import { Controll } from ".";
 import { PlayerConfig } from "..";
 import { createCtrl } from "../components/play-button";
+import Unicode from "../iconUnicode";
 import { Material } from "../icons";
 import styles from "../style.module.css";
 import FullSrcCtrl from "./full-src-button";
@@ -16,7 +17,7 @@ class Toolbar implements Controll {
   constructor(fullscrCtrl: FullSrcCtrl, config: PlayerConfig) {
     this._el = document.createElement('div');
     this._el.className = styles.toolBar;
-    this._backBtn = createCtrl({ icon: Material.ArrowBackIcon });
+    this._backBtn = createCtrl({ icon: Unicode.arrow_back });
     this._backBtn.style.visibility = "hidden";
     this._backBtn.addEventListener('click', () => {
       history.back();

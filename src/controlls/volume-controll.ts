@@ -2,6 +2,7 @@ import { Controll } from ".";
 import SkaraPlayer, { PlayerConfig } from "..";
 import { createCtrl, replaceIcon } from "../components/play-button";
 import { VOL_CHANGE_STEP } from "../constant";
+import Unicode from "../iconUnicode";
 import { Material } from "../icons";
 import styles from "../style.module.css";
 
@@ -14,7 +15,7 @@ class VolumeController implements Controll {
     this._el = document.createElement('div');
     this._el.className = styles.volCtrlWrapper;
     if (!config.showVolumeBar) this._el.style.display = "none";
-    this.muteCtrl = createCtrl({ icon: player.muted ? Material.VolumeOffIcon : Material.VolumeOnIcon });
+    this.muteCtrl = createCtrl({ icon: player.muted ? Unicode.volume_off : Unicode.volume_up });
     this.volSlider = document.createElement('input')
 
     this.muteCtrl.addEventListener('click', () => {
@@ -47,15 +48,15 @@ class VolumeController implements Controll {
 
   public update(player: SkaraPlayer) {
     if (player.volume === 0 || player.muted) {
-      replaceIcon(this.muteCtrl, Material.VolumeOffIcon)
+      replaceIcon(this.muteCtrl, Unicode.volume_off)
       this.volSlider.value = '0';
       this.volSlider.style.setProperty('--value', '0');
     } else if (player.volume > 0 && player.volume < .5) {
-      replaceIcon(this.muteCtrl, Material.VolumeDownIcon)
+      replaceIcon(this.muteCtrl, Unicode.volume_down)
       this.volSlider.value = player.volume.toString();
       this.volSlider.style.setProperty('--value', player.volume.toString());
     } else {
-      replaceIcon(this.muteCtrl, Material.VolumeOnIcon)
+      replaceIcon(this.muteCtrl, Unicode.volume_up)
       this.volSlider.value = player.volume.toString();
       this.volSlider.style.setProperty('--value', player.volume.toString());
     }

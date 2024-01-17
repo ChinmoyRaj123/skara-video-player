@@ -1,0 +1,20 @@
+
+.icon-chevron_left:before { content: '\e800'; } /* '' */
+.icon-arrow_back:before { content: '\e801'; } /* '' */
+.icon-chevron_right-1:before { content: '\e802'; } /* '' */
+.icon-filter:before { content: '\e803'; } /* '' */
+.icon-fullscreen:before { content: '\e804'; } /* '' */
+.icon-fullscreen_exit:before { content: '\e805'; } /* '' */
+.icon-pause:before { content: '\e806'; } /* '' */
+.icon-play_arrow:before { content: '\e807'; } /* '' */
+.icon-playback_speed:before { content: '\e808'; } /* '' */
+.icon-replay:before { content: '\e809'; } /* '' */
+.icon-screen_lock_rotation:before { content: '\e80c'; } /* '' */
+.icon-settings:before { content: '\e80d'; } /* '' */
+.icon-volume_down:before { content: '\e80e'; } /* '' */
+.icon-volume_mute:before { content: '\e80f'; } /* '' */
+.icon-volume_off:before { content: '\e810'; } /* '' */
+.icon-volume_up:before { content: '\e811'; } /* '' */
+.icon-chevron_right:before { content: '\e812'; } /* '' */
+.icon-screen_lock_landscapenew:before { content: '\e817'; } /* '' */
+.icon-screen_lock_portrait:before { content: '\e818'; } /* '' */

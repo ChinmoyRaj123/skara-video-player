@@ -18,6 +18,7 @@ import PrgsContainerWrapper from "./controlls/progress-container-wrapper"
 import Toolbar from "./controlls/tool-bar"
 import OrientationLock from "./controlls/orientation"
 import BrandImage from "./controlls/brand-image"
+import Unicode from "./iconUnicode"
 
 export type PlayerConfig = {
   src: string
@@ -769,19 +770,19 @@ class SkaraPlayer {
     this._videoEl.addEventListener('play', () => {
       this._videoThumbnail.style.display = "none";
       this._spinner.hide();
-      this._playBtn.changeIcon(Material.PauseIcon);
+      this._playBtn.changeIcon(Unicode.pause);
       this._centerBtn.hide();
       this.events.playing && this.events.playing()
     });
 
     this._videoEl.addEventListener('pause', () => {
-      this._playBtn.changeIcon(Material.PlayIcon)
+      this._playBtn.changeIcon(Unicode.play)
       this._centerBtn.show();
       this.events.pause && this.events.pause()
     });
 
     this._videoEl.addEventListener('ended', () => {
-      this._playBtn.changeIcon(Material.ReplayIcon);
+      this._playBtn.changeIcon(Unicode.replay);
       this._videoThumbnail.style.display = "block";
       this.events.ended && this.events.ended()
     })
