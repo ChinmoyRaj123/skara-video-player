@@ -1,5 +1,5 @@
 {
-  "name": "skara-player",
+  "name": "skara-player-1",
   "version": "0.0.60",
   "description": "A flexible, customizale video player",
   "source": "src/index.ts",

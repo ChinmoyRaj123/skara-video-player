@@ -1,35 +1,22 @@
 import { Controll } from ".";
 import SkaraPlayer, { PlayerConfig } from "..";
-import { Material } from "../icons";
+import Unicode from "../iconUnicode";
 import styles from "../style.module.css";
 
 class CenterButton implements Controll {
   private visible: boolean;
   private _el: HTMLElement;
-  private _iconel: HTMLImageElement;
+  private _iconel: HTMLElement;
 
   constructor(player: SkaraPlayer, config: PlayerConfig) {
     this.visible = false;
     this._el = document.createElement('div');
     this._el.className = styles.centerButton;
     if (!config.showCenterPlayPause) this._el.style.display = "none";
-    this._iconel = document.createElement('img');
-    this._iconel.src = Material.PlayIcon;
+    this._iconel = document.createElement('p');
     this._iconel.className = styles.centerButtonImage;
-    this._el.appendChild(this._iconel)
-    // this._el.style.mask = `url(${Material.PlayIcon})`;
-    // this._el.style.webkitMask = `url(${Material.PlayIcon})`;
-    // this._el.style.webkitMaskSize = 'contain';
-    // this._el.style.webkitMaskRepeat = 'no-repeat';
-
-    // this._el.addEventListener('mouseover', () => {
-    //   this._el.style.backgroundColor = config.theme?.colors?.centerIconButtonHoverColor as string;
-    // })
-
-    // this._el.addEventListener('mouseleave', () => {
-    //   this._el.style.backgroundColor = config.theme?.colors?.centerIconButtonColor as string;
-    // })
-
+    this._iconel.textContent = Unicode.play;
+    this._el.append(this._iconel);
     this._el.addEventListener('click', () => {
       player.play();
     })

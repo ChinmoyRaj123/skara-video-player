@@ -3,6 +3,11 @@
   src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "skaraFontIcon";
+  src: url("../fontello/font/fontello.ttf") format("truetype");
+}
+
 :root {
   --skaraVideoPrimaryColor: #fcfcfc;
   --skaraVideoSecondaryColor: #EFFAB0;
@@ -643,6 +648,9 @@
   width: var(--iconButtonSize);
   cursor: pointer;
   opacity: var(--iconButtonOpacity);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .controls:hover {
@@ -694,6 +702,9 @@
   transform: translate3d(-50%, -50%, 0);
   padding: var(--centerIconButtonPadding);
   opacity: var(--centerIconButtonOpacity);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* transition: all 200s ease-out; */
 }
 
@@ -702,13 +713,24 @@
 }
 
 .centerButtonImage {
-  width: 100%;
-  height: 100%;
+  font-family: 'skaraFontIcon';
+  font-size: var(--centerIconButtonSize);
+  color: white;
+  display: block;
 }
 
 .iconButtonImage {
-  width: 100%;
-  height: 100%;
+  font-family: 'skaraFontIcon';
+  font-size: var(--iconButtonSize);
+  color: white;
+  display: block;
+}
+
+.settingIcon {
+  font-family: 'skaraFontIcon';
+  font-size: 24px;
+  color: white;
+  display: block;
 }
 
 .watchTimer {
@@ -826,7 +848,7 @@
 }
 
 .centerBtnShow {
-  display: block;
+  display: flex;
   z-index: 16;
 }
 

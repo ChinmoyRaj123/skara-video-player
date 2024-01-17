@@ -1,6 +1,7 @@
 import { Controll } from ".";
 import SkaraPlayer from "..";
 import { createCtrl, replaceIcon } from "../components/play-button";
+import Unicode from "../iconUnicode";
 import { Material } from "../icons";
 
 class OrientationLock implements Controll {
@@ -8,7 +9,8 @@ class OrientationLock implements Controll {
   private rotated: boolean;
 
   constructor(player: SkaraPlayer) {
-    this._el = createCtrl({ icon: Material.ScrLockRotationIcon });
+    //scrlockrotation
+    this._el = createCtrl({ icon: Unicode.screen_lock_rotation });
     this.rotated = false;
     this._el.addEventListener('click', () => {
       this.handleClick(player)
@@ -19,7 +21,8 @@ class OrientationLock implements Controll {
     if (this.rotated) {
       player.root.style.transform = 'rotate(-90deg)'
       this.rotated = false;
-      this.changeIcon(Material.ScrLockRotationIcon)
+      //scrlockrotation
+      this.changeIcon(Unicode.screen_lock_rotation)
       return;
     }
 
@@ -30,7 +33,8 @@ class OrientationLock implements Controll {
     } else {
       player.root.style.transform = 'rotate(90deg)'
     }
-    this.changeIcon(Material.ScrLockLandscapeIcon)
+    //scrlocklandscape
+    this.changeIcon(Unicode.screen_lock_landscape)
     this.rotated = true;
   }
 

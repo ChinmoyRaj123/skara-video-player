@@ -2,6 +2,7 @@ import Hls, { Level } from "hls.js";
 import { Controll } from ".";
 import SkaraPlayer, { PlayerConfig } from "..";
 import { createCtrl } from "../components/play-button";
+import Unicode from "../iconUnicode"
 import { Material } from "../icons";
 import styles from "../style.module.css";
 
@@ -25,19 +26,14 @@ class SettingItem implements Controll {
     this._el = document.createElement('div');
     this._el.className = styles.settingItem;
 
+    //newly entered font icon 
     const icon = document.createElement('div');
     icon.className = styles.icon;
-    const iconel = document.createElement('img');
-    iconel.style.width = "100%";
-    iconel.style.height = "100%";
-    iconel.src = props.icon;
-    icon.appendChild(iconel);
 
-    // icon.className = styles.icon;
-    // icon.style.mask = `url(${props.icon})`;
-    // icon.style.webkitMask = `url(${props.icon})`;
-    // icon.style.webkitMaskSize = 'contain'
-    // icon.style.webkitMaskRepeat = 'no-repeat'
+    const iconel = document.createElement('p');
+    iconel.textContent = props.icon;
+    iconel.className = styles.settingIcon;
+    icon.appendChild(iconel);
 
     const levelDiv = document.createElement('div');
     levelDiv.textContent = props.text
@@ -57,18 +53,15 @@ class SettingItem implements Controll {
     const moreIcon = document.createElement('div');
     moreIcon.className = styles.icon;
 
-    const iconel2 = document.createElement('img');
-    iconel2.style.width = "100%";
-    iconel2.style.height = "100%";
-    iconel2.src = Material.ChevronRightIcon;
-    moreIcon.appendChild(iconel2);
+    // const iconel2 = document.createElement('img');
+    // iconel2.style.width = "100%";
+    // iconel2.style.height = "100%";
+    // iconel2.src = Material.ChevronRightIcon;
 
-    // moreIcon.style.mask = `url(${Material.ChevronRightIcon})`;
-    // moreIcon.style.webkitMask = `url(${Material.ChevronRightIcon})`;
-    // moreIcon.style.webkitMaskSize = 'contain'
-    // moreIcon.style.webkitMaskRepeat = 'no-repeat'
-    // moreIcon.style.width = '14px';
-    // moreIcon.style.height = '14px';
+    const iconel2 = document.createElement('p');
+    iconel2.textContent = Unicode.chevron_right;
+    iconel2.className = styles.settingIcon;
+    moreIcon.appendChild(iconel2);
 
     const dv2 = document.createElement('div');
     dv2.style.cssText = `
@@ -205,7 +198,7 @@ class SettingControl implements Controll {
     this._settingItems.style.width = '100%';
     this._innerEl = document.createElement('div');
     this._config = config
-    this._el = createCtrl({ icon: Material.SettingIcon });
+    this._el = createCtrl({ icon: Unicode.settings });
     if (!config.showSettings) this._el.style.display = "none";
 
     this._el.addEventListener('click', () => {
@@ -242,7 +235,7 @@ class SettingControl implements Controll {
   public createWindow({ player, levels, hls }: CreateSettingWindowProps) {
     const speedCtrl = new SettingItem({
       text: "Playback speed",
-      icon: Material.SlowMotionIcon,
+      icon: Unicode.playback_speed,
       onClick: () => {
         this.lastChilds = this.getChild(this._popupEl);
         this._innerEl.replaceChildren(this._speedPopup as Node);
@@ -252,7 +245,7 @@ class SettingControl implements Controll {
 
     const qltyctrl = new SettingItem({
       text: "Quality",
-      icon: Material.TuneIcon,
+      icon: Unicode.filter,
       onClick: () => {
         this.lastChilds = this.getChild(this._popupEl);
         this._innerEl.replaceChildren(this._levelPopup as Node);
@@ -287,17 +280,15 @@ class SettingControl implements Controll {
     const icon = document.createElement('div')
     icon.className = styles.icon
 
-    const iconel3 = document.createElement('img');
-    iconel3.style.width = "100%";
-    iconel3.style.height = "100%";
-    iconel3.src = Material.ArrowBackIcon;
+    // const iconel3 = document.createElement('img');
+    // iconel3.style.width = "100%";
+    // iconel3.style.height = "100%";
+    // iconel3.src = Material.ArrowBackIcon;
+
+    const iconel3 = document.createElement('p');
+    iconel3.textContent = Unicode.arrow_back;
+    iconel3.className = styles.settingIcon;
     icon.appendChild(iconel3);
-
-
-    // icon.style.mask = `url(${Material.ArrowBackIcon})`;
-    // icon.style.webkitMask = `url(${Material.ArrowBackIcon})`;
-    // icon.style.webkitMaskSize = 'contain'
-    // icon.style.webkitMaskRepeat = 'no-repeat'
 
     btn.prepend(icon)
     btn.addEventListener('click', () => {

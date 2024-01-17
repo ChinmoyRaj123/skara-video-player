@@ -9,16 +9,11 @@ export const createCtrl = (cfg: ControlProps = {}) => {
   const btn = document.createElement('div');
   if (cfg.text) btn.textContent = cfg.text;
   if (cfg.icon) {
-    const el = document.createElement("img");
-    el.src = cfg.icon;
+    const el = document.createElement("p");
+    el.textContent = cfg.icon;
     el.className = styles.iconButtonImage;
     btn.appendChild(el)
-    // btn.style.mask = `url(${cfg.icon})`
-    // btn.style.webkitMask = `url(${cfg.icon})`
-    // btn.style.webkitMaskSize = 'contain'
-    // btn.style.webkitMaskRepeat = 'no-repeat'
   }
-
   if (cfg.style) {
     btn.style.cssText = JSON.stringify(cfg.style);
   } else {
@@ -28,10 +23,6 @@ export const createCtrl = (cfg: ControlProps = {}) => {
 }
 
 export const replaceIcon = (el: HTMLElement, icon: string) => {
-  const imgel = el.children[0] as HTMLImageElement
-  imgel.src = icon
-  // el.style.mask = `url(${icon})`
-  // el.style.webkitMask = `url(${icon})`
-  // el.style.webkitMaskSize = 'contain'
-  // el.style.webkitMaskRepeat = 'no-repeat'
+  const imgel = el.children[0] as HTMLElement
+  imgel.textContent = icon
 }

@@ -3,8 +3,13 @@
   src: url("Roboto-Regular.ca197847.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: skaraFontIcon;
+  src: url("fontello.605d2e61.ttf") format("truetype");
+}
+
 :root {
-  --skaraVideoPrimaryColor: #ef4136;
+  --skaraVideoPrimaryColor: #fcfcfc;
   --skaraVideoSecondaryColor: #effab0;
   --skaraVideoPopup: #1655b2;
   --skaraVideoPopupBg: #02122a;
@@ -592,6 +597,9 @@
   width: var(--iconButtonSize);
   cursor: pointer;
   opacity: var(--iconButtonOpacity);
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .VC4pIW_controls:hover {
@@ -638,6 +646,9 @@
   border-radius: var(--centerIconButtonCornerRadius);
   padding: var(--centerIconButtonPadding);
   opacity: var(--centerIconButtonOpacity);
+  justify-content: center;
+  align-items: center;
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -648,9 +659,25 @@
   background-color: var(--centerIconButtonHoverColor);
 }
 
-.VC4pIW_centerButtonImage, .VC4pIW_iconButtonImage {
-  width: 100%;
-  height: 100%;
+.VC4pIW_centerButtonImage {
+  font-family: skaraFontIcon;
+  font-size: var(--centerIconButtonSize);
+  color: #fff;
+  display: block;
+}
+
+.VC4pIW_iconButtonImage {
+  font-family: skaraFontIcon;
+  font-size: var(--iconButtonSize);
+  color: #fff;
+  display: block;
+}
+
+.VC4pIW_settingIcon {
+  color: #fff;
+  font-family: skaraFontIcon;
+  font-size: 24px;
+  display: block;
 }
 
 .VC4pIW_watchTimer {
@@ -771,7 +798,7 @@
 
 .VC4pIW_centerBtnShow {
   z-index: 16;
-  display: block;
+  display: flex;
 }
 
 .VC4pIW_centerBtnHide {
