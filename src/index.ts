@@ -311,7 +311,7 @@ class SkaraPlayer {
     // const hlsarr = ["audio/x-mpegurl", "application/vnd.apple.mpegurl", "application/x-mpegurl"]
     // const r = await fetch(this.config.src, { method: 'HEAD' })
     // fileType = r.headers.get('Content-Type')
-    if (this.config.mediaType === "m3u8") {
+    if (this.config.mediaType === "hls") {
       if (Hls.isSupported()) {
         this.hls = new Hls()
         this.hls.loadSource(this.config.src)
@@ -789,8 +789,6 @@ class SkaraPlayer {
 
     this._videoEl.addEventListener('loadeddata', () => {
       console.log('video loaded')
-      console.log("this.config", this.config)
-
       this._watchTimer.setDuration(this.duration);
       this._spinner.hide()
       this.events.loaded && this.events.loaded()
